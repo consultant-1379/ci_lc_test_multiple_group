@@ -1,0 +1,20 @@
+[
+  {
+    "nodeName": "SYS_DEF_SUB_RADIONODE_NODE_01",
+    "ipAddress": "8.8.8.8",
+    "neType": "RadioNode",
+    "ossModelIdentity": "18.Q2-R43A23",
+    "technologyDomain": [
+      "EPS"
+    ]
+  },
+  {
+    "nodeName": "SYS_DEF_SUB_RADIONODE_NODE_02",
+    "ipAddress": "8.8.8.8",
+    "neType": "RadioNode",
+    "ossModelIdentity": "18.Q2-R43A23",
+    "technologyDomain": [
+      "EPS"
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "@class": "uetrace",
+  "administrationState": "INACTIVE",
+  "description": "Hello World",
+  "id": null,
+  "name": "UETraceSubscription",
+  "nodeInfoList": [
+    {
+      "interfaceTypes": [
+        "s1",
+        "uu",
+        "x2"
+      ],
+      "nodeGrouping": "ENODEB",
+      "traceDepth": "MINIMUM"
+    },
+    {
+      "interfaceTypes": [
+        "gb",
+        "gn_gp",
+        "gr",
+        "iu",
+        "s11",
+        "s1_mme",
+        "s3_s10",
+        "s3_s16",
+        "s4",
+        "s6a",
+        "s6d",
+        "sgs",
+        "slg",
+        "sls",
+        "sv"
+      ],
+      "nodeGrouping": "MME"
+    }
+  ],
+  "operationalState": "NA",
+  "outputMode": "FILE_AND_STREAMING",
+  "owner": "administrator",
+  "rop": "FIFTEEN_MIN",
+  "scheduleInfo": {
+    "endDateTime": 1931359200000,
+    "startDateTime": 1900427100000
+  },
+  "streamInfo": {
+    "ipAddress": "192.168.0.42"
+  },
+  "taskStatus": "OK",
+  "type": "UETRACE",
+  "ueInfo": {
+    "type": "IMSI",
+    "value": "123456"
+  },
+  "userActivationDateTime": null,
+  "userDeActivationDateTime": null,
+  "userType": "USER_DEF"
+}

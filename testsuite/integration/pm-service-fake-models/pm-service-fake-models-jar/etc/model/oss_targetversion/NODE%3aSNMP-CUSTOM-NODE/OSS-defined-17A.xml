@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+
+*******************************************************************************
+* COPYRIGHT Ericsson LMI 2019. All rights reserved.
+*
+* No part of this document may be reproduced in any form without the
+* written permission of the copyright owner.The contents of this document
+* are subject to revision without notice due to continued progress in
+* methodology, design and manufacturing. Ericsson shall have no liability
+* for any error or damage of any kind resulting from the use of this document.
+*
+*******************************************************************************
+
+
+-->
+<TargetVersionInformation xmlns:ns2="urn:com:ericsson:schema:xml:oss:oss_common" xmlns="urn:com:ericsson:schema:xml:oss:oss_targetversion" ns2:name="OSS-defined-17A" ns2:ns="NODE:SNMP-CUSTOM-NODE" targetModelIdentity="17A">
+  <ns2:modelCreationInfo author="Network Model Transformer" creationDate="Thu Mar 14 12:13:53 GMT+01:00 2019">
+    <ns2:designedModel componentId="SNMP-CUSTOM-NODE 17A model"/>
+  </ns2:modelCreationInfo>
+  <ns2:desc>Target Version information model for SNMP-CUSTOM-NODE 17A</ns2:desc>
+  <supportedModels>
+    <urn>/pfm_measurement/SNMP-CUSTOM-NODE/NE-defined/181718039625.410986185759.965259259588</urn>
+  </supportedModels>
+  <release>17A</release>
+</TargetVersionInformation>

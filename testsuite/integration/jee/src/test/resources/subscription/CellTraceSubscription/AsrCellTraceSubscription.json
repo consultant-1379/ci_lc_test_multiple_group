@@ -1,0 +1,132 @@
+{
+  "@class": "celltrace",
+  "name": "ASR-L System Defined Subscription",
+  "owner": "Ericsson",
+  "description": "Analytic Session Record for LTE Radio",
+  "userType": "SYSTEM_DEF",
+  "type": "CELLTRACE",
+  "cellTraceCategory": "ASR",
+  "scheduleInfo": {},
+  "administrationState": "INACTIVE",
+  "operationalState": "NA",
+  "taskStatus": "OK",
+  "rop": "FIFTEEN_MIN",
+  "filterOnManagedFunction": false,
+  "filterOnManagedElement": false,
+  "nodeListIdentity": 1377321201,
+  "nodeFilter": "NODE_TYPE",
+  "cbs": false,
+  "nodes": [
+    {
+      "name": "ASR-ERBS-18.Q4-NODE",
+      "fdn": "NetworkElement=ASR-ERBS-18.Q4-NODE",
+      "neType": "ERBS",
+      "ossModelIdentity": "18.Q4-J.2.300",
+      "ossPrefix": "MeContext=ASR-ERBS-18.Q4-NODE",
+      "technologyDomain": [],
+      "pmFunction": "N/A"
+    }
+  ],
+  "criteriaSpecification": [],
+  "events": [],
+  "outputMode": "FILE",
+  "streamInfoList": [],
+  "ebsCounters": [],
+  "ebsEvents": [
+    {
+      "name": "INTERNAL_PROC_HO_PREP_X2_IN",
+      "groupName": "HANDOVER_EVALUATION"
+    },
+    {
+      "name": "INTERNAL_PER_UE_RB_TRAFFIC_REP",
+      "groupName": "INTERNAL_PERIODIC"
+    },
+    {
+      "name": "INTERNAL_PER_RADIO_UE_MEASUREMENT",
+      "groupName": "INTERNAL_PERIODIC"
+    },
+    {
+      "name": "INTERNAL_PROC_HO_PREP_X2_OUT",
+      "groupName": "HANDOVER_EVALUATION"
+    },
+    {
+      "name": "INTERNAL_PROC_RRC_CONN_SETUP",
+      "groupName": "INTERNAL"
+    },
+    {
+      "name": "INTERNAL_PROC_HO_EXEC_S1_IN",
+      "groupName": "HANDOVER_EVALUATION"
+    },
+    {
+      "name": "S1_INITIAL_UE_MESSAGE",
+      "groupName": "EXTERNAL"
+    },
+    {
+      "name": "X2_HANDOVER_REQUEST",
+      "groupName": "EXTERNAL"
+    },
+    {
+      "name": "INTERNAL_PROC_HO_EXEC_X2_OUT",
+      "groupName": "HANDOVER_EVALUATION"
+    },
+    {
+      "name": "INTERNAL_PROC_HO_PREP_S1_IN",
+      "groupName": "HANDOVER_EVALUATION"
+    },
+    {
+      "name": "S1_HANDOVER_REQUEST",
+      "groupName": "EXTERNAL"
+    },
+    {
+      "name": "X2_CONTEXT_FETCH_RESPONSE",
+      "groupName": "EXTERNAL"
+    },
+    {
+      "name": "INTERNAL_PROC_S1_SIG_CONN_SETUP",
+      "groupName": "INTERNAL"
+    },
+    {
+      "name": "INTERNAL_PROC_HO_EXEC_S1_OUT",
+      "groupName": "HANDOVER_EVALUATION"
+    },
+    {
+      "name": "S1_PATH_SWITCH_REQUEST_ACKNOWLEDGE",
+      "groupName": "EXTERNAL"
+    },
+    {
+      "name": "INTERNAL_PROC_RRC_CONNECTION_RE_ESTABLISHMENT",
+      "groupName": "INTERNAL"
+    },
+    {
+      "name": "S1_INITIAL_CONTEXT_SETUP_REQUEST",
+      "groupName": "EXTERNAL"
+    },
+    {
+      "name": "INTERNAL_PROC_HO_EXEC_X2_IN",
+      "groupName": "HANDOVER_EVALUATION"
+    },
+    {
+      "name": "INTERNAL_PROC_INITIAL_CTXT_SETUP",
+      "groupName": "INTERNAL"
+    },
+    {
+      "name": "INTERNAL_PROC_HO_PREP_S1_OUT",
+      "groupName": "HANDOVER_EVALUATION"
+    },
+    {
+      "name": "INTERNAL_EVENT_UE_MOBILITY_EVAL",
+      "groupName": "HANDOVER_EVALUATION"
+    },
+    {
+      "name": "INTERNAL_PER_UE_TRAFFIC_REP",
+      "groupName": "INTERNAL_PERIODIC"
+    },
+    {
+      "name": "INTERNAL_PROC_UE_CTXT_RELEASE",
+      "groupName": "INTERNAL"
+    }
+  ],
+  "ueFraction": 1,
+  "asnEnabled": true,
+  "ebsStreamInfoList": []
+}

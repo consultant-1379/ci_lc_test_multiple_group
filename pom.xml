@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.ericsson.oss.pmic</groupId>
+    <artifactId>pmic-integration</artifactId>
+    <version>1.70.14</version>
+  </parent>
+
+  <artifactId>pm-service</artifactId>
+  <version>2.23.3-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>[${project.artifactId}] JEE7 Project</name>
+
+  <properties>
+    <!-- This is an artifact contained in the parent pmic-integration so use the same version as the parent here !! -->
+    <version.mediation-bom>1.70.14</version.mediation-bom>
+    <sonar.coverage.exclusions>src/test/**/*</sonar.coverage.exclusions>
+    <!-- SGSN-MME -->
+    <version.sgsn-mme-node-model-16a-CP02-jar>1.11.2</version.sgsn-mme-node-model-16a-CP02-jar>
+    <version.sgsn-mme-node-model-15b-CP01-jar>2.22.1</version.sgsn-mme-node-model-15b-CP01-jar>
+    <version.sgsn-mme-node-model-15b-jar>2.4.2</version.sgsn-mme-node-model-15b-jar>
+    <!-- RadioNode -->
+    <version.radionode-node-model-16b-R28DS-jar>1.14.1</version.radionode-node-model-16b-R28DS-jar>
+    <version.radionode-node-model-16b-R28GY-jar>1.13.4</version.radionode-node-model-16b-R28GY-jar>
+    <version.radionode-node-model-17a-R2YX-jar>1.10.14</version.radionode-node-model-17a-R2YX-jar>
+    <version.radionode-node-model-19.Q3-R41A26-jar>2.23.5</version.radionode-node-model-19.Q3-R41A26-jar>
+    <version.msrbsv2-node-model-16a-R22AC-jar>1.18.2</version.msrbsv2-node-model-16a-R22AC-jar>
+    <!-- 5GRadioNode -->
+    <version.5gradionode-node-model-1-7-18.Q2-R1A852-jar>1.18.1</version.5gradionode-node-model-1-7-18.Q2-R1A852-jar>
+    <version.5gradionode-node-model-1-14-18.Q4-R5A77-jar>1.21.1</version.5gradionode-node-model-1-14-18.Q4-R5A77-jar>
+    <version.5gradionode-node-model-1-20-19.Q2-R15A16-jar>1.27.1</version.5gradionode-node-model-1-20-19.Q2-R15A16-jar>
+    <version.5gradionode-node-model-common-jar>1.25.2</version.5gradionode-node-model-common-jar>
+    <!-- RBS Node -->
+    <version.rbs-node-model-17a-jar>1.3.5</version.rbs-node-model-17a-jar>
+    <version.rbs-node-model-17a-460-jar>1.3.5</version.rbs-node-model-17a-460-jar>
+    <!-- EPG Node -->
+    <version.epg-node-model-16b-jar>1.4.2</version.epg-node-model-16b-jar>
+    <!-- CISCO Node -->
+    <version.cisco-asr900-node-model-common-jar>1.0.3</version.cisco-asr900-node-model-common-jar>
+    <version.cisco-asr9000-node-model-common-jar>1.0.3</version.cisco-asr9000-node-model-common-jar>
+    <!--  FRONTHAUL-6080 Node -->
+    <version.fronthaul-6080-node-model-common-jar>${version.ERICfronthaul6080nodemodelcommon_CXP9033034}
+    </version.fronthaul-6080-node-model-common-jar>
+    <version.fronthaul-6080-node-model-17b-jar>1.4.1</version.fronthaul-6080-node-model-17b-jar>
+    <!--  Router6675 Node -->
+    <version.er6675-node-model-common-jar>1.11.2</version.er6675-node-model-common-jar>
+    <!-- MSRBSV1 -->
+    <version.msrbsv1-node-model-16a-R9A-jar>1.4.5</version.msrbsv1-node-model-16a-R9A-jar>
+    <!--  ESA -->
+    <version.ERICgenericesanodemodelcommon_CXP9034609>1.8.1</version.ERICgenericesanodemodelcommon_CXP9034609>
+    <!-- BSC -->
+    <version.bsc-node-model-jar>1.29.1</version.bsc-node-model-jar>
+    <!--ESN Model -->
+    <version.esn-service-models-config-model>1.8.1</version.esn-service-models-config-model>
+    <!-- STN Node models -->
+    <version.siu02-node-model-common-jar>1.23.1</version.siu02-node-model-common-jar>
+    <version.tcu02-node-model-common-jar>1.25.1</version.tcu02-node-model-common-jar>
+    <!-- ESC Model -->
+    <version.esc-node-model-common-jar>1.7.1</version.esc-node-model-common-jar>
+    <!-- ENM Baseline ////////////////////////////////////////////////////////////// -->
+    <version.ejb>3.1</version.ejb>
+    <version.jee>6</version.jee>
+    <version.jboss-as-maven-plugin>7.3.Final</version.jboss-as-maven-plugin>
+    <version.testng>6.1</version.testng>
+    <version.equalsverifier>2.0.1</version.equalsverifier>
+
+    <project.ear.defaultLibBundleDir>lib</project.ear.defaultLibBundleDir>
+    <project.ear.Dependencies>org.apache.xerces,
+      org.dom4j,
+      com.ericsson.oss.itpf.datalayer.dps.api export,
+      org.slf4j,com.ericsson.oss.mediation.ftp.jca.connector.api,
+      com.ericsson.oss.mediation.engine-api export
+    </project.ear.Dependencies>
+
+  </properties>
+  <dependencyManagement>
+    <dependencies>
+      <!-- mediation-sdk deps -->
+      <dependency>
+        <groupId>com.ericsson.oss.pmic</groupId>
+        <artifactId>mediation-bom</artifactId>
+        <version>${version.mediation-bom}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>nl.jqno.equalsverifier</groupId>
+        <artifactId>equalsverifier</artifactId>
+        <version>${version.equalsverifier}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>${version.testng}</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jboss.spec</groupId>
+      <artifactId>jboss-javaee-7.0</artifactId>
+      <version>${version.jboss.jee.spec}</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.sdk</groupId>
+      <artifactId>sdk-recording-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.sdk</groupId>
+      <artifactId>sdk-cache-api</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>com.ericsson.oss.itpf.modeling</groupId>
+          <artifactId>modeling-annotation-jar</artifactId>
+        </exclusion>
+      </exclusions>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.modeling</groupId>
+      <artifactId>model-service-api-jar</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>com.ericsson.oss.itpf.modeling</groupId>
+          <artifactId>modeling-common-jar</artifactId>
+        </exclusion>
+      </exclusions>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.sdk</groupId>
+      <artifactId>sdk-cluster-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.sdk</groupId>
+      <artifactId>sdk-cluster-core</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.sdk</groupId>
+      <artifactId>sdk-scheduling-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.sdk</groupId>
+      <artifactId>sdk-instrumentation-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.sdk</groupId>
+      <artifactId>sdk-instrumentation</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.sdk</groupId>
+      <artifactId>sdk-config-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.sdk</groupId>
+      <artifactId>sdk-core-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.sdk</groupId>
+      <artifactId>sdk-context-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.sdk</groupId>
+      <artifactId>sdk-eventbus-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.sdk</groupId>
+      <artifactId>sdk-modeled-eventbus-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.sdk</groupId>
+      <artifactId>sdk-security-accesscontrol-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.nms.mediation</groupId>
+      <artifactId>core-mediation-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.datalayer.dps</groupId>
+      <artifactId>dps-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.mediation.pmic.modules</groupId>
+      <artifactId>pmic-common-module-api-jar</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.mediation.pmic.modules</groupId>
+      <artifactId>pmic-dto</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.mediation.pmic.modules</groupId>
+      <artifactId>pmic-scanner-master-jar</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.mediation.pmic.modules</groupId>
+      <artifactId>pmic-dao</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.mediation.adapter.ftp</groupId>
+      <artifactId>ftp-jca-connector-api-jar</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.cds</groupId>
+      <artifactId>cdi-test-support</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.mediation.pmic.modules</groupId>
+      <artifactId>pm-cdi-test-utils</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.datalayer.dps</groupId>
+      <artifactId>dps-test-support</artifactId>
+      <version>RELEASE</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.spockframework</groupId>
+      <artifactId>spock-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.athaydes</groupId>
+      <artifactId>spock-reports</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>cglib</groupId>
+      <artifactId>cglib-nodep</artifactId>
+      <version>3.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.objenesis</groupId>
+      <artifactId>objenesis</artifactId>
+      <version>2.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.infinispan</groupId>
+      <artifactId>infinispan-core</artifactId>
+      <scope>provided</scope>
+      <version>6.0.2.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.mediation.pmic.modules</groupId>
+      <artifactId>pmic-common-module-impl-ejb</artifactId>
+      <scope>provided</scope>
+      <version>${version.ERICpmiccommonmoduleimpl_CXP9032400}</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.9</version>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <configuration>
+              <failOnError>false</failOnError>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <modules>
+    <module>pm-service-api</module>
+    <module>pm-service-cbs-api</module>
+    <module>pm-service-jar</module>
+    <module>pm-service-ejb</module>
+    <module>pm-service-cbs-ejb</module>
+    <module>pm-service-war</module>
+    <module>pm-service-ear</module>
+    <module>ERICpmic_CXP9030369</module>
+    <module>pm-service-model</module>
+    <module>ERICpmicmodel_CXP9030403</module>
+    <module>testsuite</module>
+    <module>vertical-slice</module>
+  </modules>
+
+  <scm>
+    <developerConnection>${ericsson.scm.url}</developerConnection>
+    <connection>${ericsson.scm.url}</connection>
+    <tag>pm-service-1.10.2</tag>
+  </scm>
+</project>

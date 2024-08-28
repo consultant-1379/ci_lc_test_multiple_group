@@ -1,0 +1,20 @@
+[
+  {
+    "nodeName": "SYS_DEF_SUB_ERBS_NODE_01",
+    "ipAddress": "8.8.8.8",
+    "neType": "ERBS",
+    "ossModelIdentity": "18.Q4-J.2.300",
+    "technologyDomain": [
+      "EPS"
+    ]
+  },
+  {
+    "nodeName": "SYS_DEF_SUB_ERBS_NODE_02",
+    "ipAddress": "8.8.8.8",
+    "neType": "ERBS",
+    "ossModelIdentity": "18.Q4-J.2.300",
+    "technologyDomain": [
+      "EPS"
+    ]
+  }
+]

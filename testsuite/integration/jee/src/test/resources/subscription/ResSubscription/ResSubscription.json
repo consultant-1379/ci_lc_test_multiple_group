@@ -1,0 +1,86 @@
+{
+  "@class": "res",
+  "accessType": "FULL",
+  "activationTime": null,
+  "administrationState": "INACTIVE",
+  "applyOnAllCells": true,
+  "cbs": false,
+  "cellInfoList": [],
+  "counters": [
+    {
+      "moClassType": "UtranCell",
+      "name": "pmRes1"
+    },
+    {
+      "moClassType": "UtranCell",
+      "name": "pmRes2"
+    },
+    {
+      "moClassType": "UtranCell",
+      "name": "pmRes3"
+    }
+  ],
+  "criteriaSpecification": [],
+  "deactivationTime": null,
+  "description": "This is a test",
+  "filterOnManagedElement": false,
+  "filterOnManagedFunction": false,
+  "id": null,
+  "name": "ResSubscriptionEgri",
+  "nextVersionName": null,
+  "nodeFilter": "NODE_TYPE",
+  "nodeListIdentity": 78118344,
+  "nodes": [
+    {
+      "name": "RNC01",
+      "neType": "RNC",
+      "ossModelIdentity": "16B-V.7.1659",
+      "technologyDomain": [],
+      "pmFunction": "ON",
+      "fdn": "NetworkElement=RNC01",
+      "ossPrefix": "MeContext=RNC01",
+      "meFdn": null,
+      "id": "281474980282324"
+    }
+  ],
+  "numberOfNodes": 1,
+  "operationalState": "NA",
+  "owner": "Administrator",
+  "persistenceTime": null,
+  "pnpEnabled": false,
+  "prevVersionName": null,
+  "resMeasDef": {
+    "pmRes3": {
+      "rmq": "UE_TX_POWER",
+      "service": "PSCONVUNKNOWNEULHS"
+    },
+    "pmRes2": {
+      "rmq": "CPICH_RSCP",
+      "service": "CSSTREAMING"
+    },
+    "pmRes1": {
+      "rmq": "CPICH_EC_NO",
+      "service": "SPEECH12200_PSDCHHS"
+    }
+  },
+  "resMeasPeriods": {
+    "SPEECH": 16,
+    "VIDEO": 16,
+    "INTERACTIVE": 16,
+    "STREAMING": 16
+  },
+  "resUeFraction": 1,
+  "rop": "FIFTEEN_MIN",
+  "scheduleInfo": {
+    "endDateTime": null,
+    "startDateTime": null
+  },
+  "selectedNeTypes": [
+    "RNC"
+  ],
+  "taskStatus": "OK",
+  "type": "RES",
+  "userActivationDateTime": null,
+  "userDeActivationDateTime": null,
+  "userType": "USER_DEF"
+}

@@ -1,0 +1,67 @@
+networks: {}
+services:
+  #Image containing models
+  pm_service_model-deployment:
+    image: armdocker.rnd.ericsson.se/proj_oss_releases/enm/model-deployment
+    environment:
+      IMAGE_NAME: model-deployment
+      DOCKER_INIT_DIR: /opt/ericsson/docker/config/init
+      DOCKER_RPMS_DIR: /opt/ericsson/docker/config/init/rpms
+    hostname: models-0
+    volumes:
+    - /etc/opt/ericsson/ERICmodeldeployment
+    - /etc/opt/ericsson/ERICmodeldeployment/data
+    - /etc/opt/ericsson/ERICmodeldeployment/models
+    - ./src/test/docker/models/config:/opt/ericsson/docker/config
+
+  # Image containing neo4j
+  pm_service_db:
+    image: armdocker.rnd.ericsson.se/proj_oss_releases/enm/neo4j
+    ports:
+    - '7474:7474'
+    - '7473:7473'
+    - '7687:7687'
+    hostname: neo4j1
+
+  # Image containing PostgreSQL Database Server used by Service Framework
+  pm_service_postgres:
+    image: armdocker.rnd.ericsson.se/proj_oss_releases/enm/postgres
+    hostname: postgresql-server
+
+  # Image containing OpenDJ (LDAP Server) and all openidm policies
+  pm_service_opendj:
+    image: armdocker.rnd.ericsson.se/proj_oss_releases/enm/access-control
+    volumes:
+    - ./src/test/docker/access-control/config:/opt/ericsson/docker/config
+
+  # Image containing JBoss AS server
+  pm_service_jboss:
+    build: ./src/test/docker/jboss
+    command: "-IPJ -s jboss $DOCKER_JBOSS_STARTUP_OPTIONS -H $DOCKER_MACHINE_HOST_IP"
+    links:
+    - pm_service_model-deployment:models-0
+    - pm_service_postgres:postgresql-server
+    - pm_service_opendj:ldap-remote
+    - pm_service_opendj:ldap-local
+    - pm_service_db:neo4j1
+    depends_on:
+    - pm_service_model-deployment
+    - pm_service_db
+    volumes_from:
+    - pm_service_db
+    - pm_service_opendj
+    - pm_service_model-deployment
+    environment:
+    - PM_FUNCTION_CONFIG=${PM_FUNCTION_CONFIG}
+    - RUNNING_ENV=$DOCKER_RUNNING_ENV
+    - JAVA_OPTS=-Dneo4j.server.hostname=neo4j1 -Xms2g -Xmx8g -Dneo4j.serverTransport=bolt
+    ports:
+    - "9999:9999"
+    - "9990:9990"
+    - "8080:8080"
+    - "8787:8787"
+    - "6300:6300"
+    volumes:
+    - ./src/test/docker/jboss/config:/opt/ericsson/docker/config
+version: '2.1'
+volumes: {}

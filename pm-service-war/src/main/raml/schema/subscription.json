@@ -1,0 +1,622 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PMIC Subscription",
+  "type": "object",
+  "definitions": {
+    "rop": {
+      "enum": [
+        "ONE_MIN",
+        "FIVE_MIN",
+        "FIFTEEN_MIN",
+        "THIRTY_MIN",
+        "ONE_HOUR",
+        "TWELVE_HOUR",
+        "ONE_DAY",
+        "TEN_SECONDS",
+        "THIRTY_SECONDS",
+        "null"
+      ]
+    },
+    "outputMode": {
+      "enum": [
+        "FILE",
+        "STREAMING",
+        "FILE_AND_STREAMING",
+        null
+      ]
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "neType": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fdn": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ossModelIdentity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pmFunction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "technologyDomain": {
+          "items": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "counter": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "moClassType": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "streamInfo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ipAddress": {
+          "type": "string"
+        },
+        "port": {
+          "type": "integer"
+        },
+        "portOffset": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "ipAddress",
+        "port",
+        "portOffset"
+      ]
+    },
+    "moInstance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "nodeName": {
+          "type": "string"
+        },
+        "moInstanceName": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "nodeName",
+        "moInstanceName"
+      ]
+    },
+    "ueInfo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "enum": [
+            "IMSI",
+            "IMEI",
+            "IMEI_SOFTWARE_VERSION"
+          ]
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "value"
+      ]
+    },
+    "criteriaSpecification": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "criteriaIdString": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "criteriaIdString"
+      ]
+    },
+    "cellInfo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "nodeName": {
+          "type": "string"
+        },
+        "utranCellId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "nodeName",
+        "utranCellId"
+      ]
+    },
+    "nodeInfo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "nodeGrouping": {
+          "enum": [
+            "ENODEB",
+            "MM"
+          ]
+        },
+        "traceDepth": {
+          "enum": [
+            "MINIMUM",
+            "MEDIUM",
+            "MAXIMUM",
+            "MINIMUM_WITHOUT_VENDOR_SPECIFIC_EXTENSION",
+            "MEDIUM_WITHOUT_VENDOR_SPECIFIC_EXTENSION",
+            "MAXIMUM_WITHOUT_VENDOR_SPECIFIC_EXTENSION",
+            "DISABLED"
+          ]
+        },
+        "interfaceTypes": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "nodeGrouping",
+        "traceDepth"
+      ]
+    },
+    "subscription": {
+      "statistical": {
+        "type": "object",
+        "properties": {
+          "counters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/counter"
+            }
+          }
+        }
+      },
+      "cellTrace": {
+        "type": "object",
+        "properties": {
+          "ueFraction": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "asnEnabled": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "ebsEnabled": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "ebsCounters": {
+            "type": "array",
+            "additionalProperties": false,
+            "items": {
+              "$ref": "#/definitions/counter"
+            }
+          }
+        }
+      },
+      "ctum": {
+        "type": "object",
+        "properties": {
+          "streamInfo": {
+            "$ref": "#/definitions/streamInfo"
+          }
+        }
+      },
+      "ebm": {
+        "type": "object",
+        "properties": {
+          "compressionEnabled": {
+            "type": "boolean"
+          },
+          "ebsEnabled": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "ebsCounters": {
+            "type": "array",
+            "additionalProperties": false,
+            "items": {
+              "$ref": "#/definitions/counter"
+            }
+          },
+          "ebsOutputStrategy": {
+            "enum": [
+              "TGPP",
+              "TGPP_GZ",
+              "TGPP_ENIQ_GZ",
+              "TGPP_GZ_ENIQ_GZ",
+              "ENIQ_GZ",
+              "null"
+            ]
+          },
+          "ebsOutputInterval": {
+            "$ref": "#/definitions/rop"
+          }
+        }
+      },
+      "moInstance": {
+        "type": "object",
+        "properties": {
+          "moInstances": {
+            "type": "array",
+            "additionalProperties": false,
+            "items": {
+              "$ref": "#/definitions/moInstance"
+            }
+          }
+        }
+      },
+      "ueTrace": {
+        "type": "object",
+        "properties": {
+          "outputMode": {
+            "$ref": "#/definitions/outputMode"
+          },
+          "streamInfo": {
+            "$ref": "#/definitions/streamInfo"
+          },
+          "ueInfo": {
+            "$ref": "#/definitions/ueInfo"
+          },
+          "nodeInfo": {
+            "$ref": "#/definitions/nodeInfo"
+          }
+        }
+      },
+      "uetr": {
+        "type": "object",
+        "properties": {
+          "moInstances": {
+            "type": "array",
+            "additionalProperties": false,
+            "items": {
+              "$ref": "#/definitions/ueInfo"
+            }
+          }
+        }
+      },
+      "gpeh": {
+        "type": "object",
+        "properties": {
+          "cellsSupported": {
+            "type": "boolean"
+          },
+          "ueFraction": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "applyOnAllCells": {
+            "type": "boolean"
+          },
+          "cellInfo": {
+            "type": "array",
+            "additionalProperties": false,
+            "items": {
+              "$ref": "#/definitions/cellInfo"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/subscription/statistical"
+    },
+    {
+      "$ref": "#/definitions/subscription/cellTrace"
+    },
+    {
+      "$ref": "#/definitions/subscription/ctum"
+    },
+    {
+      "$ref": "#/definitions/subscription/ebm"
+    },
+    {
+      "$ref": "#/definitions/subscription/moInstance"
+    },
+    {
+      "$ref": "#/definitions/subscription/ueTrace"
+    },
+    {
+      "$ref": "#/definitions/subscription/uetr"
+    },
+    {
+      "$ref": "#/definitions/subscription/gpeh"
+    },
+    {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "nextVersionName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "prevVersionName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "owner": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "userType": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scheduleInfo": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "startDateTime": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "endDateTime": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            }
+          }
+        },
+        "administrationState": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "operationalState": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "taskStatus": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "activationTime": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "deactivationTime": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "rop": {
+          "$ref": "#/definitions/rop"
+        },
+        "userActivationDateTime": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "userDeActivationDateTime": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "persistenceTime": {
+          "type": "integer"
+        },
+        "pnpEnabled": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "filterOnManagedFunction": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "filterOnManagedElement": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "nodes": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/node"
+          }
+        },
+        "cbs": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "criteriaSpecification": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/criteriaSpecification"
+          }
+        },
+        "nodeListIdentity": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "selectedNeTypes": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "nodeFilter": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "events": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "groupName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name"
+            ]
+          }
+        },
+        "outputMode": {
+          "$ref": "#/definitions/outputMode"
+        },
+        "streamInfoList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/streamInfo"
+          }
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "name",
+    "nextVersionName",
+    "prevVersionName",
+    "owner",
+    "description",
+    "userType",
+    "type",
+    "scheduleInfo",
+    "administrationState",
+    "operationalState",
+    "taskStatus",
+    "activationTime",
+    "deactivationTime",
+    "rop",
+    "userActivationDateTime",
+    "userDeActivationDateTime",
+    "persistenceTime"
+  ]
+}

@@ -1,0 +1,11 @@
+/.settings
+/.classpath
+/.project
+/target
+*.orig
+.groovy
+*.versionsBackup
+/target
+/target
+/bin/
+/target

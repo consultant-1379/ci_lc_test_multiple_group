@@ -1,0 +1,32 @@
+[
+  {
+    "nodeName": "SGSN-15B-CP01-V301",
+    "ipAddress": "7.7.7.7",
+    "neType": "SGSN-MME",
+    "ossModelIdentity": "15B-CP01",
+    "technologyDomain": [
+      "EPS"
+    ]
+  },
+  {
+    "nodeName": "ERBS-18_Q4",
+    "ipAddress": "8.8.8.8",
+    "neType": "ERBS",
+    "ossModelIdentity": "18.Q4-J.2.300",
+    "technologyDomain": [
+      "EPS"
+    ]
+  },
+  {
+    "nodeName": "SGSN-15B-CP01-V301-NO-TECH-DOMAIN",
+    "ipAddress": "7.7.7.7",
+    "neType": "SGSN-MME",
+    "ossModelIdentity": "15B-CP01"
+  },
+  {
+    "nodeName": "ERBS-18_Q4-NO-TECH-DOMAIN",
+    "ipAddress": "8.8.8.8",
+    "neType": "ERBS",
+    "ossModelIdentity": "18.Q4-J.2.300"
+  }
+]

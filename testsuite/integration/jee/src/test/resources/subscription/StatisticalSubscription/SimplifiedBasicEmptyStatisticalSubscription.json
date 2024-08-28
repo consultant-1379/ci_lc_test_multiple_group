@@ -1,0 +1,12 @@
+{
+  "name": "EmptySimplifiedStat",
+  "description": null,
+  "type": "STATISTICAL",
+  "scheduleInfo": {
+    "startDateTime": null,
+    "endDateTime": null
+  },
+  "rop": "FIFTEEN_MIN",
+  "nodes": [],
+  "counters": []
+}

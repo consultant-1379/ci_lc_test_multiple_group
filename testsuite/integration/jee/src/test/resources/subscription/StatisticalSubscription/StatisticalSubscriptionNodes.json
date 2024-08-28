@@ -1,0 +1,20 @@
+[
+  {
+    "nodeName": "RNC03",
+    "ipAddress": "7.7.7.7",
+    "neType": "RNC",
+    "ossModelIdentity": "16B-V.7.1659"
+  },
+  {
+    "nodeName": "BSC01",
+    "ipAddress": "8.7.7.7",
+    "neType": "BSC",
+    "ossModelIdentity": "BSC-G17.Q4-R1C-APG43L-3.4.0-R5A"
+  },
+  {
+    "nodeName": "ESA01",
+    "ipAddress": "1.2.3.4",
+    "neType": "GenericESA",
+    "ossModelIdentity": "ESA_Dummy_123"
+  }
+]

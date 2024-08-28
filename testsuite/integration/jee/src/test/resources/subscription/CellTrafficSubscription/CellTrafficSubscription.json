@@ -1,0 +1,33 @@
+{
+    "type":"CELLTRAFFIC",
+    "id":null,
+    "name":"CellTrafficSubscriptionTest",
+    "description":"test CTR",
+    "userType":"USER_DEF",
+    "administrationState":"INACTIVE",
+    "operationalState":"NA",
+    "userActivationDateTime":null,
+    "userDeActivationDateTime":null,
+    "owner":"administrator",
+    "scheduleInfo":{},
+    "nodeFilter":"NODE_TYPE",
+    "selectedNeTypes":["RNC"],
+    "nodes":[
+        {"fdn":"NetworkElement=RNC01","id":"2071883","pmFunction":"ON","technologyDomain":["UMTS"],"ossPrefix":"MeContext=RNC01","neType":"RNC","ossModelIdentity":"16B-V.7.1659"}
+        ],
+    "numberOfNodes":1,
+    "@class":"celltraffic",
+    "outputMode":"FILE",
+    "cellInfoList":[],
+    "taskStatus":"OK",
+    "rop":"FIFTEEN_MIN",
+    "pnpEnabled":false,
+    "filterOnManagedFunction":false,
+    "filterOnManagedElement":false,
+    "cbs":false,
+    "events":[
+        {"groupName":"INTERNAL","name":"INTERNAL_IMSI"},
+        {"groupName":"INTERNAL","name":"INTERNAL_UE_MOVE"}
+        ],
+    "triggerEventInfo":{"groupName":"NBAP","name":"NBAP_COMPRESSED_MODE_COMMAND"}
+}

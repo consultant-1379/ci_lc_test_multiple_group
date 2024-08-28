@@ -1,0 +1,64 @@
+{
+  "@class": "res",
+  "name": "_WITH_ATTACHED_NODES",
+  "description": "_WITH_ATTACHED_NODES",
+  "type": "RES",
+  "scheduleInfo": {
+    "startDateTime": null,
+    "endDateTime": null
+  },
+  "rop": "FIFTEEN_MIN",
+  "nodes": [
+    {
+      "fdn": "NetworkElement=Node_RNC"
+    }
+  ],
+  "counters": [
+    {
+      "name": "pmRes1",
+      "moClassType": "UtranCell"
+    },
+    {
+      "name": "pmRes2",
+      "moClassType": "UtranCell"
+    }
+  ],
+  "applyOnAllCells": false,
+  "resUeFraction": 5,
+  "resMeasPeriods": {
+    "VIDEO": 16,
+    "SPEECH": 4,
+    "STREAMING": 2,
+    "INTERACTIVE": 16
+  },
+  "resMeasDef": {
+    "pmRes2": {
+      "service": "CSSTREAMING",
+      "rmq": "UL_BLER"
+    },
+    "pmRes1": {
+      "service": "AMR4750",
+      "rmq": "CPICH_EC_NO"
+    }
+  },
+  "resSpreadingFactor": [
+    "SF_4",
+    "SF_8",
+    "SF_16"
+  ],
+  "attachedNodes": [
+    {
+      "fdn": "NetworkElement=Node_RadioNode"
+    }
+  ],
+  "cellInfoList": [
+    {
+      "nodeName": "Node_RNC",
+      "utranCellId": "RNC01-1-1"
+    },
+    {
+      "nodeName": "Node_RNC",
+      "utranCellId": "RNC01-10-1"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "description": "TEST_DESCRIPTION",
+  "ebsCounters": [],
+  "ebsOutputStrategy": "ENIQ_GZ",
+  "events": [],
+  "name": "EBM_SIMPLIFIED_TEST",
+  "nodes": [
+    {
+      "fdn": "NetworkElement=SGSN-16A-CP02-V301"
+    }
+  ],
+  "outputMode": "FILE",
+  "rop": "FIFTEEN_MIN",
+  "scheduleInfo": {
+    "endDateTime": null,
+    "startDateTime": null
+  },
+  "streamInfoList": [],
+  "type": "EBM"
+}

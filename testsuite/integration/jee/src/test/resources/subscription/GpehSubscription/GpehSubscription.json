@@ -1,0 +1,37 @@
+{
+    "type":"GPEH",
+    "id":null,
+    "name":"GpehSubscriptionTest",
+    "description":"test gpeh",
+    "userType":"USER_DEF",
+    "administrationState":"INACTIVE",
+    "operationalState":"NA",
+    "userActivationDateTime":null,
+    "userDeActivationDateTime":null,
+    "owner":"administrator",
+    "scheduleInfo":{},
+    "nodeFilter":"NODE_TYPE",
+    "selectedNeTypes":[],
+    "nodes":[
+        {"fdn":"NetworkElement=RNC01","id":"2041120","pmFunction":"ON","technologyDomain":["UMTS"],"ossPrefix":"MeContext=RNC01","neType":"RNC","ossModelIdentity":"16B-V.7.1659"}
+        ],
+    "numberOfNodes":1,
+    "@class":"gpeh",
+    "outputMode":"FILE",
+    "ueFraction":1000,
+    "cellsSupported":true,
+    "applyOnAllCells":false,
+    "cellInfoList":[
+        {"nodeName":"RNC01","utranCellId":"RNC01-9-1"}
+        ],
+    "criteriaSpecification":[],
+    "taskStatus":"OK",
+    "rop":"FIFTEEN_MIN",
+    "pnpEnabled":false,
+    "filterOnManagedFunction":false,
+    "filterOnManagedElement":false,
+    "cbs":false,
+    "events":[
+        {"groupName":"INTERNAL","name":"INTERNAL_ACCESS_CLASS_BARRING"}
+        ]
+}

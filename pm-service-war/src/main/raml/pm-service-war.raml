@@ -1,0 +1,142 @@
+#%RAML 0.8
+title: PM Initiation and Collection (PMIC)
+baseUri: http://customer-domain/pm-service/rest/
+protocols: [HTTP, HTTPS]
+schemas:
+ - initiation: !include schema/initiation.json
+ - subscription: !include schema/subscription.json
+/subscription:
+  description: Endpoint for subscription CRUD actions.
+  get:
+    description: Get filtered list of subscriptions
+    queryParameters:
+      Name:
+        description: Filter of subscription name. Multiple values can be provided.
+        type: string
+        example: Name=PM_02_328-13543222
+      Type:
+        description: Filter of subscription type. Multiple values can be provided.
+        type: string
+        example: Type=STATISTICAL
+      Status:
+        description: Filter of subscription status. Multiple values can be provided.
+        type: string
+        example: Status=INACTIVE&Status=ACTIVE
+    responses:
+      200:
+        description: Response subscription filtered list
+        body:
+          application/json:
+            schema: |
+              {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "title": "PMIC Subscription",
+                "type": "array",
+                "items": {"$ref": "schema/subscription.json"}
+              }
+            example: !include example/filteredSubscriptionList.json
+
+      400: !include common/400.raml
+      403: !include common/403.raml
+      500: !include common/500.raml
+  post:
+    description: Post method for create subscription
+    body:
+      application/json:
+        example: !include example/createSubscription.json
+        schema: subscription
+    responses:
+      201:
+        description: Subscription created. Light subscription object will be returned.
+        body:
+          application/json:
+            example: !include example/lightSubscription.json
+      202:
+        description: Subscription creation is still in progress. Response contains Url for future subscription polling
+        body:
+          application/json:
+            description:
+            example: |
+              {
+                "url":"/pm-service/rest/subscription/status/30bbcd3c-5895-4dc5-81bf-a7435a41ee98"
+              }
+      400: !include common/400.raml
+      403: !include common/403.raml
+      500: !include common/500.raml
+  /{id}:
+    delete:
+      description: Delete method for deleting subscription
+      responses:
+        200:
+          description: Response response
+          body:
+            application/json:
+              example: !include example/lightSubscription.json
+        400: !include common/400.raml
+        403: !include common/403.raml
+        404: !include common/404.raml
+        500: !include common/500.raml
+    get:
+      description: Get method for fetching subscription
+      responses:
+        200:
+          description: Subscription object
+          body:
+            application/json:
+              schema: subscription
+              example: !include example/lightSubscription.json
+        400: !include common/400.raml
+        403: !include common/403.raml
+        404: !include common/404.raml
+        500: !include common/500.raml
+    put:
+      description: Put method for updating the subscription
+      body:
+        application/json:
+          schema: subscription
+          example: !include example/lightSubscription.json
+      responses:
+        200:
+          description: Updated subscription object
+          body:
+            application/json:
+              schema: subscription
+              example: !include example/lightSubscription.json
+        400: !include common/400.raml
+        403: !include common/403.raml
+        404: !include common/404.raml
+        500: !include common/500.raml
+    /deactivate:
+      post:
+        description: Deactivate subscription. Its mandatory to provide valid time when subscription has been updated for the last time.
+        body:
+          application/json:
+            schema: initiation
+            example: !include example/initiation.json
+        responses:
+          200:
+            body:
+              application/json:
+                schema: !include schema/initiationResponse.json
+                example: !include example/initiationResponse.json
+          400: !include common/400.raml
+          403: !include common/403.raml
+          404: !include common/404.raml
+          500: !include common/500.raml
+    /activate:
+      post:
+        description: Activate subscription. Its mandatory to provide valid time when subscription has been updated for the last time.
+        body:
+          application/json:
+            schema: initiation
+            example: !include example/initiation.json
+        responses:
+          200:
+            body:
+              application/json:
+                schema: !include schema/initiationResponse.json
+                example: !include example/initiationResponse.json
+          400: !include common/400.raml
+          403: !include common/403.raml
+          404: !include common/404.raml
+          500: !include common/500.raml

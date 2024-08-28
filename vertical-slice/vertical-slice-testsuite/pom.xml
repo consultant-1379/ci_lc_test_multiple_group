@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.ericsson.oss.services.test</groupId>
+    <artifactId>cucumber-testsuite-integration-pom</artifactId>
+    <version>RELEASE</version>
+    <relativePath />
+  </parent>
+
+  <groupId>com.ericsson.oss.pmic</groupId>
+  <artifactId>pm-service-vertical-slice-testsuite</artifactId>
+  <version>2.23.3-SNAPSHOT</version>
+  <name>[${project.artifactId}]</name>
+
+  <properties>
+    <testsuite.name>PM SERVICE</testsuite.name>
+    <arquillian.cucumber.options>--tags ~@Netsim</arquillian.cucumber.options>
+    <docker-config-base-dir>../../testsuite/integration/jee/src${file.separator}test${file.separator}docker${file.separator}
+    </docker-config-base-dir>
+    <docker-code-rpms-dir>${docker-config-base-dir}jboss${file.separator}config${file.separator}init${file.separator}rpms</docker-code-rpms-dir>
+    <docker-models-rpms-dir>${docker-config-base-dir}models${file.separator}config${file.separator}init${file.separator}rpms</docker-models-rpms-dir>
+
+    <!-- Blast sut configuration -->
+    <blast.sut.setup>false</blast.sut.setup>
+    <blast.sut.setup.bash>../../testsuite/integration/jee/docker-start.sh</blast.sut.setup.bash>
+    <blast.sut.setup.param>dd,ready</blast.sut.setup.param>
+    <blast.sut.setup.logfile>docker-compose.log</blast.sut.setup.logfile>
+    <blast.sut.wait.bash>../../testsuite/integration/jee/docker-wait.sh jboss</blast.sut.wait.bash>
+    <blast.sut.wait.param>/opt/ericsson/docker/jboss/shared,ready</blast.sut.wait.param>
+    <blast.sut.wait.logfile>docker-wait.log</blast.sut.wait.logfile>
+    <sonar.tests>src/test/java</sonar.tests>
+    <consolidated.jacoco.path>${project.basedir}/../target/jacoco.exec</consolidated.jacoco.path>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.eu.ingwar.tools</groupId>
+      <artifactId>arquillian-suite-extension</artifactId>
+      <version>1.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>xerces</groupId>
+      <artifactId>xercesImpl</artifactId>
+      <version>2.8.1</version>
+    </dependency>
+    <!-- PM-SERVICE ear -->
+    <dependency>
+      <groupId>com.ericsson.oss.pmic</groupId>
+      <artifactId>pm-service-ear</artifactId>
+      <version>${project.version}</version>
+      <type>ear</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-library</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.test</groupId>
+      <artifactId>rest-cucumber-steps</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.test</groupId>
+      <artifactId>pm-mediation-cucumber-steps</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.test</groupId>
+      <artifactId>service-helper-api</artifactId>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.pmic</groupId>
+      <artifactId>pm-service-cucumber-steps</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.mediation.pmic.modules</groupId>
+      <artifactId>pmic-dto</artifactId>
+      <version>${version.ERICpmiccommonmoduleapi_CXP9032401}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.mediation.pmic.modules</groupId>
+      <artifactId>pmic-common-module-impl-jar</artifactId>
+      <version>${version.ERICpmiccommonmoduleimpl_CXP9032400}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.reflections</groupId>
+      <artifactId>reflections</artifactId>
+      <version>0.9.10</version>
+      <exclusions>
+        <exclusion>
+          <groupId>dom4j</groupId>
+          <artifactId>dom4j</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.javassist</groupId>
+      <artifactId>javassist</artifactId>
+      <version>3.25.0-GA</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+          <execution>
+            <id>add-test-source</id>
+            <phase>generate-test-sources</phase>
+            <goals>
+              <goal>add-test-resource</goal>
+            </goals>
+            <configuration>
+              <resources>
+                <resource>
+                  <directory>src/test/resources</directory>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>3.1.1</version>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <goals>
+              <goal>analyze-dep-mgt</goal>
+            </goals>
+            <configuration>
+              <failBuild>false</failBuild>
+              <ignoreDirect>false</ignoreDirect>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <scm>
+    <tag>pm-service-1.10.2</tag>
+  </scm>
+</project>

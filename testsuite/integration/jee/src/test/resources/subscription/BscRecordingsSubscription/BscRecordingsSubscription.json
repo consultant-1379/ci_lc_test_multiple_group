@@ -1,0 +1,26 @@
+{
+    "type":"BSCRECORDINGS",
+    "id":null,
+    "name":"BscRecordingsSubscriptionTest",
+    "description":"test Bsc Recordings",
+    "userType":"USER_DEF",
+    "administrationState":"INACTIVE",
+    "operationalState":"NA",
+    "userActivationDateTime":null,
+    "userDeActivationDateTime":null,
+    "owner":"administrator",
+    "scheduleInfo":{},
+    "nodeFilter":"NODE_TYPE",
+    "selectedNeTypes":["BSC"],
+    "nodes":[
+        {"fdn":"NetworkElement=BSC01","id":"2107594","pmFunction":"ON","technologyDomain":[],"ossPrefix":"MeContext=BSC01","neType":"BSC","ossModelIdentity":"-"}
+        ],
+    "numberOfNodes":1,
+    "@class":"bscrecordings",
+    "taskStatus":"OK",
+    "rop":"FIFTEEN_MIN",
+    "pnpEnabled":false,
+    "filterOnManagedFunction":false,
+    "filterOnManagedElement":false,
+    "cbs":false
+}

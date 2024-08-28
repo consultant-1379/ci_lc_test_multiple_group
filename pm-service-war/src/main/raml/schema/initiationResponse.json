@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ENM Node",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "persistenceTime": {
+      "type": "integer"
+    },
+    "administrationState": {
+      "enum": [
+        "ACTIVE",
+        "ACTIVATING",
+        "INACTIVE",
+        "DEACTIVATING",
+        "UPDATING",
+        "SCHEDULED"
+      ]
+    },
+    "userActivationDateTime": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "userDeactivationDateTime": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    }
+  }
+}

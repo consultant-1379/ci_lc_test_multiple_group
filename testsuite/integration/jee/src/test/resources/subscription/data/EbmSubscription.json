@@ -1,0 +1,78 @@
+{
+  "@class": "ebm",
+  "administrationState": "INACTIVE",
+  "cbs": false,
+  "compressionEnabled": false,
+  "description": "Hello World",
+  "ebsCounters": [],
+  "ebsEnabled": false,
+  "ebsOutputInterval": "FIFTEEN_MIN",
+  "ebsOutputStrategy": "ENIQ_GZ",
+  "events": [
+    {
+      "groupName": "OTHER",
+      "name": "L_DETACH"
+    },
+    {
+      "groupName": "OTHER",
+      "name": "L_ATTACH"
+    },
+    {
+      "groupName": "OTHER",
+      "name": "L_CDMA2000"
+    },
+    {
+      "groupName": "OTHER",
+      "name": "L_DEDICATED_BEARER_ACTIVATE"
+    },
+    {
+      "groupName": "OTHER",
+      "name": "L_DEDICATED_BEARER_DEACTIVATE"
+    },
+    {
+      "groupName": "OTHER",
+      "name": "L_BEARER_MODIFY"
+    },
+    {
+      "groupName": "OTHER",
+      "name": "L_HANDOVER"
+    },
+    {
+      "groupName": "OTHER",
+      "name": "L_PDN_CONNECT"
+    },
+    {
+      "groupName": "OTHER",
+      "name": "L_PDN_DISCONNECT"
+    },
+    {
+      "groupName": "OTHER",
+      "name": "L_SERVICE_REQUEST"
+    },
+    {
+      "groupName": "OTHER",
+      "name": "L_TAU"
+    }
+  ],
+  "filterOnManagedElement": false,
+  "filterOnManagedFunction": false,
+  "id": null,
+  "name": "EbmSubscription",
+  "nodeFilter": "NODE_TYPE",
+  "nodes": [],
+  "operationalState": "NA",
+  "outputMode": "FILE",
+  "owner": "administrator",
+  "pnpEnabled": false,
+  "rop": "FIFTEEN_MIN",
+  "scheduleInfo": {},
+  "selectedNeTypes": [
+    "RNC"
+  ],
+  "streamInfoList": [],
+  "taskStatus": "OK",
+  "type": "EBM",
+  "userActivationDateTime": null,
+  "userDeActivationDateTime": null,
+  "userType": "USER_DEF"
+}

@@ -1,0 +1,67 @@
+version: "2"
+
+services:
+
+  #Image containing models
+  pm_service_model-deployment:
+    image: armdocker.rnd.ericsson.se/proj_oss_releases/enm/model-deployment
+    volumes:
+    - /etc/opt/ericsson/ERICmodeldeployment
+    - /etc/opt/ericsson/ERICmodeldeployment/data
+    - /etc/opt/ericsson/ERICmodeldeployment/models
+
+  # Image containing neo4j
+  pm_service_db:
+    image: armdocker.rnd.ericsson.se/proj_oss_releases/enm/neo4j
+    ports:
+    - '7474:7474'
+    - '7473:7473'
+    - '7687:7687'
+    hostname: neo4j1
+
+  pm_service_postgres:
+    image: armdocker.rnd.ericsson.se/proj_oss_releases/enm/postgres-enm
+    hostname: postgresql-server
+
+  pm_service_opendj:
+    image: armdocker.rnd.ericsson.se/proj_oss_releases/enm/access-control
+    volumes:
+    - ./src/test/docker/ldifs:/docker-entrypoint-init.d:ro
+
+  pm_service_jboss_mc:
+    build: ./src/test/docker/jboss
+    command: "-IPJ -s jboss $DOCKER_JBOSS_STARTUP_OPTIONS -H $DOCKER_MACHINE_HOST_IP"
+    environment:
+    - RUNNING_ENV=$DOCKER_RUNNING_ENV
+    - UI_TEST=true
+    - JAVA_OPTS=-Dneo4j.server.hostname=neo4j1 -Dneo4j.serverTransport=bolt
+    links:
+    - pm_service_postgres:postgresql-server
+    - pm_service_opendj:ldap-remote
+    - pm_service_opendj:ldap-local
+    - pm_service_httpd:apache-host
+    - pm_service_db:neo4j1
+    depends_on:
+    - pm_service_model-deployment
+    - pm_service_db
+    volumes_from:
+    - pm_service_db
+    - pm_service_opendj
+    - pm_service_model-deployment
+    volumes:
+    - ./src/test/docker/jboss/config:/opt/ericsson/docker/config
+    ports:
+    - "9999:9999"
+    - "9990:9990"
+    - "8080:8080"
+    - "8787:8787"
+
+  pm_service_httpd:
+    build: ./src/test/docker/apache-httpd-enm
+    #image: apache 
+    hostname: apache-host
+    volumes:
+    - /var/www/html
+    ports:
+    - "6666:6666"
+    - "80:80"

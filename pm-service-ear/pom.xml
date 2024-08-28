@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>pm-service</artifactId>
+    <groupId>com.ericsson.oss.pmic</groupId>
+    <version>2.23.3-SNAPSHOT</version>
+  </parent>
+  <artifactId>pm-service-ear</artifactId>
+  <packaging>ear</packaging>
+
+  <name>[${project.parent.artifactId}] EAR module</name>
+
+  <properties>
+    <version.maven-ear-plugin>2.7</version.maven-ear-plugin>
+    <project.ear.contextRoot>${project.parent.artifactId}</project.ear.contextRoot>
+    <project.war.contextRoot>/${project.parent.artifactId}</project.war.contextRoot>
+    <jboss.home>${env.JBOSS_HOME}</jboss.home>
+    <jacoco.skip>true</jacoco.skip>
+  </properties>
+
+  <build>
+    <outputDirectory>target/${project.parent.artifactId}-${project.version}</outputDirectory>
+    <plugins>
+      <plugin>
+        <groupId>org.jboss.as.plugins</groupId>
+        <artifactId>jboss-as-maven-plugin</artifactId>
+        <configuration>
+          <filename>${project.artifactId}-${project.version}.ear</filename>
+          <skip>false</skip>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ear-plugin</artifactId>
+        <configuration>
+          <version>${version.jee}</version>
+          <workDirectory>target/${project.parent.artifactId}-${project.version}</workDirectory>
+          <defaultLibBundleDir>${project.ear.defaultLibBundleDir}</defaultLibBundleDir>
+          <description>${project.parent.artifactId} JEE6 service</description>
+          <displayName>${project.parent.artifactId} JEE6 service</displayName>
+
+          <archive>
+            <manifestEntries>
+              <Dependencies>${project.ear.Dependencies}</Dependencies>
+            </manifestEntries>
+          </archive>
+
+          <modules>
+            <ejbModule>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>${project.parent.artifactId}-ejb</artifactId>
+            </ejbModule>
+            <ejbModule>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>${project.parent.artifactId}-cbs-ejb</artifactId>
+            </ejbModule>
+            <ejbModule>
+              <groupId>com.ericsson.oss.mediation.pmic.modules</groupId>
+              <artifactId>pmic-common-module-impl-ejb</artifactId>
+            </ejbModule>
+            <ejbModule>
+              <groupId>com.ericsson.oss.services.pmic</groupId>
+              <artifactId>pmic-service-common-module-impl-ejb</artifactId>
+            </ejbModule>
+            <ejbModule>
+              <groupId>com.ericsson.oss.services.pmic</groupId>
+              <artifactId>pmic-service-sub-uetr-ejb</artifactId>
+            </ejbModule>
+            <ejbModule>
+              <groupId>com.ericsson.oss.services.pmic</groupId>
+              <artifactId>pmic-service-sub-moinstance-impl-ejb</artifactId>
+            </ejbModule>
+            <ejbModule>
+              <groupId>com.ericsson.oss.services.pmic</groupId>
+              <artifactId>pmic-service-sub-celltraffic-ejb</artifactId>
+            </ejbModule>
+            <ejbModule>
+              <groupId>com.ericsson.oss.services.pmic</groupId>
+              <artifactId>pmic-service-sub-gpeh-ejb</artifactId>
+            </ejbModule>
+            <ejbModule>
+              <groupId>com.ericsson.oss.services.pmic</groupId>
+              <artifactId>pmic-service-sub-bscrecordings-ejb</artifactId>
+            </ejbModule>
+            <ejbModule>
+              <groupId>com.ericsson.oss.services.pmic</groupId>
+              <artifactId>pmic-service-sub-res-ejb</artifactId>
+            </ejbModule>
+            <ejbModule>
+              <groupId>com.ericsson.oss.services.pmic</groupId>
+              <artifactId>pmic-service-sub-mtr-ejb</artifactId>
+            </ejbModule>
+            <webModule>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>${project.parent.artifactId}-war</artifactId>
+              <contextRoot>${project.war.contextRoot}</contextRoot>
+            </webModule>
+          </modules>
+        </configuration>
+      </plugin>
+    </plugins>
+
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>${project.parent.artifactId}-ejb</artifactId>
+      <version>${project.version}</version>
+      <type>ejb</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.ericsson.oss.mediation.pmic.modules</groupId>
+      <artifactId>pmic-common-module-impl-ejb</artifactId>
+      <version>${version.ERICpmiccommonmoduleimpl_CXP9032400}</version>
+      <type>ejb</type>
+    </dependency>
+
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>${project.parent.artifactId}-cbs-ejb</artifactId>
+      <version>${project.version}</version>
+      <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-common-module-impl-ejb</artifactId>
+      <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-sub-uetr-ejb</artifactId>
+      <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-sub-moinstance-impl-ejb</artifactId>
+      <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-sub-celltraffic-ejb</artifactId>
+      <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-sub-gpeh-ejb</artifactId>
+      <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-sub-bscrecordings-ejb</artifactId>
+      <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-sub-res-ejb</artifactId>
+      <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-sub-mtr-ejb</artifactId>
+      <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>${project.parent.artifactId}-war</artifactId>
+      <version>${project.version}</version>
+      <type>war</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.ericsson.oss.mediation.pmic.modules</groupId>
+      <artifactId>pmic-common-module-api-dist</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-sub-celltraffic-model-config</artifactId>
+      <type>jar</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-sub-uetr-model-config</artifactId>
+      <type>jar</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-sub-gpeh-model-config</artifactId>
+      <type>jar</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-sub-mtr-model-config</artifactId>
+      <type>jar</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-sub-bscrecordings-model-config</artifactId>
+      <type>jar</type>
+    </dependency>
+
+  </dependencies>
+
+  <profiles>
+
+    <profile>
+      <id>production_env</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <dependencies>
+        <!-- All production-ready dependencies to Service Framework implementation
+            modules should go here. These are LITP specific -->
+        <dependency>
+          <groupId>com.ericsson.oss.itpf.sdk</groupId>
+          <artifactId>service-framework-dist</artifactId>
+        </dependency>
+      </dependencies>
+    </profile>
+    <profile>
+      <id>deploy_ear_locally</id>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <groupId>org.apache.maven.plugins</groupId>
+            <version>1.7</version>
+            <executions>
+              <execution>
+                <phase>install</phase>
+                <configuration>
+                  <target>
+                    <delete>
+                      <fileset dir="${jboss.home}/standalone/deployments" includes="${project.artifactId}-*-SNAPSHOT.ear" />
+                    </delete>
+                  </target>
+                </configuration>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>

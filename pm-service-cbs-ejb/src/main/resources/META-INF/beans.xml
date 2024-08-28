@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+       xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://jboss.org/schema/cdi/beans_1_0.xsd">
+  <interceptors>
+    <class>com.ericsson.oss.itpf.sdk.tracing.interceptor.TracingInterceptor</class>
+    <!-- <class>com.ericsson.oss.itpf.sdk.instrument.interceptor.ProfileInterceptor</class> -->
+    <class>com.ericsson.oss.services.pm.initiation.interceptors.ModelDeploymentValidationInterceptor</class>
+    <class>com.ericsson.oss.itpf.sdk.scheduling.interceptor.SchedulingInterceptor</class>
+    <class>com.ericsson.oss.itpf.sdk.security.accesscontrol.interceptor.AuthorizeInterceptor</class>
+    <class>com.ericsson.oss.services.pm.initiation.interceptors.MasterNodeInterceptor</class>
+    <class>com.ericsson.oss.pmic.profiler.logging.LoggingProfilerInterceptor</class>
+    <class>com.ericsson.oss.pmic.impl.handler.InvokeInTransactionInterceptor</class>
+  </interceptors>
+</beans>

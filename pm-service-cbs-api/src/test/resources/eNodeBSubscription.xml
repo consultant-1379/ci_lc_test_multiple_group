@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<statisticalSubscription>
+  <name>subs</name>
+  <owner>subsowner</owner>
+  <description>subs1</description>
+  <userType>SYSTEM_DEF</userType>
+  <type>STATISTICAL</type>
+  <administrationState>CREATE</administrationState>
+  <operationalState>NA</operationalState>
+  <jobStatus>NA</jobStatus>
+  <scheduleInfo>
+    <startDateTime>2013-07-21T11:20:00</startDateTime>
+    <endDateTime>2013-07-30T11:20:00</endDateTime>
+    <duration>15:00:00</duration>
+  </scheduleInfo>
+  <isPnPEnabled>false</isPnPEnabled>
+  <isCbs>false</isCbs>
+  <ropInfo>900</ropInfo>
+</statisticalSubscription>

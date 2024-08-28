@@ -1,0 +1,25 @@
+{
+  "@class": "res",
+  "name": "_res1",
+  "description": "res without nodes",
+  "type": "RES",
+  "scheduleInfo": {
+    "startDateTime": null,
+    "endDateTime": null
+  },
+  "rop": "FIFTEEN_MIN",
+  "nodes": [],
+  "counters": [],
+  "applyOnAllCells": false,
+  "resUeFraction": 1,
+  "resMeasPeriods": {
+    "SPEECH": 16,
+    "VIDEO": 16,
+    "INTERACTIVE": 16,
+    "STREAMING": 16
+  },
+  "resMeasDef": {},
+  "resSpreadingFactor": [],
+  "attachedNodes": [],
+  "cellInfoList": []
+}

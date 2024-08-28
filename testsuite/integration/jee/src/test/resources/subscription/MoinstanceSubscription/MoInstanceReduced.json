@@ -1,0 +1,14 @@
+{
+  "type": "MOINSTANCE",
+  "id": null,
+  "name": "ReducedMoTest",
+  "description": "Reduced Test",
+  "scheduleInfo": {},
+  "nodes": [
+    {
+      "fdn": "NetworkElement=RNC03"
+    }
+  ],
+  "counters": [],
+  "moInstances": []
+}

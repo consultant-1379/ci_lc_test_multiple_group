@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<litp:vm-service id="{VM_ID}" xmlns:litp="http://www.ericsson.com/litp"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ericsson.com/litp litp--schema/litp.xsd">
+<cleanup_command>/sbin/service {VM_ID} stop-undefine --stop-timeout=300</cleanup_command>
+<service_name>{VM_ID}</service_name>
+<cpus>{CPUS}</cpus>
+<image_name>{VM_IMAGE}</image_name>
+<internal_status_check>{INTERNAL_STATUS_CHECK}</internal_status_check>
+<ram>{RAM}</ram>
+<litp:vm-service-vm_aliases-collection id="vm_aliases">
+<litp:vm-alias id="ntp-server-1">
+<address>%%ntp_1_IP%%</address>
+<alias_names>ntp-server1</alias_names>
+</litp:vm-alias>
+<litp:vm-alias id="ntp-server-2">
+<address>%%ntp_2_IP%%</address>
+<alias_names>ntp-server2</alias_names>
+</litp:vm-alias>
+<litp:vm-alias id="jms01_alias">
+<address>%%db_vip_jms%%</address>
+<alias_names>jms01</alias_names>
+</litp:vm-alias>
+<litp:vm-alias id="svc-{SVC-ID-1}-{VM_ID}_alias">
+<address><!-- first internal VLAN IPv4 Address --></address>
+<alias_names>svc-{SVC-ID-1}-{VM_ID},{VM_ID}-1-internal</alias_names>
+</litp:vm-alias>
+<litp:vm-alias id="svc-{SVC-ID-2}-{VM_ID}_alias">
+<address><!-- second internal VLAN IPv4 Address --></address>
+<alias_names>svc-{SVC-ID-2}-{VM_ID},{VM_ID}-2-internal</alias_names>
+</litp:vm-alias>
+<!-- Add here additional VM services -->
+<litp:vm-alias id="db1-service_alias">
+<address>%%db_vip_versant%%</address>
+<alias_names>db1-service</alias_names>
+</litp:vm-alias>
+<litp:vm-alias id="neo4j3_alias">
+<address>%%db_vip_neo4j_3%%</address>
+<alias_names>neo4j3</alias_names>
+</litp:vm-alias>
+<litp:vm-alias id="neo4j2_alias">
+<address>%%db_vip_neo4j_2%%</address>
+<alias_names>neo4j2</alias_names>
+</litp:vm-alias>
+<litp:vm-alias id="neo4j1_alias">
+<address>%%db_vip_neo4j_1%%</address>
+<alias_names>neo4j1</alias_names>
+</litp:vm-alias>
+<litp:vm-alias id="ms-1_alias">
+<address>%%LMS_IP_internal%%</address>
+<alias_names>ms-1</alias_names>
+</litp:vm-alias>
+<litp:vm-alias id="elasticsearch_alias">
+<address>%%db_vip_elasticsearch%%</address>
+<alias_names>elasticsearch</alias_names>
+</litp:vm-alias>
+<litp:vm-alias id="mysql_alias">
+<address>%%db_vip_mysql%%</address>
+<alias_names>mysql</alias_names>
+</litp:vm-alias>
+<litp:vm-alias id="postgresql01_alias">
+<address>%%db_vip_postgres%%</address>
+<alias_names>postgresql01</alias_names>
+</litp:vm-alias>
+</litp:vm-service-vm_aliases-collection>
+<litp:vm-service-vm_network_interfaces-collection id="vm_network_interfaces">
+<litp:vm-network-interface id="internal">
+<device_name>eth0</device_name>
+<gateway>%%svc_PM_vip_internal%%</gateway>
+<host_device>br1</host_device>
+<ipaddresses><!-- internal VLAN IPv4 Addresses --></ipaddresses>
+<network_name>internal</network_name>
+</litp:vm-network-interface>
+<litp:vm-network-interface id="jgroups">
+<device_name>eth1</device_name>
+<host_device>br3</host_device>
+<ipaddresses><!-- jgroups VLAN IPv4 Addresses --></ipaddresses>
+<network_name>jgroups</network_name>
+</litp:vm-network-interface>
+<litp:vm-network-interface id="services">
+<device_name>eth2</device_name>
+<gateway6>%%ENMservices_IPv6gateway%%</gateway6>
+<host_device>br0</host_device>
+<ipv6addresses><!-- Service VLAN IPv6 Addresses --></ipv6addresses>
+<network_name>services</network_name>
+</litp:vm-network-interface>
+</litp:vm-service-vm_network_interfaces-collection>
+<litp:vm-service-vm_nfs_mounts-collection id="vm_nfs_mounts">
+<litp:vm-nfs-mount id="nfsm-data">
+<device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-data</device_path>
+<mount_options>soft,nfsvers=3,defaults</mount_options>
+<mount_point>/ericsson/tor/data</mount_point>
+</litp:vm-nfs-mount>
+<litp:vm-nfs-mount id="nfsm-mdt">
+<device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-mdt</device_path>
+<mount_options>soft,nfsvers=3,defaults</mount_options>
+<mount_point>/etc/opt/ericsson/ERICmodeldeployment</mount_point>
+</litp:vm-nfs-mount>
+<litp:vm-nfs-mount id="nfsm-ddc_data">
+<device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-ddc_data</device_path>
+<mount_options>soft,nfsvers=3,defaults</mount_options>
+<mount_point>/var/ericsson/ddc_data</mount_point>
+</litp:vm-nfs-mount>
+<litp:vm-nfs-mount id="nfsm-hcdumps">
+<device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-hcdumps</device_path>
+<mount_options>soft,nfsvers=3,defaults</mount_options>
+<mount_point>/ericsson/enm/dumps</mount_point>
+</litp:vm-nfs-mount>
+<litp:vm-nfs-mount id="nfsm-cron">
+<device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-cron</device_path>
+<mount_options>soft,nfsvers=3,defaults</mount_options>
+<mount_point>/ericsson/vmcrons</mount_point>
+</litp:vm-nfs-mount>
+<litp:vm-nfs-mount id="nfsm-home">
+<device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-home</device_path>
+<mount_options>soft,nfsvers=3,defaults</mount_options>
+<mount_point>/home/shared</mount_point>
+</litp:vm-nfs-mount>
+<litp:vm-nfs-mount id="nfsm-spool_mails">
+<device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-spool_mails</device_path>
+<mount_options>soft,nfsvers=3,defaults</mount_options>
+<mount_point>/ericsson/enm/email/spool</mount_point>
+</litp:vm-nfs-mount>
+<litp:vm-nfs-mount id="nfsm-pm1">
+<device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-pm1</device_path>
+<mount_options>soft,nfsvers=3,defaults</mount_options>
+<mount_point>/ericsson/pmic1</mount_point>
+</litp:vm-nfs-mount>
+<litp:vm-nfs-mount id="nfsm-pm2">
+<device_path>%%nas_vip_enm_2%%:/vx/%%ENM_sfs_storage_pool_name%%-pm2</device_path>
+<mount_options>soft,nfsvers=3,defaults</mount_options>
+<mount_point>/ericsson/pmic2</mount_point>
+</litp:vm-nfs-mount>
+<litp:vm-nfs-mount id="nfsm-pmlinks1">
+<device_path>%%nas_vip_enm_1%%:/vx/%%ENM_sfs_storage_pool_name%%-pmlinks1</device_path>
+<mount_options>soft,nfsvers=3,defaults</mount_options>
+<mount_point>/ericsson/symvol</mount_point>
+</litp:vm-nfs-mount>
+</litp:vm-service-vm_nfs_mounts-collection>
+<litp:vm-service-vm_packages-collection id="vm_packages">
+<litp:vm-package id="{CUSTOM_PACKAGE}">
+<name>{CUSTOM_PACKAGE}</name>
+</litp:vm-package>
+</litp:vm-service-vm_packages-collection>
+<litp:vm-service-vm_ssh_keys-collection id="vm_ssh_keys">
+<litp:vm-ssh-key id="vm-ssh-key-id">
+<ssh_key>%%vm_ssh_key%%</ssh_key>
+</litp:vm-ssh-key>
+</litp:vm-service-vm_ssh_keys-collection>
+<litp:vm-service-vm_yum_repos-collection id="vm_yum_repos">
+<litp:vm-yum-repo id="common">
+<base_url>http://%%LMS_IP_storage%%/ENM_common/</base_url>
+<name>common</name>
+</litp:vm-yum-repo>
+<litp:vm-yum-repo id="services">
+<base_url>http://%%LMS_IP_storage%%/ENM_services/</base_url>
+<name>services</name>
+</litp:vm-yum-repo>
+<litp:vm-yum-repo id="OS">
+<base_url>http://%%LMS_IP_storage%%/6/os/x86_64/Packages/</base_url>
+<name>OS</name>
+</litp:vm-yum-repo>
+<litp:vm-yum-repo id="UPDATES">
+<base_url>http://%%LMS_IP_storage%%/6/updates/x86_64/Packages/</base_url>
+<name>UPDATES</name>
+</litp:vm-yum-repo>
+</litp:vm-service-vm_yum_repos-collection>
+</litp:vm-service>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>pm-service</artifactId>
+    <groupId>com.ericsson.oss.pmic</groupId>
+    <version>2.23.3-SNAPSHOT</version>
+  </parent>
+  <artifactId>pm-service-api</artifactId>
+  <name>[${project.parent.artifactId}] API module</name>
+
+  <properties>
+    <version.javax.validation>1.0.0.GA</version.javax.validation>
+    <sonar.tests>src/test/groovy</sonar.tests>
+  </properties>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-core-asl</artifactId>
+      <version>${version.jackson-asl}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-mapper-asl</artifactId>
+      <version>${version.jackson-asl}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-common-module-model-jaxb</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-common-module-model-cache</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>nl.jqno.equalsverifier</groupId>
+      <artifactId>equalsverifier</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-sub-res-ejb</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.googlecode.json-simple</groupId>
+      <artifactId>json-simple</artifactId>
+      <version>1.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>pm-service-jar</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.mediation.pmic.modules</groupId>
+      <artifactId>pmic-common-module-api-jar</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.mediation.pmic.modules</groupId>
+      <artifactId>pmic-dto</artifactId>
+    </dependency>
+  </dependencies>
+</project>

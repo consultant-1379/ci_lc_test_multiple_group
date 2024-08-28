@@ -1,0 +1,21 @@
+#################################
+# Common dependencies           #
+#################################
+ERICpib_CXP9030194
+#################################
+# install specific dependencies #
+#################################
+ERICftpjcaconnectorapi_CXP9031542
+ERICmediationengineapi_CXP9031505
+#################################
+# install test dependencies     #
+#################################
+ERICcmread_CXP9030316
+ERICcmeditcommon_CXP9035095
+ERICtopologysearch_CXP9030474
+ERICcryptographyservice_CXP9031013
+ERICcryptographyserviceapi_CXP9031014
+
+ERICneo4jjcaapi_CXP9032725
+ERICneo4jjca_CXP9032726
+ERICdpsneo4j_CXP9032728

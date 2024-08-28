@@ -1,0 +1,1 @@
+Dependencies: com.ericsson.oss.itpf.datalayer.dps.api export, com.ericsson.oss.itpf.modeling.modelservice.api meta-inf, com.ericsson.oss.mediation.engine-api export meta-inf

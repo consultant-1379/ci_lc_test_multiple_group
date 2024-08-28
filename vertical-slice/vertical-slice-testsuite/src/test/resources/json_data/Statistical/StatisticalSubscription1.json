@@ -1,0 +1,36 @@
+{
+  "@class": "statistical",
+  "name": "EmptyStat",
+  "nextVersionName": null,
+  "prevVersionName": null,
+  "owner": "administrator",
+  "description": null,
+  "userType": "USER_DEF",
+  "type": "STATISTICAL",
+  "scheduleInfo": {
+    "startDateTime": null,
+    "endDateTime": null
+  },
+  "administrationState": "INACTIVE",
+  "operationalState": "NA",
+  "taskStatus": "OK",
+  "activationTime": null,
+  "deactivationTime": null,
+  "rop": "FIFTEEN_MIN",
+  "userActivationDateTime": null,
+  "userDeActivationDateTime": null,
+  "persistenceTime": null,
+  "pnpEnabled": false,
+  "filterOnManagedFunction": false,
+  "filterOnManagedElement": false,
+  "nodeListIdentity": 0,
+  "selectedNeTypes": [
+    "RNC"
+  ],
+  "nodeFilter": "NODE_TYPE",
+  "cbs": false,
+  "nodes": [],
+  "criteriaSpecification": [],
+  "counters": [],
+  "id": null
+}

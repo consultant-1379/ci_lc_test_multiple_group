@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.ericsson.oss.pmic</groupId>
+    <artifactId>pm-service</artifactId>
+    <version>2.23.3-SNAPSHOT</version>
+  </parent>
+  <artifactId>ERICpmic_CXP9030369</artifactId>
+  <packaging>${rpm.packaging}</packaging>
+  <name>[${project.parent.artifactId}] CXP module</name>
+
+  <properties>
+    <com.ericsson.oss.rpm.architecture>noarch</com.ericsson.oss.rpm.architecture>
+    <!-- Install path =  /${rpm-root}/${comp-name}/${install-path} -->
+    <rpm-root>opt</rpm-root>
+    <comp-name>ericsson</comp-name>
+    <install-path>/${rpm-root}/${comp-name}/${project.parent.groupId}</install-path>
+    <publish_artifact>true</publish_artifact>
+    <media.category>service</media.category>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>com.ericsson.oss.pmic</groupId>
+      <artifactId>pm-service-ear</artifactId>
+      <version>${project.version}</version>
+      <type>ear</type>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>rpm-maven-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <skip>true</skip>
+          <inherited>true</inherited>
+          <copyright>2012 Ericsson AB All rights reserved</copyright>
+          <summary>${stripped.artifactId}</summary>
+          <packager>${ericsson.rstate}</packager>
+          <group>ERI-NMS</group>
+          <requires>
+            <require>python &gt;= 2.6</require>
+          </requires>
+          <vendor>Ericsson AB</vendor>
+          <url>www.ericsson.com</url>
+          <mappings>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}</directory>
+              <filemode>775</filemode>
+              <username>root</username>
+              <groupname>root</groupname>
+            </mapping>
+            <mapping>
+              <directory>/${install-path}</directory>
+              <filemode>775</filemode>
+              <username>root</username>
+              <groupname>root</groupname>
+              <configuration>false</configuration>
+              <directoryIncluded>true</directoryIncluded>
+              <recurseDirectories>true</recurseDirectories>
+              <dependency>
+                <includes>
+                  <include>${project.groupId}:${project.parent.artifactId}-ear</include>
+                </includes>
+              </dependency>
+              <sources>
+                <source>
+                  <location>src/main/python</location>
+                  <excludes>
+                    <exclude>**/*.pyc</exclude>
+                    <exclude>**/*.gitignore</exclude>
+                  </excludes>
+                </source>
+                <source>
+                  <location>src/main/resources/</location>
+                  <excludes>
+                    <exclude>**/*.pyc</exclude>
+                    <exclude>**/version.txt</exclude>
+                    <exclude>**/*.gitignore</exclude>
+                    <exclude>**/ETF.xml</exclude>
+                    <exclude>**/*.sql</exclude>
+                  </excludes>
+                </source>
+                <source>
+                  <location>src/main/scripts/</location>
+                  <excludes>
+                    <exclude>**/*.pyc</exclude>
+                    <exclude>**/postinstall.sh</exclude>
+                    <exclude>**/preremove.sh</exclude>
+                    <exclude>**/postremove.sh</exclude>
+                    <exclude>**/*.gitignore</exclude>
+                  </excludes>
+                </source>
+              </sources>
+            </mapping>
+            <!-- JBoss hook scripts -->
+            <mapping>
+              <directory>${vm.jboss-install-path}/bin/post-start</directory>
+              <filemode>550</filemode>
+              <username>${jboss-username}</username>
+              <groupname>${jboss-groupname}</groupname>
+              <sources>
+                <source>
+                  <location>src/main/scripts/jboss/post-start/load-pmic-mounts-config.py</location>
+                </source>
+              </sources>
+            </mapping>
+          </mappings>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

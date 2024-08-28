@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>com.ericsson.oss.services.test</groupId>
+    <artifactId>cucumber-integration-pom</artifactId>
+    <version>RELEASE</version>
+    <relativePath />
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.ericsson.oss.pmic</groupId>
+  <artifactId>pm-service-cucumber-steps</artifactId>
+  <version>2.23.3-SNAPSHOT</version>
+  <name>[${project.artifactId}]</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.ericsson.oss.services.test</groupId>
+      <artifactId>rest-cucumber-steps</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.mediation.pmic.modules</groupId>
+      <artifactId>pmic-dto</artifactId>
+      <version>${version.ERICpmiccommonmoduleapi_CXP9032401}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <scm>
+    <tag>pm-service-1.10.2</tag>
+  </scm>
+</project>

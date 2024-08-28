@@ -1,0 +1,18 @@
+{
+  "@class": "statistical",
+  "name": "ESA_test",
+  "description": "subscription",
+  "type": "STATISTICAL",
+  "userType": "USER_DEF",
+  "scheduleInfo": {
+    "startDateTime": null,
+    "endDateTime": null
+  },
+  "rop": "FIFTEEN_MIN",
+  "nodes": [
+    {
+      "fdn": "NetworkElement=ESA01"
+    }
+  ],
+  "counters": []
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     *******************************************************************************
+     * COPYRIGHT Ericsson LMI 2019. All rights reserved.
+     *
+     * No part of this document may be reproduced in any form without the
+     * written permission of the copyright owner.The contents of this document
+     * are subject to revision without notice due to continued progress in
+     * methodology, design and manufacturing. Ericsson shall have no liability
+     * for any error or damage of any kind resulting from the use of this document.
+     *
+     *******************************************************************************
+-->
+<TargetTypeInformation
+  xmlns:oc="urn:com:ericsson:schema:xml:oss:oss_common"
+  oc:ns="NODE"
+  oc:name="SNMP-CUSTOM-NODE"
+  xmlns="urn:com:ericsson:schema:xml:oss:oss_targettype"
+>
+
+  <oc:modelCreationInfo author="generated from archetype" creationDate="Fri Mar 15 08:56:41 GMT+01:00 2019">
+    <oc:designedModel componentId="SNMP-CUSTOM-NODE NODE MODEL"/>
+    <!-- snmpcustomnode-node-model-common sdk-archetype version: RELEASE -->
+  </oc:modelCreationInfo>
+
+  <oc:desc>This is the target type information model for Network Element type "SNMP-CUSTOM-NODE".</oc:desc>
+
+  <!--Platform, TechnologyDomain, RootMoType and FunctionMoType are commented out, uncomment and fill it when applicable-->
+  <!--platform>CPP</platform-->
+  <!--technologyDomain>EPS</technologyDomain-->
+  <!--CM is currently not supported. Set to a value in order to avoid crash in ned mediation during NE deletion-->
+  <rootMoType namespace="OSS_TOP" name="ManagedElement"/>
+  <!--functionMoType namespace="SNMP-CUSTOM-NODE_NODE_MODEL" name="ENodeBFunction" technologyDomain="EPS"/-->
+  <ciMoType namespace="GEN_SNMP_MED" name="GenericSnmpNodeConnectivityInformation"/>
+</TargetTypeInformation>

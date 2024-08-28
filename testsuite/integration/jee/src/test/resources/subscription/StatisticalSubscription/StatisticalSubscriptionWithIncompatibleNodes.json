@@ -1,0 +1,55 @@
+{
+  "@class": "statistical",
+  "name": "Statistical Subscription with incompatible nodes",
+  "nextVersionName": null,
+  "prevVersionName": null,
+  "owner": "administrator",
+  "description": null,
+  "userType": "USER_DEF",
+  "type": "STATISTICAL",
+  "scheduleInfo": {
+    "startDateTime": null,
+    "endDateTime": null
+  },
+  "administrationState": "INACTIVE",
+  "operationalState": "NA",
+  "taskStatus": "OK",
+  "activationTime": null,
+  "deactivationTime": null,
+  "rop": "FIFTEEN_MIN",
+  "userActivationDateTime": null,
+  "userDeActivationDateTime": null,
+  "persistenceTime": null,
+  "pnpEnabled": false,
+  "filterOnManagedFunction": false,
+  "filterOnManagedElement": false,
+  "nodeListIdentity": 0,
+  "selectedNeTypes": [
+    "BSC"
+  ],
+  "nodeFilter": "NODE_TYPE",
+  "cbs": false,
+  "nodes": [
+    {
+      "fdn": "NetworkElement=BSC01",
+      "id": "281474978428104",
+      "name": "BSC01",
+      "neType": "BSC",
+      "ossModelIdentity": "16B-V.7.1659",
+      "ossPrefix": "MeContext=BSC01",
+      "pmFunction": "ON"
+    },
+    {
+      "fdn": "NetworkElement=RNC03",
+      "id": "281474978428104",
+      "name": "RNC03",
+      "neType": "RNC",
+      "ossModelIdentity": "16B-V.7.1659",
+      "ossPrefix": "MeContext=RNC03",
+      "pmFunction": "ON"
+    }
+  ],
+  "criteriaSpecification": [],
+  "counters": [],
+  "id": null
+}

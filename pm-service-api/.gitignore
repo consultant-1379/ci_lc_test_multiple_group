@@ -1,0 +1,7 @@
+/.settings
+/.project
+/.classpath
+/test-output/
+/target
+*.orig
+*.versionsBackup/target

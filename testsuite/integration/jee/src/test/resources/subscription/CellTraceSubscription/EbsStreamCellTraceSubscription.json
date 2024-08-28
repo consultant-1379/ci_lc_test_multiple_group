@@ -1,0 +1,88 @@
+{
+  "@class": "celltrace",
+  "activationTime": null,
+  "administrationState": "INACTIVE",
+  "asnEnabled": false,
+  "cbs": false,
+  "cellTraceCategory": "CELLTRACE_AND_EBSL_STREAM",
+  "criteriaSpecification": [],
+  "deactivationTime": null,
+  "description": "EBS CellTrace Subscription Test Description",
+  "ebsCounters": [
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAdvCellSupDetection"
+    }
+  ],
+  "events": [
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_UE_CTXT_MODIFY"
+    }
+  ],
+  "ebsEvents": [
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ADV_CELL_SUP_DETECTION"
+    }
+  ],
+  "filterOnManagedElement": false,
+  "filterOnManagedFunction": false,
+  "id": null,
+  "name": "CellTraceSubscriptionJson4",
+  "nextVersionName": null,
+  "nodeFilter": "NODE_TYPE",
+  "nodeListIdentity": 123,
+  "nodes": [
+    {
+      "fdn": "NetworkElement=ERBS-18_Q4",
+      "id": "281474978428104",
+      "name": "ERBS-18_Q4",
+      "neType": "ERBS",
+      "ossModelIdentity": "18.Q4-J.2.300",
+      "ossPrefix": "MeContext=ERBS-18_Q4",
+      "pmFunction": "ON",
+      "technologyDomain": [
+        "EPS"
+      ]
+    },
+    {
+      "fdn": "NetworkElement=ERBS-18_Q4-NO-TECH-DOMAIN",
+      "id": "281474978428104",
+      "name": "ERBS-18_Q4",
+      "neType": "ERBS",
+      "ossModelIdentity": "18.Q4-J.2.300",
+      "ossPrefix": "MeContext=ERBS-18_Q4",
+      "pmFunction": "ON"
+    }
+  ],
+  "operationalState": "NA",
+  "outputMode": "STREAMING",
+  "owner": "Administrator",
+  "persistenceTime": null,
+  "prevVersionName": null,
+  "rop": "FIFTEEN_MIN",
+  "scheduleInfo": {
+    "endDateTime": null,
+    "startDateTime": null
+  },
+  "selectedNeTypes": [
+    "ERBS"
+  ],
+  "streamInfoList": [
+    {
+      "ipAddress": "1.1.1.1",
+      "port": 100
+    },
+    {
+      "ipAddress": "2.2.2.2",
+      "port": 200
+    }
+  ],
+  "taskStatus": "OK",
+  "type": "CELLTRACE",
+  "ueFraction": 1,
+  "userActivationDateTime": null,
+  "userDeActivationDateTime": null,
+  "userType": "USER_DEF"
+}

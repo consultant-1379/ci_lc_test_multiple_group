@@ -1,0 +1,9 @@
+#################################
+# install specific dependencies #
+#################################
+#################################
+# install NEO4J dependencies#
+#################################
+ERICneo4jjcaapi_CXP9032725
+ERICneo4jjca_CXP9032726
+ERICdpsneo4j_CXP9032728

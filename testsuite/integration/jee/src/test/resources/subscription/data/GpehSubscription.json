@@ -1,0 +1,1528 @@
+{
+  "@class": "gpeh",
+  "administrationState": "INACTIVE",
+  "applyOnAllCells": false,
+  "cbs": false,
+  "cellInfoList": [
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-21-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-1-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-10-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-10-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-11-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-11-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-11-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-12-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-12-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-12-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-13-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-13-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-13-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-14-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-14-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-14-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-15-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-15-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-15-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-16-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-16-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-16-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-17-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-17-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-17-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-18-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-18-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-18-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-19-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-19-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-19-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-2-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-20-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-20-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-20-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-10-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-21-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-21-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-22-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-22-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-22-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-23-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-23-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-23-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-23-4"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-23-5"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-23-6"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-23-7"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-23-8"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-23-9"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-3-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-3-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-3-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-4-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-4-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-4-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-5-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-5-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-5-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-6-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-6-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-6-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-7-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-7-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-7-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-8-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-8-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-8-3"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-9-1"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-9-2"
+    },
+    {
+      "nodeName": "netsim_RNC01",
+      "utranCellId": "RNC01-9-3"
+    }
+  ],
+  "cellsSupported": true,
+  "description": "Hello World",
+  "events": [
+    {
+      "groupName": "PCAP",
+      "name": "PCAP_POSITION_ACTIVATION_REQUEST"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_ACCESS_CLASS_BARRING"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_AMR_MAX_RATE_RESTRICTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_ANR_ADD_RELATION_PREVENTED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_ANR_IEF_CANDIDATE_FOUND"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_BMC_CBS_MESSAGE_ATT_SCHEDULED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_BMC_CBS_MESSAGE_DISCARDED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_CALL_REESTABLISHMENT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_CALL_SETUP_FAIL"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_CBS_MESSAGE_ORDER_DISCARDED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_CELL_LOAD_MONITOR_UPDATE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_CHANNEL_SWITCHING"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_CMODE_ACTIVATE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_CMODE_DEACTIVATE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_CNHHO_EXECUTION_ACTIVE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_CN_OVERLOAD_CONTROL_STATUS"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_CONGESTION_CONTROL_CHANNEL_SWITCH_AND_TERMINATE_RC"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_DL_POWER_MONITOR_UPDATE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_DOWNLINK_CHANNELIZATION_CODE_ALLOCATION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_FAILED_HSDSCH_CELL_CHANGE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_FAILED_TRANSITION_TO_DCH"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_HSDSCH_CELL_SELECTION_NO_CELL_SELECTED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_IFHO_EVALUATION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_IFHO_EXECUTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_IFHO_EXECUTION_ACTIVE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_IFHO_REPORT_RECEPTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_IFLS_EVALUATION_RESULT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_IFLS_NO_CANDIDATE_EVALUATION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_IMSI"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_INC_EXT_HARD_HANDOVER_FAILURE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_INC_EXT_HARD_HANDOVER_SUCCESS"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_IRAT_CELL_CHANGE_DISCARDED_DATA"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_IRAT_HO_CC_EVALUATION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_IRAT_HO_CC_EXECUTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_IRAT_HO_CC_REPORT_RECEPTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_LOAD_CONTROL_ACTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_LOAD_CONTROL_TRIGGER"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_MBMS_SESSION_START_FAILED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_MBMS_SESSION_START_SUCCESS"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_MBMS_SESSION_STOP_NORMAL"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_MBMS_SESSION_STOP_SYSTEM"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_MEASUREMENT_HANDLING_EVALUATION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_MEASUREMENT_HANDLING_EXECUTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_NBAP_ERROR"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_NORMAL_RELEASE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_OUT_HARD_HANDOVER_FAILURE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_OUT_HARD_HANDOVER_SUCCESS"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PACKET_DEDICATED_THROUGHPUT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PACKET_DEDICATED_THROUGHPUT_CONV_SPEECH"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PACKET_DEDICATED_THROUGHPUT_CONV_UNKNOWN"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PACKET_DEDICATED_THROUGHPUT_STREAMING"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PCAP_ERROR"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_POWER_SAVE_ACTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PS_IDT_QUEUING_RESULT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PS_RELEASE_DUE_TO_CNHHO"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_RAB_ESTABLISHMENT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_RAB_RELEASE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_RADIO_QUALITY_MEASUREMENTS_RNH"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_RADIO_QUALITY_MEASUREMENTS_UEH"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_RANAP_ERROR"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_RBS_HW_MONITOR_UPDATE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_RC_SUPERVISION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_RNSAP_ERROR"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_RRC_ERROR"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_SOFT_HANDOVER_EVALUATION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_SOFT_HANDOVER_EXECUTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_SOFT_HANDOVER_REPORT_RECEPTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_SOHO_DS_MISSING_NEIGHBOUR"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_SOHO_DS_UNMONITORED_NEIGHBOUR"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_START_CONGESTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_STOP_CONGESTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_SUCCESSFUL_HSDSCH_CELL_CHANGE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_SUCCESSFUL_HSDSCH_CELL_SELECTION_NEW_ACTIVE_SET"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_SUCCESSFUL_HSDSCH_CELL_SELECTION_OLD_ACTIVE_SET"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_SUCCESSFUL_TRANSITION_TO_DCH"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_SYSTEM_BLOCK"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_SYSTEM_RELEASE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_SYSTEM_UTILIZATION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TWO_NON_USED_FREQ_EXCEEDED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_UE_MOVE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_UE_POSITIONING_QOS"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_UE_POSITIONING_UNSUCC"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_UL_OUTER_LOOP_POWER_CONTROL"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_UPLINK_SCRAMBLING_CODE_ALLOCATION"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_AUDIT_FAILURE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_AUDIT_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_AUDIT_REQUIRED_INDICATION"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_AUDIT_RESPONSE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_CELL_DELETION_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_CELL_DELETION_RESPONSE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_CELL_RECONFIGURATION_FAILURE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_CELL_RECONFIGURATION_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_CELL_RECONFIGURATION_RESPONSE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_CELL_SETUP_FAILURE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_CELL_SETUP_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_CELL_SETUP_RESPONSE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMMON_MEASUREMENT_FAILURE_INDICATION"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMMON_MEASUREMENT_INITIATION_FAILURE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMMON_MEASUREMENT_INITIATION_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMMON_MEASUREMENT_INITIATION_RESPONSE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMMON_MEASUREMENT_REPORT"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMMON_MEASUREMENT_TERMINATION_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMMON_TRANSPORT_CHANNEL_DELETION_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMMON_TRANSPORT_CHANNEL_DELETION_RESPONSE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMMON_TRANSPORT_CHANNEL_RECONFIGURATION_FAILURE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMMON_TRANSPORT_CHANNEL_RECONFIGURATION_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMMON_TRANSPORT_CHANNEL_RECONFIGURATION_RESPONSE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMMON_TRANSPORT_CHANNEL_SETUP_FAILURE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMMON_TRANSPORT_CHANNEL_SETUP_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMMON_TRANSPORT_CHANNEL_SETUP_RESPONSE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_COMPRESSED_MODE_COMMAND"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_DEDICATED_MEASUREMENT_FAILURE_INDICATION"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_DEDICATED_MEASUREMENT_INITIATION_FAILURE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_DEDICATED_MEASUREMENT_INITIATION_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_DEDICATED_MEASUREMENT_INITIATION_RESPONSE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_DEDICATED_MEASUREMENT_REPORT"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_DEDICATED_MEASUREMENT_TERMINATION_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_DL_POWER_CONTROL_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_ERROR_INDICATION"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_MBMS_NOTIFICATION_UPDATE_COMMAND"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_PHYSICAL_SHARED_CHANNEL_RECONFIGURATION_FAILURE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_PHYSICAL_SHARED_CHANNEL_RECONFIGURATION_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_PHYSICAL_SHARED_CHANNEL_RECONFIGURATION_RESPONSE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_ACTIVATION_COMMAND"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_ADDITION_FAILURE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_ADDITION_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_ADDITION_RESPONSE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_DELETION_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_DELETION_RESPONSE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_FAILURE_INDICATION"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_PARAMETER_UPDATE_INDICATION"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_PREEMPTION_REQUIRED_INDICATION"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_RECONFIGURATION_CANCEL"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_RECONFIGURATION_COMMIT"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_RECONFIGURATION_FAILURE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_RECONFIGURATION_PREPARE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_RECONFIGURATION_READY"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_RESTORE_INDICATION"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_SETUP_FAILURE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_SETUP_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RADIO_LINK_SETUP_RESPONSE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RESET_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RESET_RESPONSE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_RESOURCE_STATUS_INDICATION"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_SECONDARY_UL_FREQUENCY_REPORT"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_SECONDARY_UL_FREQUENCY_UPDATE_INDICATION"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_SYSTEM_INFORMATION_UPDATE_FAILURE"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_SYSTEM_INFORMATION_UPDATE_REQUEST"
+    },
+    {
+      "groupName": "NBAP",
+      "name": "NBAP_SYSTEM_INFORMATION_UPDATE_RESPONSE"
+    },
+    {
+      "groupName": "PCAP",
+      "name": "PCAP_ERROR_INDICATION"
+    },
+    {
+      "groupName": "PCAP",
+      "name": "PCAP_POSITION_ACTIVATION_FAILURE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_ADMISSION_CONTROL_RESPONSE"
+    },
+    {
+      "groupName": "PCAP",
+      "name": "PCAP_POSITION_ACTIVATION_RESPONSE"
+    },
+    {
+      "groupName": "PCAP",
+      "name": "PCAP_POSITION_INITIATION_FAILURE"
+    },
+    {
+      "groupName": "PCAP",
+      "name": "PCAP_POSITION_INITIATION_REQUEST"
+    },
+    {
+      "groupName": "PCAP",
+      "name": "PCAP_POSITION_INITIATION_RESPONSE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_COMMON_ID"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_DIRECT_TRANSFER"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_ERROR_INDICATION"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_INITIAL_UE_MESSAGE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_IU_RELEASE_COMMAND"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_IU_RELEASE_COMPLETE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_IU_RELEASE_REQUEST"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_LOCATION_REPORT"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_LOCATION_REPORTING_CONTROL"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_MBMS_SESSION_START"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_MBMS_SESSION_START_FAILURE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_MBMS_SESSION_START_RESPONSE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_MBMS_SESSION_STOP"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_MBMS_SESSION_STOP_RESPONSE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_PAGING"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RAB_ASSIGNMENT_REQUEST"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RAB_ASSIGNMENT_RESPONSE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RAB_RELEASE_REQUEST"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RANAP_RELOCATION_INFORMATION"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RELOCATION_CANCEL"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RELOCATION_CANCEL_ACKNOWLEDGE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RELOCATION_COMMAND"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RELOCATION_COMPLETE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RELOCATION_DETECT"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RELOCATION_FAILURE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RELOCATION_PREPARATION_FAILURE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RELOCATION_REQUEST"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RELOCATION_REQUEST_ACKNOWLEDGE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RELOCATION_REQUIRED"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RESET"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RESET_ACKNOWLEDGE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RESET_RESOURCE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_RESET_RESOURCE_ACKNOWLEDGE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_SECURITY_MODE_COMMAND"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_SECURITY_MODE_COMPLETE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_SECURITY_MODE_REJECT"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_SRNS_CONTEXT_REQUEST"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_SRNS_CONTEXT_RESPONSE"
+    },
+    {
+      "groupName": "RANAP",
+      "name": "RANAP_SRNS_DATA_FORWARD_COMMAND"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_COMMON_TRANSPORT_CHANNEL_RESOURCES_FAILURE"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_COMMON_TRANSPORT_CHANNEL_RESOURCES_RELEASE_REQUEST"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_COMMON_TRANSPORT_CHANNEL_RESOURCES_REQUEST"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_COMMON_TRANSPORT_CHANNEL_RESOURCES_RESPONSE"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_COMPRESSED_MODE_COMMAND"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_DEDICATED_MEASUREMENT_FAILURE_INDICATION"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_DEDICATED_MEASUREMENT_INITIATION_FAILURE"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_DEDICATED_MEASUREMENT_INITIATION_REQUEST"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_DEDICATED_MEASUREMENT_INITIATION_RESPONSE"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_DEDICATED_MEASUREMENT_REPORT"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_DEDICATED_MEASUREMENT_TERMINATION_REQUEST"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_DL_POWER_CONTROL_REQUEST"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_DOWNLINK_SIGNALLING_TRANSFER_REQUEST"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_ERROR_INDICATION"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_ACTIVATION_COMMAND"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_ADDITION_FAILURE"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_ADDITION_REQUEST"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_ADDITION_RESPONSE"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_DELETION_REQUEST"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_DELETION_RESPONSE"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_FAILURE_INDICATION"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_PARAMETER_UPDATE_INDICATION"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_RECONFIGURATION_CANCEL"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_RECONFIGURATION_COMMIT"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_RECONFIGURATION_FAILURE"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_RECONFIGURATION_PREPARE"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_RECONFIGURATION_READY"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_RESTORE_INDICATION"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_SETUP_FAILURE"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_SETUP_REQUEST"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_RADIO_LINK_SETUP_RESPONSE"
+    },
+    {
+      "groupName": "RNSAP",
+      "name": "RNSAP_UPLINK_SIGNALLING_TRANSFER_INDICATION"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_ACTIVE_SET_UPDATE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_ACTIVE_SET_UPDATE_COMPLETE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_ACTIVE_SET_UPDATE_FAILURE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_CELL_CHANGE_ORDER_FROM_UTRAN"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_CELL_CHANGE_ORDER_FROM_UTRAN_FAILURE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_CELL_UPDATE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_CELL_UPDATE_CONFIRM"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_DOWNLINK_DIRECT_TRANSFER"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_HANDOVER_FROM_UTRAN_COMMAND"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_HANDOVER_FROM_UTRAN_FAILURE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_HANDOVER_TO_UTRAN_COMPLETE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_INITIAL_DIRECT_TRANSFER"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_MBMS_COMMON_P_T_M_RB_INFORMATION"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_MBMS_CURRENT_CELL_P_T_M_RB_INFORMATION"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_MBMS_GENERAL_INFORMATION"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_MBMS_MODIFIED_SERVICES_INFORMATION"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_MBMS_NEIGHBOURING_CELL_P_T_M_RB_INFORMATION"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_MBMS_UNMODIFIED_SERVICES_INFORMATION"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_MEASUREMENT_CONTROL"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_MEASUREMENT_CONTROL_FAILURE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_MEASUREMENT_REPORT"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_PAGING_TYPE_2"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_PHYSICAL_CHANNEL_RECONFIGURATION"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_PHYSICAL_CHANNEL_RECONFIGURATION_COMPLETE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_PHYSICAL_CHANNEL_RECONFIGURATION_FAILURE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RADIO_BEARER_RECONFIGURATION"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RADIO_BEARER_RECONFIGURATION_COMPLETE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RADIO_BEARER_RECONFIGURATION_FAILURE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RADIO_BEARER_RELEASE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RADIO_BEARER_RELEASE_COMPLETE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RADIO_BEARER_RELEASE_FAILURE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RADIO_BEARER_SETUP"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RADIO_BEARER_SETUP_COMPLETE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RADIO_BEARER_SETUP_FAILURE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RRC_CONNECTION_REJECT"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RRC_CONNECTION_RELEASE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RRC_CONNECTION_RELEASE_COMPLETE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RRC_CONNECTION_REQUEST"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RRC_CONNECTION_SETUP"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RRC_CONNECTION_SETUP_COMPLETE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_RRC_STATUS"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_SECURITY_MODE_COMMAND"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_SECURITY_MODE_COMPLETE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_SECURITY_MODE_FAILURE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_SIGNALLING_CONNECTION_RELEASE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_SIGNALLING_CONNECTION_RELEASE_INDICATION"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_SYSTEM_INFORMATION_CHANGE_INDICATION"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_TRANSPORT_CHANNEL_RECONFIGURATION"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_TRANSPORT_CHANNEL_RECONFIGURATION_COMPLETE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_TRANSPORT_FORMAT_COMBINATION_CONTROL"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_TRANSPORT_FORMAT_COMBINATION_CONTROL_FAILURE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_UE_CAPABILITY_ENQUIRY"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_UE_CAPABILITY_INFORMATION"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_UE_CAPABILITY_INFORMATION_CONFIRM"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_UPLINK_DIRECT_TRANSFER"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_URA_UPDATE"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_URA_UPDATE_CONFIRM"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_UTRAN_MOBILITY_INFORMATION"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_UTRAN_MOBILITY_INFORMATION_CONFIRM"
+    },
+    {
+      "groupName": "RRC",
+      "name": "RRC_UTRAN_MOBILITY_INFORMATION_FAILURE"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_ERROR_INDICATION"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_FAILURE"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_KILL"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_KILL_COMPLETE"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_KILL_FAILURE"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_MESSAGE_STATUS_QUERY"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_MESSAGE_STATUS_QUERY_COMPLETE"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_MESSAGE_STATUS_QUERY_FAILURE"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_RESET"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_RESET_COMPLETE"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_RESET_FAILURE"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_RESTART"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_WRITE_REPLACE"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_WRITE_REPLACE_COMPLETE"
+    },
+    {
+      "groupName": "SABP",
+      "name": "SABP_WRITE_REPLACE_FAILURE"
+    }
+  ],
+  "filterOnManagedElement": false,
+  "filterOnManagedFunction": false,
+  "id": null,
+  "name": "GpehSubscription",
+  "nodeFilter": "NODE_TYPE",
+  "nodes": [],
+  "operationalState": "NA",
+  "outputMode": "FILE",
+  "owner": "administrator",
+  "pnpEnabled": false,
+  "rop": "FIFTEEN_MIN",
+  "scheduleInfo": {
+    "endDateTime": 1963412880000,
+    "startDateTime": 1805472780000
+  },
+  "selectedNeTypes": [
+    "RNC"
+  ],
+  "taskStatus": "OK",
+  "type": "GPEH",
+  "ueFraction": 1000,
+  "userActivationDateTime": null,
+  "userDeActivationDateTime": null,
+  "userType": "USER_DEF"
+}

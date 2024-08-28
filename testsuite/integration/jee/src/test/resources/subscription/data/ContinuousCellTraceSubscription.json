@@ -1,0 +1,4914 @@
+{
+  "@class": "continuousCellTrace",
+  "administrationState": "INACTIVE",
+  "asnEnabled": true,
+  "cbs": true,
+  "criteriaSpecification": [],
+  "description": "Continuous Cell Trace (CCTR) System Defined Subscription",
+  "ebsCounters": [
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoExeSuccLteInterFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAdvCellSupDetection"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAdvCellSupRecoveryCellSucc"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAdvCellSupRecoveryNodeAtt"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAdvCellSupRecoveryNodeSucc"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAgMeasSuccCgi"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAgMeasSuccCgiQci1"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrMeasFailEutranCgi"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrMeasFailEutranPci"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrMeasSuccEutranCgi"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrMeasSuccEutranPci"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrNeighbrelAddEUtran"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrNeighbrelAddGeran"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrNeighbrelAddUtran"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrNeighbrelDelGeran"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrNeighbrelDelUtran"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrPciConflictMeasFailEutranCgi"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrPciConflictMeasSuccEutranCgi"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrUeCapFailGeran"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrUeCapFailUtran"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrUeCapSuccGeran"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAnrUeCapSuccUtran"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCceUtilDistrPartition$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoExeAttLteInterFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoExeAttLteIntraFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoExeAttLteNpPCIQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoExeAttLteNpPCIQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoExeAttLteSmallCellQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoExeAttLteSmallCellQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoExeSuccLteInterFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoExeSuccLteIntraFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoExeSuccLteNpPCIQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoExeSuccLteNpPCIQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoExeSuccLteSmallCellQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoExeSuccLteSmallCellQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoPrepAttLteInterFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoPrepAttLteIntraFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoPrepAttLteNpPCIQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoPrepAttLteNpPCIQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoPrepAttLteSmallCellQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoPrepAttLteSmallCellQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoPrepSuccLteInterFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoPrepSuccLteIntraFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoPrepSuccLteNpPCIQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoPrepSuccLteNpPCIQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoPrepSuccLteSmallCellQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmCellHoPrepSuccLteSmallCellQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmDlS1Cdma2000TunnelingHOFail"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmDlS1Cdma2000TunnelingHOSucc"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmDlS1Cdma2000TunnelingNonHO"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmDrxMeasSuccCgi"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmDrxMeasSuccCgiQci1"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabAttAddedPaLsm"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabAttInitPaLsm"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabFailAddedGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabFailAddedMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabFailAddedNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabFailAddedProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabFailAddedRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabFailAddedTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabFailInitGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabFailInitMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabFailInitNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabFailInitProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabFailInitRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabFailInitTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabSuccAddedPaLsm"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabSuccInitPaLsm"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabTimeAddedDistrQci$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabTimeAddedMaxQci$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabTimeAddedSumQci$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabTimeInitDistrQci$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabTimeInitMaxQci$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabEstabTimeInitSumQci$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabModFailCause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelAttQci$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelEnbGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelEnbMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelEnbNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelEnbProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelEnbRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelEnbTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelFailGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelFailMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelFailNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelFailProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelFailRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelFailTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelMmeGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelMmeMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelMmeNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelMmeProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelMmeRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelMmeTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmErabRelSuccQci$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeAttBlindInterFreq"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeAttBlindIntraFreq"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeAttBlindWcdma"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeAttMeasBasedInterFreq"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeAttMeasBasedInterFreqNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeAttMeasBasedIntraFreq"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeAttMeasBasedIntraFreqNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeAttMeasBasedWcdma"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeInAttQci"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeInSuccQci"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeInSuccTdScdmaQci"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeInSuccUtran"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeSuccBlindInterFreq"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeSuccBlindIntraFreq"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeSuccBlindWcdma"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeSuccMeasBasedInterFreq"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeSuccMeasBasedInterFreqNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeSuccMeasBasedIntraFreq"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeSuccMeasBasedIntraFreqNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExeSuccMeasBasedWcdma"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExecAttDrxConfig$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExecOutFailCause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExecOutS1AttInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExecOutS1SuccInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExecOutX2AttInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExecOutX2SuccInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoExecSuccDrxConfig$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepAttLteInterFQci"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepAttLteIntraFQci"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInAttUtran"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInRejUtranGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInRejUtranMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInRejUtranNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInRejUtranProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInRejUtranRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInRejUtranTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInS1RejGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInS1RejMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInS1RejNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInS1RejProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInS1RejRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInS1RejTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInSuccUtran"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInX2RejGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInX2RejMiscX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInX2RejNasX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInX2RejProtX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInX2RejRnlX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepInX2RejTranX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutAttQci"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutFailTo"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejIntraEnbInterFreqGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejIntraEnbInterFreqMiscX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejIntraEnbInterFreqNasX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejIntraEnbInterFreqProtX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejIntraEnbInterFreqRnlX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejIntraEnbInterFreqTranX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejIntraEnbIntraFreqGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejIntraEnbIntraFreqMiscX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejIntraEnbIntraFreqNasX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejIntraEnbIntraFreqProtX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejIntraEnbIntraFreqRnlX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejIntraEnbIntraFreqTranX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejTdScdmaGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejTdScdmaMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejTdScdmaNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejTdScdmaProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejTdScdmaRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutRejTdScdmaTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutS1AttInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutS1RejInterEnbInterFreqGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutS1RejInterEnbInterFreqMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutS1RejInterEnbInterFreqNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutS1RejInterEnbInterFreqProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutS1RejInterEnbInterFreqRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutS1RejInterEnbInterFreqTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutS1RejInterEnbIntraFreqGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutS1RejInterEnbIntraFreqMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutS1RejInterEnbIntraFreqNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutS1RejInterEnbIntraFreqProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutS1RejInterEnbIntraFreqRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutS1RejInterEnbIntraFreqTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutS1SuccInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutSuccQci"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutX2AttInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutX2RejInterEnbInterFreqGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutX2RejInterEnbInterFreqMiscX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutX2RejInterEnbInterFreqNasX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutX2RejInterEnbInterFreqProtX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutX2RejInterEnbInterFreqRnlX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutX2RejInterEnbInterFreqTranX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutX2RejInterEnbIntraFreqGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutX2RejInterEnbIntraFreqMiscX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutX2RejInterEnbIntraFreqNasX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutX2RejInterEnbIntraFreqProtX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutX2RejInterEnbIntraFreqRnlX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutX2RejInterEnbIntraFreqTranX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepOutX2SuccInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepRejInLicMobInterFreq"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepRejInLicMobInterMode"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepRejInLicMobUtran"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepSuccLteInterFQci"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmHoPrepSuccLteIntraFQci"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmMeasReportCdma20001xRtt"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmNoOfCmasRepReq"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmNoOfCmasRepSucc"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmNoOfCmasReq"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmNoOfCmasSucc"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmNoOfEtwsPrimReq"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmNoOfEtwsPrimSucc"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmNoOfEtwsSecReq"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmNoOfEtwsSecSucc"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmNonPlannedPciMeasFailEutranCgi"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmNonPlannedPciMeasSuccEutranCgi"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmPrbDlUtilDistrPartition$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmPrbUlUtilDistrPartition$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabFailCause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabFailFailureInRadioProcedure"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabFailLackOfResources"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabFailUnspecified"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeDistrEm"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeDistrHpa"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeDistrMod"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeDistrMos"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeDistrMta"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeMaxEm"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeMaxHpa"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeMaxMod"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeMaxMos"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeMaxMta"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeSumEm"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeSumHpa"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeSumMod"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeSumMos"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnEstabTimeSumMta"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReconfAgRestoreQci1"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReconfAgSucc"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReconfAgSuccCgi"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReconfAgSuccQci1"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReconfDrxFail"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReconfDrxRestoreQci1"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReconfDrxSucc"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReconfDrxSuccCgi"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReconfDrxSuccQci1"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReestAttHof"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReestAttOthf"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReestAttRecf"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReestAttUeUnknown"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReestSuccHof"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReestSuccOthf"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReestSuccRecf"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcConnReestSuccUeUnknown"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcCsfbParReqCdma20001xRtt"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcCsfbParRespCdma20001xRtt"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcMobFromEUtraCmdCdma20001xRtt"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmRrcUlHOPrepTransferCdma20001xRtt"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmS1DlNasTransportRcvd"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmS1NasNonDelivIndGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmS1NasNonDelivIndMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmS1NasNonDelivIndNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmS1NasNonDelivIndProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmS1NasNonDelivIndRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmS1NasNonDelivIndTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmS1UlNasTransportSent"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmTaDistr"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmTimingAdvance"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtEstabFailGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtEstabFailMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtEstabFailNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtEstabFailProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtEstabFailRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtEstabFailTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtModAtt"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtModSucc"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelEnbGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelEnbMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelEnbNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelEnbProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelEnbRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelEnbTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelMmeGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelMmeMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelMmeNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelMmeProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelMmeRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelMmeTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelS1Reset"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelTimeDistr"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelTimeS1HoSamp"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelTimeS1HoSum"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelTimeSamp"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelTimeSum"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelTimeX2HoSamp"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmUeCtxtRelTimeX2HoSum"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAdvCellSupDetection"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAdvCellSupRecoveryCellAtt"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAdvCellSupRecoveryCellSucc"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAdvCellSupRecoveryNodeAtt"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAdvCellSupRecoveryNodeSucc"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAgMeasSuccCgi"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAgMeasSuccCgiQci1"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrMeasFailEutranCgi"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrMeasFailEutranPci"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrMeasSuccEutranCgi"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrMeasSuccEutranPci"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrNeighbrelAddEUtran"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrNeighbrelAddGeran"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrNeighbrelAddUtran"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrNeighbrelDelGeran"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrNeighbrelDelUtran"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrPciConflictMeasFailEutranCgi"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrPciConflictMeasSuccEutranCgi"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrUeCapFailGeran"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrUeCapFailUtran"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrUeCapSuccGeran"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmAnrUeCapSuccUtran"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCceUtilDistrPartition$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoExeAttLteInterFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoExeAttLteIntraFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoExeAttLteNpPCIQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoExeAttLteNpPCIQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoExeAttLteSmallCellQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoExeAttLteSmallCellQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellFDD",
+      "name": "pmAdvCellSupRecoveryCellAtt"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoExeSuccLteIntraFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoExeSuccLteNpPCIQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoExeSuccLteNpPCIQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoExeSuccLteSmallCellQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoExeSuccLteSmallCellQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoPrepAttLteInterFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoPrepAttLteIntraFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoPrepAttLteNpPCIQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoPrepAttLteNpPCIQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoPrepAttLteSmallCellQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoPrepAttLteSmallCellQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoPrepSuccLteInterFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoPrepSuccLteIntraFNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoPrepSuccLteNpPCIQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoPrepSuccLteNpPCIQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoPrepSuccLteSmallCellQci1Ag"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmCellHoPrepSuccLteSmallCellQci1Drx"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmDlS1Cdma2000TunnelingHOFail"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmDlS1Cdma2000TunnelingHOSucc"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmDlS1Cdma2000TunnelingNonHO"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmDrxMeasSuccCgi"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmDrxMeasSuccCgiQci1"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabAttAddedPaLsm"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabAttInitPaLsm"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabFailAddedGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabFailAddedMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabFailAddedNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabFailAddedProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabFailAddedRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabFailAddedTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabFailInitGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabFailInitMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabFailInitNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabFailInitProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabFailInitRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabFailInitTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabSuccAddedPaLsm"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabSuccInitPaLsm"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabTimeAddedDistrQci$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabTimeAddedMaxQci$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabTimeAddedSumQci$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabTimeInitDistrQci$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabTimeInitMaxQci$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabEstabTimeInitSumQci$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabModFailCause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelAttQci$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelEnbGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelEnbMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelEnbNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelEnbProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelEnbRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelEnbTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelFailGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelFailMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelFailNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelFailProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelFailRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelFailTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelMmeGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelMmeMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelMmeNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelMmeProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelMmeRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelMmeTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmErabRelSuccQci$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeAttBlindInterFreq"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeAttBlindIntraFreq"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeAttBlindWcdma"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeAttMeasBasedInterFreq"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeAttMeasBasedInterFreqNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeAttMeasBasedIntraFreq"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeAttMeasBasedIntraFreqNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeAttMeasBasedWcdma"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeInAttQci"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeInSuccQci"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeInSuccTdScdmaQci"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeInSuccUtran"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeSuccBlindInterFreq"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeSuccBlindIntraFreq"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeSuccBlindWcdma"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeSuccMeasBasedInterFreq"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeSuccMeasBasedInterFreqNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeSuccMeasBasedIntraFreq"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeSuccMeasBasedIntraFreqNpPCI"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExeSuccMeasBasedWcdma"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExecAttDrxConfig$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExecOutFailCause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExecOutS1AttInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExecOutS1SuccInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExecOutX2AttInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExecOutX2SuccInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoExecSuccDrxConfig$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepAttLteInterFQci"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepAttLteIntraFQci"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInAttUtran"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInRejUtranGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInRejUtranMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInRejUtranNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInRejUtranProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInRejUtranRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInRejUtranTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInS1RejGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInS1RejMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInS1RejNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInS1RejProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInS1RejRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInS1RejTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInSuccUtran"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInX2RejGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInX2RejMiscX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInX2RejNasX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInX2RejProtX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInX2RejRnlX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepInX2RejTranX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutAttQci"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutFailTo"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejIntraEnbInterFreqGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejIntraEnbInterFreqMiscX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejIntraEnbInterFreqNasX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejIntraEnbInterFreqProtX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejIntraEnbInterFreqRnlX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejIntraEnbInterFreqTranX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejIntraEnbIntraFreqGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejIntraEnbIntraFreqMiscX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejIntraEnbIntraFreqNasX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejIntraEnbIntraFreqProtX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejIntraEnbIntraFreqRnlX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejIntraEnbIntraFreqTranX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejTdScdmaGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejTdScdmaMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejTdScdmaNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejTdScdmaProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejTdScdmaRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutRejTdScdmaTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutS1AttInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutS1RejInterEnbInterFreqGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutS1RejInterEnbInterFreqMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutS1RejInterEnbInterFreqNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutS1RejInterEnbInterFreqProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutS1RejInterEnbInterFreqRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutS1RejInterEnbInterFreqTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutS1RejInterEnbIntraFreqGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutS1RejInterEnbIntraFreqMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutS1RejInterEnbIntraFreqNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutS1RejInterEnbIntraFreqProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutS1RejInterEnbIntraFreqRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutS1RejInterEnbIntraFreqTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutS1SuccInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutSuccQci"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutX2AttInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutX2RejInterEnbInterFreqGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutX2RejInterEnbInterFreqMiscX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutX2RejInterEnbInterFreqNasX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutX2RejInterEnbInterFreqProtX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutX2RejInterEnbInterFreqRnlX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutX2RejInterEnbInterFreqTranX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutX2RejInterEnbIntraFreqGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutX2RejInterEnbIntraFreqMiscX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutX2RejInterEnbIntraFreqNasX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutX2RejInterEnbIntraFreqProtX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutX2RejInterEnbIntraFreqRnlX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutX2RejInterEnbIntraFreqTranX2Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepOutX2SuccInterEnb"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepRejInLicMobInterFreq"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepRejInLicMobInterMode"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepRejInLicMobUtran"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepSuccLteInterFQci"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmHoPrepSuccLteIntraFQci"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmMeasReportCdma20001xRtt"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmNoOfCmasRepReq"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmNoOfCmasRepSucc"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmNoOfCmasReq"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmNoOfCmasSucc"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmNoOfEtwsPrimReq"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmNoOfEtwsPrimSucc"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmNoOfEtwsSecReq"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmNoOfEtwsSecSucc"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmNonPlannedPciMeasFailEutranCgi"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmNonPlannedPciMeasSuccEutranCgi"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmPrbDlUtilDistrPartition$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmPrbUlUtilDistrPartition$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabFailCause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabFailFailureInRadioProcedure"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabFailLackOfResources"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabFailUnspecified"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeDistrEm"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeDistrHpa"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeDistrMod"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeDistrMos"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeDistrMta"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeMaxEm"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeMaxHpa"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeMaxMod"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeMaxMos"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeMaxMta"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeSumEm"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeSumHpa"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeSumMod"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeSumMos"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnEstabTimeSumMta"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReconfAgRestoreQci1"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReconfAgSucc"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReconfAgSuccCgi"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReconfAgSuccQci1"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReconfDrxFail"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReconfDrxRestoreQci1"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReconfDrxSucc"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReconfDrxSuccCgi"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReconfDrxSuccQci1"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReestAttHof"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReestAttOthf"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReestAttRecf"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReestAttUeUnknown"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReestSuccHof"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReestSuccOthf"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReestSuccRecf"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcConnReestSuccUeUnknown"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcCsfbParReqCdma20001xRtt"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcCsfbParRespCdma20001xRtt"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcMobFromEUtraCmdCdma20001xRtt"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmRrcUlHOPrepTransferCdma20001xRtt"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmS1DlNasTransportRcvd"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmS1NasNonDelivIndGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmS1NasNonDelivIndMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmS1NasNonDelivIndNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmS1NasNonDelivIndProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmS1NasNonDelivIndRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmS1NasNonDelivIndTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmS1UlNasTransportSent"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmTaDistr"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmTimingAdvance"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtEstabFailGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtEstabFailMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtEstabFailNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtEstabFailProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtEstabFailRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtEstabFailTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtModAtt"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtModSucc"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelEnbGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelEnbMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelEnbNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelEnbProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelEnbRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelEnbTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelMmeGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelMmeMiscS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelMmeNasS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelMmeProtS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelMmeRnlS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelMmeTranS1Cause$"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelS1Reset"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelTimeDistr"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelTimeS1HoSamp"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelTimeS1HoSum"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelTimeSamp"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelTimeSum"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelTimeX2HoSamp"
+    },
+    {
+      "moClassType": "EUtranCellTDD",
+      "name": "pmUeCtxtRelTimeX2HoSum"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ConnShutdownTimeDistr"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ConnShutdownTimeSamp"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ConnShutdownTimeSum"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ErrorIndEnbGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ErrorIndEnbMiscS1Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ErrorIndEnbNasS1Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ErrorIndEnbProtS1Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ErrorIndEnbRnlS1Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ErrorIndEnbTranS1Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ErrorIndMmeGrp$S1Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ErrorIndMmeMiscS1Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ErrorIndMmeNasS1Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ErrorIndMmeProtS1Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ErrorIndMmeRnlS1Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1ErrorIndMmeTranS1Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1LiteConnShutdownTimeDistr"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1LiteConnShutdownTimeSamp"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmS1LiteConnShutdownTimeSum"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnEstabFailInGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnEstabFailInMiscX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnEstabFailInNasX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnEstabFailInProtX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnEstabFailInRnlX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnEstabFailInTranX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnEstabFailOutGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnEstabFailOutMiscX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnEstabFailOutNasX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnEstabFailOutProtX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnEstabFailOutRnlX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnEstabFailOutTranX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnEstabSucc"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnResetInGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnResetInMiscX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnResetInNasX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnResetInProtX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnResetInRnlX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnResetInTranX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnResetOutGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnResetOutMiscX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnResetOutNasX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnResetOutProtX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnResetOutRnlX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ConnResetOutTranX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ErrorIndInGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ErrorIndInMiscX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ErrorIndInNasX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ErrorIndInProtX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ErrorIndInRnlX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ErrorIndInTranX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ErrorIndOutGrp$X2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ErrorIndOutMiscX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ErrorIndOutNasX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ErrorIndOutProtX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ErrorIndOutRnlX2Cause$"
+    },
+    {
+      "moClassType": "EnodeBFunction",
+      "name": "pmX2ErrorIndOutTranX2Cause$"
+    },
+    {
+      "moClassType": "ProcessorLoad",
+      "name": "pmProcessorLoadMax"
+    },
+    {
+      "moClassType": "ProcessorLoad",
+      "name": "pmProcessorLoadSamp"
+    },
+    {
+      "moClassType": "ProcessorLoad",
+      "name": "pmProcessorLoadSum"
+    }
+  ],
+  "events": [
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_PER_RADIO_CELL_NOISE_INTERFERENCE_PRB"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ADV_CELL_SUP_DETECTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ADV_CELL_SUP_RECOVERY_RESULT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_NEIGHBCELL_ADDITIONAL_CGI"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_NON_PLANNED_PCI_CGI_REPORT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_ANR_CGI_REPORT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ANR_PCI_REPORT_WANTED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_NEIGHBREL_ADD"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_NEIGHBREL_REMOVE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_ANR_PCI_CONFLICT_CGI_REPORT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_HO_EXEC_S1_OUT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_HO_PREP_S1_OUT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_ERAB_SETUP"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_INITIAL_CTXT_SETUP"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_ERAB_MODIFY"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_UE_CTXT_RELEASE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_ERAB_RELEASE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_HO_EXEC_X2_OUT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_HO_EXEC_S1_IN"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_HO_PREP_S1_IN"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_HO_PREP_X2_IN"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_HO_PREP_X2_OUT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEASUREMENT_REPORT_RECEIVED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_CMAS_RESP"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_CMAS_REQ"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ETWS_REQ"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ETWS_RESP"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_RRC_CONN_SETUP"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_RRC_CONN_RECONF_NO_MOB"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_RRC_CONNECTION_RE_ESTABLISHMENT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_S1_NAS_NON_DELIVERY_INDICATION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_UE_CTXT_MODIFY"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_SCTP_SHUTDOWN"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_S1_ERROR_INDICATION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_X2_SETUP"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_X2_RESET"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_X2_ERROR_INDICATION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ADMISSION_BLOCKING_STARTED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ADMISSION_BLOCKING_STOPPED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ADMISSION_BLOCKING_UPDATED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ANR_CONFIG_MISSING"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ANR_HO_LEVEL_CHANGED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ANR_STOP_MEASURING"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_CANDNREL_ADD"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_CANDNREL_REMOVE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_CELL_DL_CAPACITY"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_CELL_SLEEP_CRITERIA_FAILED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_CELL_SLEEP_PROHIBIT_TRIGGERED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_CELL_WAKEUP_DETECTED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_CELL_WAKEUP_TRIGGERED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_CMAS_REPET_STOPPED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_COV_CELL_DISCOVERY_END"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_COV_CELL_DISCOVERY_START"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_COV_CELL_DISCOVERY_UPDATE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_DLHARQ_ANMODE_CONFIG"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_DL_COMP_MEAS_CONFIG_REJECT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_DL_COMP_MEAS_REP_DISCARD"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_DYNAMIC_UE_ADMISSION_BLOCKING_STARTED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_DYNAMIC_UE_ADMISSION_BLOCKING_STOPPED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_DYNAMIC_UE_ADMISSION_BLOCKING_UPDATED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ERAB_DATA_INFO"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ERAB_RELEASE_DELAYED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ERAB_ROHC_FAIL_LIC_REJECT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ETWS_REPET_STOPPED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_EUTRAN_FREQUENCY_ADD"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_FLEX_FILTER_ISSUE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_FREQ_REL_ADD"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_HO_WRONG_CELL"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_HO_WRONG_CELL_REEST"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_IMLB_ACTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_IMLB_CONTROL"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_INTEGRITY_VER_FAIL_RRC_MSG"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_IP_ADDR_GET_FAILURE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_LB_EVALUATION_TO"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_LB_INTER_FREQ"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_LB_SUB_RATIO"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_LICENSE_UNAVAILABLE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_LIC_GRACE_PERIOD_EXPIRED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_LIC_GRACE_PERIOD_EXPIRING"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_LIC_GRACE_PERIOD_RESET"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_LIC_GRACE_PERIOD_STARTED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_LOAD_CONTROL_STATE_TRANSITION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MAX_FILESIZE_REACHED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MAX_FILESIZE_RECOVERY"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MAX_STORAGESIZE_REACHED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MAX_UETRACES_REACHED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MBMS_CELL_SELECTION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MBMS_INTEREST_INDICATION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_A1"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_A2"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_A3"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_A4"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_A5"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_A6"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_B1_CDMA2000"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_B1_GERAN"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_B1_UTRA"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_B2_CDMA2000"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_B2_GERAN"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_B2_UTRA"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_PERIODICAL_EUTRA"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_PERIODICAL_GERAN"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MEAS_CONFIG_PERIODICAL_UTRA"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_MIMO_SLEEP_DETECTED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_NEIGHBCELL_CHANGE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_NEIGHBENB_CHANGE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_NO_RESET_ACK_FROM_MME"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ONGOING_UE_MEAS"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_PARTITION_CONFIG_MISSING"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_PCI_CONFLICT_DETECTED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_PCI_CONFLICT_RESOLVED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_PM_DATA_COLLECTION_LOST"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_PM_EVENT_SUSPECTMARKED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_PM_RECORDING_FAULT_JVM"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_RECOMMENDED_NR_SI_UPDATES_REACHED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_RESUME_LOW_ARP_DRB_DL_RLC_FAIL"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_RETAIN_UECTXT_HIGH_ARP_DRB"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_RIM_RAN_INFORMATION_RECEIVED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_RIM_RAN_INFORMATION_SENT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_RIM_RAN_STATUS_CHANGED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_RRC_ERROR"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_RRC_ERROR_NB"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_RRC_UE_INFORMATION"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_S1AP_PROTOCOL_ERROR"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_SON_OSCILLATION_DETECTED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_SON_UE_OSCILLATION_PREVENTED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_SPID_PRIORITY_IGNORED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_TOO_EARLY_HO"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_TOO_LATE_HO"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_UETR_MEASUREMENT_REPORT_RECEIVED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_UETR_RRC_SCELL_DECONFIGURED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_UE_ANR_CONFIG_PCI"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_UE_ANR_CONFIG_PCI_REMOVE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_UE_ANR_PCI_REPORT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_UE_CAPABILITY"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_UE_LB_MEAS"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_UE_LB_QUAL"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_UE_MEAS_FAILURE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_UE_MOBILITY_EVAL"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_UNEXPECTED_RRC_MSG"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_UNKNOWN_UE_AT_RE_ESTABLISHMENT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_WIFI_MOBILITY_EVAL_CONNECTED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_WIFI_MOBILITY_EVAL_IDLE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_X2AP_PROTOCOL_ERROR"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_X2_CONN_RELEASE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_CELL_SLEEP_TRIGGERED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_CSG_CELL_CGI_REPORT"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_DNS_LOOKUP"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_HO_EXEC_X2_IN"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_M3_SETUP"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_MBMS_SESSION_START"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_MBMS_SESSION_UPDATE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_MIMO_SLEEP_SWITCHED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_NAS_TRANSFER_DL"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_REVERSE_DNS_LOOKUP"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_S1_SETUP"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_S1_SIG_CONN_SETUP"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_S1_TENB_CONF_LOOKUP"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_SCTP_SETUP"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_SOFT_LOCK"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_TESTEVENT_COMPLEX"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_TESTEVENT_MANY_START"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_TESTEVENT_MANY_STOP"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_TESTEVENT_NOPARAM_START"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_TESTEVENT_POST"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_UETR_RRC_SCELL_CONFIGURED"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_PROC_UE_CTXT_FETCH"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_BASIC"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_BB_BBM"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_BB_CELL"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_BB_RB"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_BB_UE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_CELL1"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_CELL2"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_L3"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_MANDATORY_OVERRIDE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_1"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_10"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_11"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_12"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_13"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_14"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_15"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_16"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_2"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_21"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_22"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_23"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_24"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_3"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_4"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_5"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_6"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_7"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_8"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_9"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_TESTEVENT_UE"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_UE_MEAS_ABORT"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PER_PARTITION_REPORT"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_HO_EXEC_S1_OUT"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_HO_PREP_S1_OUT"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_ERAB_SETUP"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_INITIAL_CTXT_SETUP"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_UE_CTXT_RELEASE"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_ERAB_RELEASE"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_HO_EXEC_X2_OUT"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_HO_EXEC_S1_IN"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_HO_PREP_S1_IN"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_HO_PREP_X2_IN"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_HO_PREP_X2_OUT"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_RRC_CONN_SETUP"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_RRC_CONNECTION_RE_ESTABLISHMENT"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PER_RADIO_UE_MEASUREMENT_TA"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_EVENT_ANR_HO_LEVEL_CHANGED"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_EVENT_PM_RECORDING_FAULT_JVM"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_EVENT_RRC_SCELL_DECONFIGURED"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_EVENT_UE_CAPABILITY"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_EVENT_UE_MOBILITY_EVAL"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PER_BB_EENB_EVENT"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PER_RADIO_CELL_MEASUREMENT"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PER_RADIO_UE_MEASUREMENT"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PER_RADIO_UTILIZATION"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PER_UE_RB_TRAFFIC_REP"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PER_UE_TRAFFIC_REP"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_HO_EXEC_X2_IN"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_RRC_SCELL_CONFIGURED"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_PROC_S1_SIG_CONN_SETUP"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "RRC_RRC_CONNECTION_RECONFIGURATION"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "RRC_RRC_CONNECTION_RECONFIGURATION_COMPLETE"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_PARTITION_REPORT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_EVENT_CMAS_REPET_COMPL"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_RADIO_UE_MEASUREMENT_TA"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_PROCESSOR_LOAD"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_BRANCH_UL_NOISEINTERF_REPORT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_BRANCH_UPPTS_UL_INTERFERENCE_REPORT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_CAP_LICENSE_UTIL_REP"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_CELL_MDT_M3_REPORT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_CELL_QCI_TRAFFIC_REP"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_CELL_TRAFFIC_REPORT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_EVENT_ETWS_REPET_COMPL"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_PRB_LICENSE_UTIL_REP"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_RADIO_CELL_CQI_SUBBAND"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_RADIO_CELL_MEASUREMENT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_RADIO_CELL_MEASUREMENT_TDD"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_RADIO_CELL_NOISE_INTERFERENCE_PRB"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_RADIO_UE_MEASUREMENT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_RADIO_UTILIZATION"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_BRANCH_UL_NOISEINTERF_REPORT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_BRANCH_UPPTS_UL_INTERFERENCE_REPORT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_CAP_LICENSE_UTIL_REP"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_CELL_QCI_TRAFFIC_REP"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_CELL_TRAFFIC_REPORT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_PARTITION_REPORT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_PRB_LICENSE_UTIL_REP"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_RADIO_CELL_CQI_SUBBAND"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_RADIO_CELL_MEASUREMENT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_RADIO_CELL_MEASUREMENT_TDD"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_RADIO_CELL_NOISE_INTERFERENCE_PRB"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_RADIO_UE_MEASUREMENT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_RADIO_UTILIZATION"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_UE_ACTIVE_SESSION_TIME"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_UE_LCG_TRAFFIC_REP"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_UE_RB_TRAFFIC_REP"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UETR_UE_TRAFFIC_REP"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UE_ACTIVE_SESSION_TIME"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UE_LCG_TRAFFIC_REP"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UE_MDT_M1_REPORT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UE_MDT_M2_REPORT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UE_MDT_M4_REPORT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UE_MDT_M5_REPORT"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UE_RB_TRAFFIC_REP"
+    },
+    {
+      "groupName": "INTERNAL_PERIODIC",
+      "name": "INTERNAL_PER_UE_TRAFFIC_REP"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_PROC_HO_EXEC_S1_OUT"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_PROC_HO_PREP_S1_OUT"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_PROC_INITIAL_CTXT_SETUP"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_PROC_UE_CTXT_RELEASE"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_PROC_HO_EXEC_X2_OUT"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_PROC_HO_PREP_X2_OUT"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_PROC_RRC_CONN_SETUP"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_PROC_UE_CTXT_MODIFY"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_PER_PROCESSOR_LOAD"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_EVENT_ADMISSION_BLOCKING_STARTED"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_EVENT_ADMISSION_BLOCKING_STOPPED"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_EVENT_ADMISSION_BLOCKING_UPDATED"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_EVENT_DYNAMIC_UE_ADMISSION_BLOCKING_STARTED"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_EVENT_DYNAMIC_UE_ADMISSION_BLOCKING_STOPPED"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_EVENT_DYNAMIC_UE_ADMISSION_BLOCKING_UPDATED"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_PER_CELL_TRAFFIC_REPORT"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_PER_RADIO_CELL_CQI_SUBBAND"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_PER_RADIO_CELL_MEASUREMENT"
+    },
+    {
+      "groupName": "GENERAL_EVALUATION",
+      "name": "INTERNAL_PER_RADIO_CELL_MEASUREMENT_TDD"
+    },
+    {
+      "groupName": "INTERNAL",
+      "name": "INTERNAL_EVENT_ADV_CELL_SUP_RECOVERY_ATTEMPT"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "INTERNAL_PROC_HO_EXEC_S1_OUT"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "INTERNAL_PROC_HO_PREP_S1_OUT"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "INTERNAL_PROC_HO_EXEC_X2_OUT"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "INTERNAL_PROC_HO_EXEC_S1_IN"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "INTERNAL_PROC_HO_PREP_S1_IN"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "INTERNAL_PROC_HO_PREP_X2_IN"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "INTERNAL_PROC_HO_PREP_X2_OUT"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "INTERNAL_EVENT_ANR_HO_LEVEL_CHANGED"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "INTERNAL_EVENT_HO_WRONG_CELL"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "INTERNAL_EVENT_HO_WRONG_CELL_REEST"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "INTERNAL_EVENT_TOO_EARLY_HO"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "INTERNAL_EVENT_TOO_LATE_HO"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "INTERNAL_EVENT_UE_MOBILITY_EVAL"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "INTERNAL_PROC_HO_EXEC_X2_IN"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "X2_HANDOVER_REPORT"
+    },
+    {
+      "groupName": "HANDOVER_EVALUATION",
+      "name": "X2_RLF_INDICATION"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_DOWNLINK_S1_CDMA2000_TUNNELING_EXT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_CSFB_PARAMETERS_REQUEST_CDMA2000"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_CSFB_PARAMETERS_RESPONSE_CDMA2000"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_MOBILITY_FROM_E_UTRA_COMMAND_EXT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_UL_HANDOVER_PREPARATION_TRANSFER"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_DOWNLINK_NAS_TRANSPORT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_UPLINK_NAS_TRANSPORT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "INTERNAL_TESTEVENT_EXT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_17"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_18"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_19"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "INTERNAL_TESTEVENT_PROC_BASE_20"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_M3_SETUP_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_M3_SETUP_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_M3_SETUP_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_MBMS_SESSION_START_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_MBMS_SESSION_START_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_MBMS_SESSION_START_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_MBMS_SESSION_STOP_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_MBMS_SESSION_STOP_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_MBMS_SESSION_UPDATE_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_MBMS_SESSION_UPDATE_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_MBMS_SESSION_UPDATE_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_MCE_CONFIGURATION_UPDATE_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_MCE_CONFIGURATION_UPDATE_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_MCE_CONFIGURATION_UPDATE_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "M3_RESET"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_CONNECTION_RE_ESTABLISHMENT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_CONNECTION_RE_ESTABLISHMENT_COMPLETE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_DL_INFORMATION_TRANSFER"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_DL_INFORMATION_TRANSFER_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_HANDOVER_FROM_EUTRA_PREPARATION_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_INTER_FREQ_RSTD_MEASUREMENT_INDICATION"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_MASTER_INFORMATION_BLOCK"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_MASTER_INFORMATION_BLOCK_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_MBMS_INTEREST_INDICATION"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_MBSFNAREA_CONFIGURATION"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_MEASUREMENT_REPORT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_MOBILITY_FROM_E_UTRA_COMMAND"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_RECONFIGURATION"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_RECONFIGURATION_COMPLETE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_RECONFIGURATION_COMPLETE_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_RECONFIGURATION_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_REJECT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_REJECT_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_RELEASE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_RELEASE_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_REQUEST_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_RE_ESTABLISHMENT_COMPLETE_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_RE_ESTABLISHMENT_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_RE_ESTABLISHMENT_REJECT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_RE_ESTABLISHMENT_REJECT_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_RE_ESTABLISHMENT_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_RE_ESTABLISHMENT_REQUEST_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_SETUP"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_SETUP_COMPLETE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_SETUP_COMPLETE_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_RRC_CONNECTION_SETUP_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_SECURITY_MODE_COMMAND"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_SECURITY_MODE_COMPLETE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_SECURITY_MODE_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_SYSTEM_INFORMATION"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_SYSTEM_INFORMATION_BLOCK_TYPE_1"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_SYSTEM_INFORMATION_BLOCK_TYPE_1_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_SYSTEM_INFORMATION_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_UE_CAPABILITY_ENQUIRY"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_UE_CAPABILITY_ENQUIRY_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_UE_CAPABILITY_INFORMATION"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_UE_CAPABILITY_INFORMATION_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_UE_INFORMATION_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_UE_INFORMATION_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_UL_INFORMATION_TRANSFER"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "RRC_UL_INFORMATION_TRANSFER_NB"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_DOWNLINK_NON_UE_ASSOCIATED_LPPA_TRANSPORT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_DOWNLINK_S1_CDMA2000_TUNNELING"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_DOWNLINK_UE_ASSOCIATED_LPPA_TRANSPORT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ENB_CONFIGURATION_TRANSFER"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ENB_CONFIGURATION_UPDATE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ENB_CONFIGURATION_UPDATE_ACKNOWLEDGE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ENB_CONFIGURATION_UPDATE_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ENB_DIRECT_INFORMATION_TRANSFER"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ENB_STATUS_TRANSFER"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ERAB_MODIFY_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ERAB_MODIFY_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ERAB_RELEASE_COMMAND"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ERAB_RELEASE_INDICATION"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ERAB_RELEASE_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ERAB_RELEASE_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ERAB_SETUP_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ERAB_SETUP_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_ERROR_INDICATION"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_HANDOVER_CANCEL"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_HANDOVER_CANCEL_ACKNOWLEDGE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_HANDOVER_COMMAND"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_HANDOVER_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_HANDOVER_NOTIFY"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_HANDOVER_PREPARATION_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_HANDOVER_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_HANDOVER_REQUEST_ACKNOWLEDGE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_HANDOVER_REQUIRED"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_INITIAL_CONTEXT_SETUP_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_INITIAL_CONTEXT_SETUP_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_INITIAL_CONTEXT_SETUP_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_INITIAL_UE_MESSAGE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_KILL_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_KILL_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_LOCATION_REPORT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_LOCATION_REPORTING_CONTROL"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_LOCATION_REPORT_FAILURE_INDICATION"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_MME_CONFIGURATION_TRANSFER"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_MME_CONFIGURATION_UPDATE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_MME_CONFIGURATION_UPDATE_ACKNOWLEDGE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_MME_CONFIGURATION_UPDATE_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_MME_DIRECT_INFORMATION_TRANSFER"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_MME_STATUS_TRANSFER"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_NAS_NON_DELIVERY_INDICATION"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_OVERLOAD_START"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_OVERLOAD_STOP"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_PAGING"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_PATH_SWITCH_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_PATH_SWITCH_REQUEST_ACKNOWLEDGE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_PATH_SWITCH_REQUEST_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_REROUTE_NAS_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_RESET"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_RESET_ACKNOWLEDGE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_S1_SETUP_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_S1_SETUP_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_S1_SETUP_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_THROUGHPUT_ESTIMATION_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_THROUGHPUT_ESTIMATION_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_UE_CAPABILITY_INFO_INDICATION"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_UE_CONTEXT_MODIFICATION_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_UE_CONTEXT_MODIFICATION_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_UE_CONTEXT_MODIFICATION_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_UE_CONTEXT_RELEASE_COMMAND"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_UE_CONTEXT_RELEASE_COMPLETE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_UE_CONTEXT_RELEASE_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_UPLINK_NON_UE_ASSOCIATED_LPPA_TRANSPORT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_UPLINK_S1_CDMA2000_TUNNELING"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_UPLINK_UE_ASSOCIATED_LPPA_TRANSPORT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_WIFI_ACCESS_DECISION_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_WIFI_ACCESS_DECISION_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_WRITE_REPLACE_WARNING_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "S1_WRITE_REPLACE_WARNING_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_CELL_ACTIVATION_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_CELL_ACTIVATION_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_CELL_ACTIVATION_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_CONTEXT_FETCH_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_CONTEXT_FETCH_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_CONTEXT_FETCH_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_CONTEXT_FETCH_RESPONSE_ACCEPT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_CONTEXT_FETCH_RESPONSE_REJECT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_ENB_CONFIGURATION_UPDATE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_ENB_CONFIGURATION_UPDATE_ACKNOWLEDGE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_ENB_CONFIGURATION_UPDATE_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_ERROR_INDICATION"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_HANDOVER_CANCEL"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_HANDOVER_PREPARATION_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_HANDOVER_REPORT"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_HANDOVER_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_HANDOVER_REQUEST_ACKNOWLEDGE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_PRIVATE_MESSAGE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_PROPRIETARY_CELL_SLEEP_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_PROPRIETARY_CELL_SLEEP_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_PROPRIETARY_CELL_SLEEP_START_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_PROPRIETARY_CELL_SLEEP_STOP_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_RESET_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_RESET_RESPONSE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_RLF_INDICATION"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_SN_STATUS_TRANSFER"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_UE_CONTEXT_RELEASE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_X2_SETUP_FAILURE"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_X2_SETUP_REQUEST"
+    },
+    {
+      "groupName": "EXTERNAL",
+      "name": "X2_X2_SETUP_RESPONSE"
+    },
+    {
+      "groupName": "SESSION_ESTABLISHMENT_EVALUATION",
+      "name": "INTERNAL_PROC_ERAB_SETUP"
+    },
+    {
+      "groupName": "SESSION_ESTABLISHMENT_EVALUATION",
+      "name": "INTERNAL_PROC_INITIAL_CTXT_SETUP"
+    },
+    {
+      "groupName": "SESSION_ESTABLISHMENT_EVALUATION",
+      "name": "INTERNAL_PROC_RRC_CONN_SETUP"
+    },
+    {
+      "groupName": "SESSION_ESTABLISHMENT_EVALUATION",
+      "name": "INTERNAL_EVENT_ADMISSION_BLOCKING_STARTED"
+    },
+    {
+      "groupName": "SESSION_ESTABLISHMENT_EVALUATION",
+      "name": "INTERNAL_EVENT_ADMISSION_BLOCKING_STOPPED"
+    },
+    {
+      "groupName": "SESSION_ESTABLISHMENT_EVALUATION",
+      "name": "INTERNAL_EVENT_ADMISSION_BLOCKING_UPDATED"
+    },
+    {
+      "groupName": "SESSION_ESTABLISHMENT_EVALUATION",
+      "name": "INTERNAL_EVENT_DYNAMIC_UE_ADMISSION_BLOCKING_STARTED"
+    },
+    {
+      "groupName": "SESSION_ESTABLISHMENT_EVALUATION",
+      "name": "INTERNAL_EVENT_DYNAMIC_UE_ADMISSION_BLOCKING_STOPPED"
+    },
+    {
+      "groupName": "SESSION_ESTABLISHMENT_EVALUATION",
+      "name": "INTERNAL_EVENT_DYNAMIC_UE_ADMISSION_BLOCKING_UPDATED"
+    },
+    {
+      "groupName": "DROPPED_SESSION_EVALUATION",
+      "name": "INTERNAL_PROC_UE_CTXT_RELEASE"
+    },
+    {
+      "groupName": "DROPPED_SESSION_EVALUATION",
+      "name": "INTERNAL_PROC_RRC_CONNECTION_RE_ESTABLISHMENT"
+    },
+    {
+      "groupName": "DROPPED_SESSION_EVALUATION",
+      "name": "INTERNAL_PROC_UE_CTXT_MODIFY"
+    },
+    {
+      "groupName": "DROPPED_SESSION_EVALUATION",
+      "name": "INTERNAL_EVENT_UNKNOWN_UE_AT_RE_ESTABLISHMENT"
+    },
+    {
+      "groupName": "DROPPED_SESSION_EVALUATION",
+      "name": "INTERNAL_PROC_UE_CTXT_FETCH"
+    },
+    {
+      "groupName": "RDT",
+      "name": "INTERNAL_PER_RADIO_UE_MEASUREMENT_TA"
+    },
+    {
+      "groupName": "RDT",
+      "name": "INTERNAL_PER_RADIO_UE_MEASUREMENT"
+    },
+    {
+      "groupName": "RDT",
+      "name": "UE_MEAS_GERAN1"
+    },
+    {
+      "groupName": "RDT",
+      "name": "UE_MEAS_INTERFREQ1"
+    },
+    {
+      "groupName": "RDT",
+      "name": "UE_MEAS_INTRAFREQ1"
+    },
+    {
+      "groupName": "RDT",
+      "name": "UE_MEAS_UTRAN1"
+    },
+    {
+      "groupName": "SESSION_PERFORMANCE_EVALUATION",
+      "name": "INTERNAL_PER_RADIO_UE_MEASUREMENT_TA"
+    },
+    {
+      "groupName": "SESSION_PERFORMANCE_EVALUATION",
+      "name": "INTERNAL_EVENT_RRC_SCELL_DECONFIGURED"
+    },
+    {
+      "groupName": "SESSION_PERFORMANCE_EVALUATION",
+      "name": "INTERNAL_EVENT_UE_CAPABILITY"
+    },
+    {
+      "groupName": "SESSION_PERFORMANCE_EVALUATION",
+      "name": "INTERNAL_PER_CELL_TRAFFIC_REPORT"
+    },
+    {
+      "groupName": "SESSION_PERFORMANCE_EVALUATION",
+      "name": "INTERNAL_PER_RADIO_CELL_CQI_SUBBAND"
+    },
+    {
+      "groupName": "SESSION_PERFORMANCE_EVALUATION",
+      "name": "INTERNAL_PER_RADIO_CELL_MEASUREMENT"
+    },
+    {
+      "groupName": "SESSION_PERFORMANCE_EVALUATION",
+      "name": "INTERNAL_PER_RADIO_CELL_MEASUREMENT_TDD"
+    },
+    {
+      "groupName": "SESSION_PERFORMANCE_EVALUATION",
+      "name": "INTERNAL_PER_RADIO_CELL_NOISE_INTERFERENCE_PRB"
+    },
+    {
+      "groupName": "SESSION_PERFORMANCE_EVALUATION",
+      "name": "INTERNAL_PER_RADIO_UE_MEASUREMENT"
+    },
+    {
+      "groupName": "SESSION_PERFORMANCE_EVALUATION",
+      "name": "INTERNAL_PER_UE_RB_TRAFFIC_REP"
+    },
+    {
+      "groupName": "SESSION_PERFORMANCE_EVALUATION",
+      "name": "INTERNAL_PER_UE_TRAFFIC_REP"
+    },
+    {
+      "groupName": "SESSION_PERFORMANCE_EVALUATION",
+      "name": "INTERNAL_PROC_RRC_SCELL_CONFIGURED"
+    },
+    {
+      "groupName": "CAPACITY_MANAGEMENT_EVALUATION",
+      "name": "INTERNAL_PER_PROCESSOR_LOAD"
+    },
+    {
+      "groupName": "CAPACITY_MANAGEMENT_EVALUATION",
+      "name": "INTERNAL_EVENT_LIC_GRACE_PERIOD_EXPIRED"
+    },
+    {
+      "groupName": "CAPACITY_MANAGEMENT_EVALUATION",
+      "name": "INTERNAL_EVENT_LIC_GRACE_PERIOD_EXPIRING"
+    },
+    {
+      "groupName": "CAPACITY_MANAGEMENT_EVALUATION",
+      "name": "INTERNAL_EVENT_LIC_GRACE_PERIOD_RESET"
+    },
+    {
+      "groupName": "CAPACITY_MANAGEMENT_EVALUATION",
+      "name": "INTERNAL_EVENT_LIC_GRACE_PERIOD_STARTED"
+    },
+    {
+      "groupName": "CAPACITY_MANAGEMENT_EVALUATION",
+      "name": "INTERNAL_PER_CAP_LICENSE_UTIL_REP"
+    },
+    {
+      "groupName": "CAPACITY_MANAGEMENT_EVALUATION",
+      "name": "INTERNAL_PER_PRB_LICENSE_UTIL_REP"
+    },
+    {
+      "groupName": "CAPACITY_MANAGEMENT_EVALUATION",
+      "name": "INTERNAL_PER_RADIO_UTILIZATION"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "INTERNAL_PROC_M3_SETUP"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "INTERNAL_PROC_MBMS_SESSION_START"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "INTERNAL_PROC_MBMS_SESSION_UPDATE"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_M3_SETUP_FAILURE"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_M3_SETUP_REQUEST"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_M3_SETUP_RESPONSE"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_MBMS_SESSION_START_FAILURE"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_MBMS_SESSION_START_REQUEST"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_MBMS_SESSION_START_RESPONSE"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_MBMS_SESSION_STOP_REQUEST"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_MBMS_SESSION_STOP_RESPONSE"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_MBMS_SESSION_UPDATE_FAILURE"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_MBMS_SESSION_UPDATE_REQUEST"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_MBMS_SESSION_UPDATE_RESPONSE"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_MCE_CONFIGURATION_UPDATE_FAILURE"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_MCE_CONFIGURATION_UPDATE_REQUEST"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_MCE_CONFIGURATION_UPDATE_RESPONSE"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "M3_RESET"
+    },
+    {
+      "groupName": "MBMS",
+      "name": "RRC_MBSFNAREA_CONFIGURATION"
+    },
+    {
+      "groupName": "MDT",
+      "name": "INTERNAL_PER_CELL_MDT_M3_REPORT"
+    },
+    {
+      "groupName": "MDT",
+      "name": "INTERNAL_PER_UE_MDT_M1_REPORT"
+    },
+    {
+      "groupName": "MDT",
+      "name": "INTERNAL_PER_UE_MDT_M2_REPORT"
+    },
+    {
+      "groupName": "MDT",
+      "name": "INTERNAL_PER_UE_MDT_M4_REPORT"
+    },
+    {
+      "groupName": "MDT",
+      "name": "INTERNAL_PER_UE_MDT_M5_REPORT"
+    },
+    {
+      "groupName": "PM_INITIATED_UE_MEASUREMENTS",
+      "name": "UE_MEAS_EVENT_FEAT_NOT_AVAIL"
+    },
+    {
+      "groupName": "PM_INITIATED_UE_MEASUREMENTS",
+      "name": "UE_MEAS_EVENT_NOT_CONFIG"
+    },
+    {
+      "groupName": "PM_INITIATED_UE_MEASUREMENTS",
+      "name": "UE_MEAS_GERAN1"
+    },
+    {
+      "groupName": "PM_INITIATED_UE_MEASUREMENTS",
+      "name": "UE_MEAS_GERAN2"
+    },
+    {
+      "groupName": "PM_INITIATED_UE_MEASUREMENTS",
+      "name": "UE_MEAS_INTERFREQ1"
+    },
+    {
+      "groupName": "PM_INITIATED_UE_MEASUREMENTS",
+      "name": "UE_MEAS_INTERFREQ2"
+    },
+    {
+      "groupName": "PM_INITIATED_UE_MEASUREMENTS",
+      "name": "UE_MEAS_INTRAFREQ1"
+    },
+    {
+      "groupName": "PM_INITIATED_UE_MEASUREMENTS",
+      "name": "UE_MEAS_INTRAFREQ2"
+    },
+    {
+      "groupName": "PM_INITIATED_UE_MEASUREMENTS",
+      "name": "UE_MEAS_UTRAN1"
+    },
+    {
+      "groupName": "PM_INITIATED_UE_MEASUREMENTS",
+      "name": "UE_MEAS_UTRAN2"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_EVENT_UETR_MEASUREMENT_REPORT_RECEIVED"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_EVENT_UETR_RRC_SCELL_DECONFIGURED"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_BRANCH_UL_NOISEINTERF_REPORT"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_BRANCH_UPPTS_UL_INTERFERENCE_REPORT"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_CAP_LICENSE_UTIL_REP"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_CELL_QCI_TRAFFIC_REP"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_CELL_TRAFFIC_REPORT"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_PARTITION_REPORT"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_PRB_LICENSE_UTIL_REP"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_RADIO_CELL_CQI_SUBBAND"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_RADIO_CELL_MEASUREMENT"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_RADIO_CELL_MEASUREMENT_TDD"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_RADIO_CELL_NOISE_INTERFERENCE_PRB"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_RADIO_UE_MEASUREMENT"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_RADIO_UTILIZATION"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_UE_ACTIVE_SESSION_TIME"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_UE_LCG_TRAFFIC_REP"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_UE_RB_TRAFFIC_REP"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PER_UETR_UE_TRAFFIC_REP"
+    },
+    {
+      "groupName": "UETR_ONLY",
+      "name": "INTERNAL_PROC_UETR_RRC_SCELL_CONFIGURED"
+    },
+    {
+      "groupName": "WIFI",
+      "name": "INTERNAL_EVENT_WIFI_MOBILITY_EVAL_CONNECTED"
+    },
+    {
+      "groupName": "WIFI",
+      "name": "INTERNAL_EVENT_WIFI_MOBILITY_EVAL_IDLE"
+    },
+    {
+      "groupName": "WIFI",
+      "name": "S1_THROUGHPUT_ESTIMATION_REQUEST"
+    },
+    {
+      "groupName": "WIFI",
+      "name": "S1_THROUGHPUT_ESTIMATION_RESPONSE"
+    },
+    {
+      "groupName": "WIFI",
+      "name": "S1_WIFI_ACCESS_DECISION_REQUEST"
+    },
+    {
+      "groupName": "WIFI",
+      "name": "S1_WIFI_ACCESS_DECISION_RESPONSE"
+    }
+  ],
+  "filterOnManagedElement": false,
+  "filterOnManagedFunction": false,
+  "id": null,
+  "name": "ContinuousCellTraceSubscription",
+  "nextVersionName": null,
+  "nodeFilter": "NODE_TYPE",
+  "nodeListIdentity": 0,
+  "nodes": [],
+  "operationalState": "NA",
+  "outputMode": "FILE",
+  "owner": "PMIC",
+  "persistenceTime": null,
+  "prevVersionName": null,
+  "rop": "FIFTEEN_MIN",
+  "scheduleInfo": {
+    "endDateTime": null,
+    "startDateTime": null
+  },
+  "selectedNeTypes": [],
+  "streamInfoList": [],
+  "taskStatus": "NA",
+  "type": "CONTINUOUSCELLTRACE",
+  "ueFraction": 1000,
+  "userActivationDateTime": null,
+  "userDeActivationDateTime": null,
+  "userType": "SYSTEM_DEF"
+}

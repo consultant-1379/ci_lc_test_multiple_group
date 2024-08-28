@@ -1,0 +1,56 @@
+{
+  "name": "STAT Subscription",
+  "type": "STATISTICAL",
+  "description": "This is a statistical subscription",
+  "userType": "USER_DEF",
+  "administrationState": "INACTIVE",
+  "operationalState": "NA",
+  "scheduleInfo": {},
+  "nodeFilter": "NODE_TYPE",
+  "selectedNeTypes": [
+    "RNC"
+  ],
+  "nodes": [
+    {
+      "fdn": "NetworkElement=SGSN-16A-CP01-V104",
+      "pmFunction": "ON",
+      "technologyDomain": [
+        "EPS",
+        "UMTS"
+      ],
+      "neType": "SGSN-MME",
+      "id": "281474977982723",
+      "ossModelIdentity": "16A-CP01"
+    },
+    {
+      "fdn": "NetworkElement=LTE01dg2ERBS00001",
+      "pmFunction": "ON",
+      "technologyDomain": [],
+      "neType": "RadioNode",
+      "id": "281474977982679",
+      "ossModelIdentity": "17A-R2YX"
+    }
+  ],
+  "criteriaSpecification": [],
+  "owner": "administrator",
+  "taskStatus": "OK",
+  "rop": "FIFTEEN_MIN",
+  "pnpEnabled": false,
+  "filterOnManagedFunction": false,
+  "filterOnManagedElement": false,
+  "cbs": false,
+  "counters": [
+    {
+      "name": "pmL2tpLostPack",
+      "moClassType": "AbisIp"
+    },
+    {
+      "name": "pmL2tpRecPack",
+      "moClassType": "AbisIp"
+    },
+    {
+      "name": "pmL2tpSentPack",
+      "moClassType": "AbisIp"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "type": "MOINSTANCE",
+  "id": null,
+  "name": "MO Instance based Subscription2",
+  "description": "MOINSTANCE Subscription Test Description",
+  "userType": "USER_DEF",
+  "administrationState": "INACTIVE",
+  "operationalState": "NA",
+  "userActivationDateTime": null,
+  "userDeActivationDateTime": null,
+  "@class": "moinstance",
+  "criteriaSpecification": [],
+  "owner": "administrator",
+  "taskStatus": "OK",
+  "rop": "FIFTEEN_MIN",
+  "pnpEnabled": false,
+  "filterOnManagedFunction": false,
+  "filterOnManagedElement": false,
+  "cbs": false,
+  "scheduleInfo": {},
+  "nodes": [
+    {
+      "neType": "RNC",
+      "fdn": "NetworkElement=RNC03",
+      "ossModelIdentity": "16B-V.7.1659-M9",
+      "ossPrefix": "MeContext=RNC03",
+      "name": "RNC03",
+      "id": "281475019200936",
+      "technologyDomain": [
+        "UMTS"
+      ]
+    },
+    {
+      "neType": "RNC",
+      "fdn": "NetworkElement=RNC03-NO-TECH-DOMAIN",
+      "ossModelIdentity": "16B-V.7.1659-M9",
+      "ossPrefix": "MeContext=RNC03",
+      "name": "RNC03",
+      "id": "281475019200936"
+    }
+  ],
+  "counters": [
+    {
+      "name": "pmFwLostCells",
+      "moClassType": "Aal2PathVccTp"
+    },
+    {
+      "name": "pmBwMissinsCells",
+      "moClassType": "Aal1TpVccTp"
+    },
+    {
+      "name": "pmLostBrCells",
+      "moClassType": "Aal0TpVccTp"
+    }
+  ],
+  "selectedNeTypes": [
+    "RNC"
+  ],
+  "nodeFilter": "NODE_TYPE",
+  "moInstances": [
+    {
+      "nodeName": "RNC03",
+      "moInstanceName": "Aal0TpVccTp=pm-1"
+    },
+    {
+      "nodeName": "RNC03",
+      "moInstanceName": "Aal1TpVccTp=pm-2"
+    }
+  ]
+}

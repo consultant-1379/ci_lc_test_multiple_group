@@ -1,0 +1,39 @@
+{
+    "type":"UETR",
+    "id":null,
+    "name":"UetrSubscriptionTest",
+    "description":"test uetr",
+    "userType":"USER_DEF",
+    "administrationState":"INACTIVE",
+    "operationalState":"NA",
+    "userActivationDateTime":null,
+    "userDeActivationDateTime":null,
+    "owner":"administrator",
+    "scheduleInfo":{},
+    "nodeFilter":"NODE_TYPE",
+    "selectedNeTypes":["RNC"],
+    "nodes":[
+        {"fdn":"NetworkElement=RNC01","id":"2071883","pmFunction":"ON","technologyDomain":["UMTS"],"ossPrefix":"MeContext=RNC01","neType":"RNC","ossModelIdentity":"16B-V.7.1659"}
+        ],
+    "numberOfNodes":1,
+    "@class":"uetr",
+    "ueInfoList":[
+        {"type":"IMSI","value":"12345"}
+        ],
+    "outputMode":"STREAMING",
+    "taskStatus":"OK",
+    "rop":"NOT_APPLICABLE",
+    "pnpEnabled":false,
+    "filterOnManagedFunction":false,
+    "filterOnManagedElement":false,
+    "cbs":false,
+    "streamInfoList":[
+        {"ipAddress":"192.168.0.42","port":678,"portOffset":0}
+        ],
+    "events":[
+        {"groupName":"INTERNAL","name":"INTERNAL_GARBLED_CALL_DETECTED"},
+        {"groupName":"INTERNAL","name":"INTERNAL_IMSI"},
+        {"groupName":"INTERNAL","name":"INTERNAL_SILENT_CALL_DETECTED"},
+        {"groupName":"INTERNAL","name":"INTERNAL_UE_MOVE"}
+        ]
+}

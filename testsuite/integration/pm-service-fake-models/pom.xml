@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.ericsson.oss.pmic</groupId>
+    <artifactId>pm-service-testsuite-integration</artifactId>
+    <version>2.23.3-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>pm-service-fake-models</artifactId>
+  <packaging>pom</packaging>
+  <name>[${project.artifactId}]</name>
+
+  <properties>
+    <version.model-processing-jar>1.33.5</version.model-processing-jar>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.m2e</groupId>
+        <artifactId>lifecycle-mapping</artifactId>
+        <version>1.0.0</version>
+        <configuration>
+          <lifecycleMappingMetadata>
+            <pluginExecutions>
+              <pluginExecution>
+                <pluginExecutionFilter>
+                  <groupId>com.ericsson.maven.plugins</groupId>
+                  <artifactId>rstate-maven-plugin</artifactId>
+                  <versionRange>[1.0,)</versionRange>
+                  <goals>
+                    <goal>rstate</goal>
+                  </goals>
+                </pluginExecutionFilter>
+                <action>
+                  <ignore />
+                </action>
+              </pluginExecution>
+              <pluginExecution>
+                <pluginExecutionFilter>
+                  <groupId>org.codehaus.mojo</groupId>
+                  <artifactId>build-helper-maven-plugin</artifactId>
+                  <versionRange>[1.7,)</versionRange>
+                  <goals>
+                    <goal>add-resource</goal>
+                    <goal>regex-property</goal>
+                  </goals>
+                </pluginExecutionFilter>
+                <action>
+                  <ignore />
+                </action>
+              </pluginExecution>
+              <pluginExecution>
+                <pluginExecutionFilter>
+                  <groupId>com.ericsson.oss.itpf.modeling.tools</groupId>
+                  <artifactId>model-processing-jar</artifactId>
+                  <versionRange>[1.0.4,)</versionRange>
+                </pluginExecutionFilter>
+                <action>
+                  <ignore />
+                </action>
+              </pluginExecution>
+              <pluginExecution>
+                <pluginExecutionFilter>
+                  <groupId>com.ericsson.oss.itpf.modeling.tools</groupId>
+                  <artifactId>modeling-annotation-processor-jar</artifactId>
+                  <versionRange>[1.0.7,)</versionRange>
+                </pluginExecutionFilter>
+                <action>
+                  <ignore />
+                </action>
+              </pluginExecution>
+            </pluginExecutions>
+          </lifecycleMappingMetadata>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <!--Profiles for site documentation -->
+
+  <modules>
+    <module>pm-service-fake-models-jar</module>
+    <module>ERICsnmpcustomnodepmnodemodelcommon_CXP0000000</module>
+  </modules>
+
+  <scm>
+    <tag>pm-service-1.10.2</tag>
+  </scm>
+
+</project>

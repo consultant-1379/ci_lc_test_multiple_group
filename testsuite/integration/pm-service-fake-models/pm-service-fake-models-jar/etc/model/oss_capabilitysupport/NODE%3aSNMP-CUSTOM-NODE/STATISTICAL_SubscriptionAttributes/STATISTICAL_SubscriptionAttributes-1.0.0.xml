@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CapabilitySupportDefinition
+        oss_common:ns="NODE:SNMP-CUSTOM-NODE"
+        oss_common:name="STATISTICAL_SubscriptionAttributes"
+        oss_common:version="1.0.0"
+        oss_common:lifeCycle="CURRENT"
+        xmlns="urn:com:ericsson:schema:xml:oss:oss_capabilitysupport"
+        xmlns:oss_common="urn:com:ericsson:schema:xml:oss:oss_common"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <oss_common:modelCreationInfo author="pmic" creationDate="15/04/2019">
+        <oss_common:designedModel componentId="PM Capability Support"/>
+    </oss_common:modelCreationInfo>
+
+    <oss_common:desc>Capability Suport model for User defined Statistical Subscription Capabilities</oss_common:desc>
+
+    <capability name="supportExternalCounterName" value="true"/>
+
+</CapabilitySupportDefinition>

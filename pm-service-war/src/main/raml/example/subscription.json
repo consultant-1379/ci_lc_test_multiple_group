@@ -1,0 +1,79 @@
+{
+  "@class": "celltrace",
+  "id": "281478056563141",
+  "name": "17A_CBS_subscription",
+  "nextVersionName": null,
+  "prevVersionName": null,
+  "owner": "administrator",
+  "description": null,
+  "userType": "USER_DEF",
+  "type": "CELLTRACE",
+  "scheduleInfo": {
+    "startDateTime": null,
+    "endDateTime": null
+  },
+  "administrationState": "ACTIVE",
+  "operationalState": "NA",
+  "taskStatus": "OK",
+  "activationTime": 1491407341478,
+  "deactivationTime": null,
+  "rop": "FIFTEEN_MIN",
+  "userActivationDateTime": 1491407340927,
+  "userDeActivationDateTime": null,
+  "persistenceTime": 1491407343681,
+  "pnpEnabled": false,
+  "filterOnManagedFunction": false,
+  "filterOnManagedElement": false,
+  "nodes": [
+    {
+      "neType": "ERBS",
+      "fdn": "NetworkElement=LTE02ERBS00130",
+      "ossModelIdentity": "17A-H.1.160",
+      "name": "LTE02ERBS00130",
+      "pmFunction": "ON",
+      "technologyDomain": [
+        "EPS"
+      ],
+      "id": "281477736170566"
+    },
+    {
+      "neType": "ERBS",
+      "fdn": "NetworkElement=LTE02ERBS00123",
+      "ossModelIdentity": "17A-H.1.160",
+      "name": "LTE02ERBS00123",
+      "pmFunction": "ON",
+      "technologyDomain": [
+        "EPS"
+      ],
+      "id": "281477736209085"
+    }
+  ],
+  "cbs": true,
+  "criteriaSpecification": [
+    {
+      "name": "17A-H.1.160_erbs_nodes",
+      "criteriaIdString": "select all objects of type NetworkElement where NetworkElement has attr netype = \"ERBS\" and attr ossModelIdentity = \"17A-H.1.160\""
+    }
+  ],
+  "nodeListIdentity": 1758455968,
+  "selectedNeTypes": [
+    "RNC"
+  ],
+  "nodeFilter": "NODE_TYPE",
+  "events": [
+    {
+      "groupName": "CAPACITY_MANAGEMENT_EVALUATION",
+      "name": "INTERNAL_EVENT_LIC_GRACE_PERIOD_EXPIRED"
+    },
+    {
+      "groupName": "CCTR",
+      "name": "INTERNAL_EVENT_ANR_HO_LEVEL_CHANGED"
+    }
+  ],
+  "outputMode": "FILE",
+  "streamInfoList": [],
+  "ueFraction": 1000,
+  "asnEnabled": false,
+  "ebsEnabled": false,
+  "ebsCounters": []
+}

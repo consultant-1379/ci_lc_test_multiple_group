@@ -1,0 +1,8 @@
+[
+  {
+    "nodeName": "SGSN-16A-CP02-V301",
+    "ipAddress": "8.8.8.8",
+    "neType": "SGSN-MME",
+    "ossModelIdentity": "16A-CP02"
+  }
+]

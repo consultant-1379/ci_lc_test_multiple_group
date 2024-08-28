@@ -1,0 +1,6 @@
+if (outcome != success) of ./subsystem=modcluster:read-resource
+./subsystem=modcluster:add
+./subsystem=modcluster/mod-cluster-config=configuration:add(advertise=false, connector=ajp, balancer="uicluster", socket-timeout="2", proxy-list="apache-host:6666", excluded-contexts="ROOT,invoker,jbossws,juddi,console,pib")
+end-if
+
+

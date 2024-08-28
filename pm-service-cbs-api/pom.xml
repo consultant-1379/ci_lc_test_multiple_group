@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>pm-service</artifactId>
+    <groupId>com.ericsson.oss.pmic</groupId>
+    <version>2.23.3-SNAPSHOT</version>
+  </parent>
+  <artifactId>pm-service-cbs-api</artifactId>
+  <name>[${project.parent.artifactId}] CBS API module</name>
+
+  <properties>
+    <!-- Treat test code like production code in SonarQube -->
+    <sonar.sources>pom.xml,src</sonar.sources>
+    <sonar.tests />
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jboss.as.plugins</groupId>
+        <artifactId>jboss-as-maven-plugin</artifactId>
+        <version>${version.jboss-as-maven-plugin}</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <compilerArguments>
+            <!-- if your EJB module is different modify line below accordingly -->
+            <AejbModuleName>${project.parent.artifactId}-ejb</AejbModuleName>
+            <!-- if your EAR module is different modify line below accordingly -->
+            <AservicePackageName>${project.parent.artifactId}-ear</AservicePackageName>
+            <AserviceVersion>${project.version}</AserviceVersion>
+          </compilerArguments>
+          <generatedSourcesDirectory>${project.basedir}/target/classes/sdk/</generatedSourcesDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.ericsson.oss.pmic</groupId>
+      <artifactId>pm-service-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+</project>

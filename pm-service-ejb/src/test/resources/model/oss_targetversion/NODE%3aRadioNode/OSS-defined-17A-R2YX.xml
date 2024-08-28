@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+Temporary model : Not able load 17A model in Spock
+-->
+<TargetVersionInformation xmlns:ns2="urn:com:ericsson:schema:xml:oss:oss_common" xmlns="urn:com:ericsson:schema:xml:oss:oss_targetversion" ns2:name="OSS-defined-17A-R2YX" ns2:ns="NODE:RadioNode" targetModelIdentity="17A-R2YX">
+  <ns2:modelCreationInfo author="Network Model Transformer" creationDate="Thu May 11 15:42:05 CEST 2017">
+    <ns2:designedModel componentId="RadioNode 17A model"/>
+  </ns2:modelCreationInfo>
+  <ns2:desc>Target Version information model for RadioNode 17A</ns2:desc>
+  <supportedModels>
+    <urn>/pfm_event/RadioNode/NE-defined/909709026822.1062922727570.202769637024</urn>
+    <urn>/pfm_measurement/RadioNode/NE-defined-EBS/386735882580.532084144141.381715302877</urn>
+    <urn>/cfm_miminfo/RadioNode/NE-defined/498217190449.785332266610.987528405229</urn>
+    <urn>/pfm_measurement/RadioNode/NE-defined/645478802444.406187419126.62490048196</urn>
+    <urn>/fbp_rule/RadioNode/NE-defined-EBS-26_T_R10A/705320216601.868067668207.845118210229</urn>
+    <urn>/net_etcm/RadioNode/NE-defined-26_R10A</urn>
+    <urn>/net_pmevents/RadioNode/26_T_R10A</urn>
+  </supportedModels>
+  <release>17A</release>
+  <productData identity="CXP9024418/5" revision="R2CXS"/>
+</TargetVersionInformation>

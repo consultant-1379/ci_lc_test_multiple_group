@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subscriptionManager>
+  <statisticalSubscription>
+    <id>1</id>
+    <name>ENODEBstatistics</name>
+    <owner>eushmar</owner>
+    <description>subscription for ENODEB</description>
+    <userType>SYSTEM_DEF</userType>
+    <type>STATISTICAL</type>
+    <administrationState>INACTVE</administrationState>
+    <operationalState>NA</operationalState>
+    <taskStatus>NA</taskStatus>
+    <scheduleInfo>
+      <startDateTime></startDateTime>
+      <endDateTime></endDateTime>
+      <duration></duration>
+    </scheduleInfo>
+    <isPnPEnabled>true</isPnPEnabled>
+    <isFilterOnManagedFunction>false</isFilterOnManagedFunction>
+    <isFilterOnManagedElement>false</isFilterOnManagedElement>
+    <managedElementTypes>
+      <meTypeName>eRBS</meTypeName>
+      <pnpNodeVersion>
+        <version>L12A</version>
+        <PnPMimVersion>
+          <name>ERBS_NODE_MODEL_D</name>
+          <version>D.105.1.R20C</version>
+        </PnPMimVersion>
+      </pnpNodeVersion>
+      <PMINodeInfo>
+        <fdnName>NW=ONRM_ROOT_MO,SN=FDDGroup,MeC=LTE01ERBS00001,ManagedElement=1</fdnName>
+      </PMINodeInfo>
+    </managedElementTypes>
+    <managedFunctionInfo>
+      <managedFunctionName>eNodeB</managedFunctionName>
+      <counterEventGroupInfo>
+        <moClassType>CounterGroup1</moClassType>
+        <eventCounterInfo>
+          <eventCounterName>pmCellDowntimeAuto</eventCounterName>
+          <eventCounterName>pmCellDowntimeMan</eventCounterName>
+          <eventCounterName>pmErabEstabAttAdded</eventCounterName>
+          <eventCounterName>pmErabEstabAttInit</eventCounterName>
+          <eventCounterName>pmErabEstabFailAddedLic</eventCounterName>
+          <eventCounterName>pmErabEstabFailInitLic</eventCounterName>
+        </eventCounterInfo>
+      </counterEventGroupInfo>
+    </managedFunctionInfo>
+  </statisticalSubscription>
+</subscriptionManager>

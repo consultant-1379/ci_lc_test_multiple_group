@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arquillian xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://jboss.org/schema/arquillian"
+            xsi:schemaLocation="http://jboss.org/schema/arquillian http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
+
+  <defaultProtocol type="Servlet 3.0"/>
+
+  <engine>
+    <property name="deploymentExportPath">target${file.separator}arquillian</property>
+  </engine>
+
+  <extension qualifier="transaction">
+    <property name="manager">java:jboss/UserTransaction</property>
+  </extension>
+
+  <container qualifier="client" default="false">
+    <configuration>
+      <property name="allowConnectingToRunningServer">true</property>
+      <property name="managementAddress">${sftp.server.hostname}</property>
+      <property name="managementPort">${sftp.server.port}</property>
+    </configuration>
+  </container>
+
+  <container qualifier="docker" default="false">
+    <configuration>
+      <property name="allowConnectingToRunningServer">true</property>
+      <property name="outputToConsole">true</property>
+      <property name="arquillian.debug">${arquillian.debug}</property>
+      <property name="username">root</property>
+      <property name="password">shroot</property>
+      <property name="managementAddress">${container-address}</property>
+    </configuration>
+    <protocol type="Servlet 3.0">
+      <property name="host">${container-address}</property>
+    </protocol>
+  </container>
+
+  <extension qualifier="cucumber">
+    <property name="report">true</property>
+    <property name="generateDocs">false</property>
+    <property name="reportDirectory">${cucumber.report.dir}</property>
+    <property name="options">${arquillian.cucumber.options}</property>
+    <property name="featureHome">src${file.separator}test${file.separator}resources${file.separator}features</property>
+  </extension>
+
+  <extension qualifier="blast">
+    <property name="envVariableFile">${blast.env.file}</property>
+    <property name="isReviewOrchestratorEnabled">${blast.review.orchestrator}</property>
+    <property name="gerritTopic">${blast.gerrit.topic}</property>
+    <property name="gerritReviews">${blast.gerrit.reviews}</property>
+    <property name="isDockerSetupEnabled">${blast.docker.setup}</property>
+    <property name="dockerComposeDir">${blast.docker.compose.dir}</property>
+    <property name="dockerContainers">${blast.docker.containers}</property>
+    <property name="dockerSetupBash">${blast.docker.setup.bash}</property>
+    <property name="dockerSetupArgs">${blast.docker.setup.param}</property>
+    <property name="dockerSetupGroovy">${blast.docker.setup.groovy}</property>
+    <property name="dockerSetupLogFile">${blast.docker.setup.logfile}</property>
+    <property name="isSutSetupEnabled">${blast.sut.setup}</property>
+    <property name="sutSetupBash">${blast.sut.setup.bash}</property>
+    <property name="sutSetupArgs">${blast.sut.setup.param}</property>
+    <property name="sutSetupGroovy">${blast.sut.setup.groovy}</property>
+    <property name="sutSetupLogFile">${blast.sut.setup.logfile}</property>
+    <property name="sutWaitBash">${blast.sut.wait.bash}</property>
+    <property name="sutWaitArgs">${blast.sut.wait.param}</property>
+    <property name="sutWaitGroovy">${blast.sut.wait.groovy}</property>
+    <property name="sutWaitLogFile">${blast.sut.wait.logfile}</property>
+  </extension>
+</arquillian>

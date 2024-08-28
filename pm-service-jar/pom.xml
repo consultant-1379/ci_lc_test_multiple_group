@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>pm-service</artifactId>
+    <groupId>com.ericsson.oss.pmic</groupId>
+    <version>2.23.3-SNAPSHOT</version>
+  </parent>
+  <artifactId>pm-service-jar</artifactId>
+  <packaging>jar</packaging>
+
+  <properties>
+    <target.java.version>1.8</target.java.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.modeling.tools</groupId>
+      <artifactId>modeling-annotation-processor-jar</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.maven</groupId>
+          <artifactId>maven-plugin-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.ericsson.oss.itpf.modeling</groupId>
+          <artifactId>modeling-common-jar</artifactId>
+        </exclusion>
+      </exclusions>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.itpf.modeling</groupId>
+      <artifactId>modeling-annotation-jar</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-common-module-model-cache</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.services.pmic</groupId>
+      <artifactId>pmic-service-common-module-model-util</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>nl.jqno.equalsverifier</groupId>
+      <artifactId>equalsverifier</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- Modelling bom is defined here as well since modelling jars were being overridden by mediation transitive dependency on modelling -->
+      <dependency>
+        <groupId>com.ericsson.oss.itpf.modeling</groupId>
+        <artifactId>Modeling-BOM</artifactId>
+        <version>${version.modeling.bom}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <name>[${project.parent.artifactId}] JAR module</name>
+
+<build>
+    <plugins>
+      <plugin>
+        <groupId>com.ericsson.oss.itpf.modeling.tools</groupId>
+        <artifactId>modeling-annotation-processor-jar</artifactId>
+        <executions>
+          <execution>
+            <phase>process-classes</phase>
+            <goals>
+              <goal>annoproc</goal>
+            </goals>
+            <configuration>
+              <modelBuildDir>../pm-service-model/model-build</modelBuildDir>
+            </configuration>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>com.ericsson.nms.mediation</groupId>
+            <artifactId>core-mediation-api</artifactId>
+            <version>${cba.version.mediation.sdk}</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

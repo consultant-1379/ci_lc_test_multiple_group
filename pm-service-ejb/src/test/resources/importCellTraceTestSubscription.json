@@ -1,0 +1,132 @@
+{
+  "@class": "celltrace",
+  "name": "CellTraceTestSubscription",
+  "description": null,
+  "type": "CELLTRACE",
+  "scheduleInfo": {
+    "startDateTime": null,
+    "endDateTime": null
+  },
+  "rop": "FIFTEEN_MIN",
+  "nodes": [
+    {
+      "fdn": "NetworkElement=LTE02ERBS00021"
+    }
+  ],
+  "events": [
+    {
+      "name": "RRC_RRC_CONNECTION_REJECT",
+      "groupName": "EXTERNAL"
+    },
+    {
+      "name": "RRC_RRC_CONNECTION_RECONFIGURATION",
+      "groupName": "CCTR"
+    },
+    {
+      "name": "RRC_RRC_CONNECTION_RECONFIGURATION_COMPLETE",
+      "groupName": "CCTR"
+    },
+    {
+      "name": "RRC_RRC_CONNECTION_RECONFIGURATION",
+      "groupName": "EXTERNAL"
+    },
+    {
+      "name": "RRC_RRC_CONNECTION_RECONFIGURATION_COMPLETE",
+      "groupName": "EXTERNAL"
+    },
+    {
+      "name": "INTERNAL_PROC_RRC_CONN_SETUP",
+      "groupName": "INTERNAL"
+    },
+    {
+      "name": "INTERNAL_PROC_RRC_CONN_SETUP",
+      "groupName": "CCTR"
+    },
+    {
+      "name": "INTERNAL_PROC_RRC_CONN_SETUP",
+      "groupName": "GENERAL_EVALUATION"
+    },
+    {
+      "name": "INTERNAL_PROC_RRC_CONN_SETUP",
+      "groupName": "SESSION_ESTABLISHMENT_EVALUATION"
+    }
+  ],
+  "outputMode": "FILE",
+  "streamInfoList": [],
+  "ebsCounters": [
+    {
+      "name": "pmEbsRbsRrcConnReconfAtt",
+      "moClassType": "EUtranCellFDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnReconfAtt",
+      "moClassType": "EUtranCellTDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnReconfSucc",
+      "moClassType": "EUtranCellFDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnReconfSucc",
+      "moClassType": "EUtranCellTDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnEstabAttDta",
+      "moClassType": "EUtranCellFDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnEstabAttDta",
+      "moClassType": "EUtranCellTDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnEstabAttEm",
+      "moClassType": "EUtranCellFDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnEstabAttEm",
+      "moClassType": "EUtranCellTDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnEstabAttEtc",
+      "moClassType": "EUtranCellFDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnEstabAttEtc",
+      "moClassType": "EUtranCellTDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnEstabAttHpa",
+      "moClassType": "EUtranCellFDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnEstabAttHpa",
+      "moClassType": "EUtranCellTDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnEstabAttMod",
+      "moClassType": "EUtranCellFDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnEstabAttMod",
+      "moClassType": "EUtranCellTDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnEstabAttMos",
+      "moClassType": "EUtranCellFDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnEstabAttMos",
+      "moClassType": "EUtranCellTDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnEstabAttMta",
+      "moClassType": "EUtranCellFDD"
+    },
+    {
+      "name": "pmEbsRbsRrcConnEstabAttMta",
+      "moClassType": "EUtranCellTDD"
+    }
+  ],
+  "ueFraction": 1000,
+  "asnEnabled": false
+}

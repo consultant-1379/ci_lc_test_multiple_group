@@ -1,0 +1,20 @@
+[
+  {
+    "nodeName": "SYS_DEF_SUB_NODE_01",
+    "ipAddress": "8.8.8.8",
+    "neType": "RadioNode",
+    "ossModelIdentity": "19.Q1-R30A04",
+    "technologyDomain": [
+      "5GS"
+    ]
+  },
+  {
+    "nodeName": "SYS_DEF_SUB_NODE_02",
+    "ipAddress": "8.8.8.8",
+    "neType": "RadioNode",
+    "ossModelIdentity": "19.Q1-R30A04",
+    "technologyDomain": [
+      "5GS"
+    ]
+  }
+]

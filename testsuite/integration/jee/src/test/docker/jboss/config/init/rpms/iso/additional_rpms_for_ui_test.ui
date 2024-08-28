@@ -1,0 +1,17 @@
+#################################
+# install specific dependencies #
+#################################
+ERICpmic_CXP9030369
+#################################
+# install modules dependencies #
+#################################
+ERICcryptographyservice_CXP9031013
+ERICcryptographyserviceapi_CXP9031014
+######################################
+# install netex related dependencies #
+######################################
+ERICps_CXP9030203
+ERIClicensecontrolmonitoringservice_CXP9031452
+ERICtopologycollections_CXP9030498
+ERICmodelinformationservice_CXP9031071
+ERICpersistentobjectservice_CXP9031015

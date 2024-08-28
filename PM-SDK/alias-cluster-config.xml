@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<litp:alias-cluster-config-aliases-collection id="aliases"
+xmlns:litp="http://www.ericsson.com/litp"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ericsson.com/litp litp--schema/litp.xsd">
+<litp:alias id="svc-{SVC-ID-1}-{VM_ID}_alias">
+<address>{IPv4_INTERNAL_1}</address>
+<alias_names>svc-{SVC-ID-1}-{VM_ID},{VM_ID}-1-internal</alias_names>
+</litp:alias>
+<litp:alias id="svc-{SVC-ID-2}-{VM_ID}_alias">
+<address>{IPv4_INTERNAL_2}</address>
+<alias_names>svc-{SVC-ID-2}-{VM_ID},{VM_ID}-2-internal</alias_names>
+</litp:alias>
+<!-- Add additional service groups -->
+</litp:alias-cluster-config-aliases-collection>

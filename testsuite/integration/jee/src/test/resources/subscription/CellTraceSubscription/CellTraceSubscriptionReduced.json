@@ -1,0 +1,21 @@
+{
+  "type": "CELLTRACE",
+  "name": "CellTraceTest",
+  "description": null,
+  "scheduleInfo": {
+    "startDateTime": null,
+    "endDateTime": null
+  },
+  "nodes": [
+    {
+      "fdn": "NetworkElement=ERBS-18_Q4"
+    }
+  ],
+  "outputMode": "FILE",
+  "rop": "FIFTEEN_MIN",
+  "ueFraction": "888",
+  "asnEnabled": false,
+  "streamInfoList": [],
+  "events": [],
+  "ebsCounters": []
+}

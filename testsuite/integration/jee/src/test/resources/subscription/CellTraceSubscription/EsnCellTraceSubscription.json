@@ -1,0 +1,40 @@
+{
+  "@class": "celltrace",
+  "name": "ESN Subscription",
+  "owner": "Ericsson",
+  "description": "Event Stream NBI for ERBS",
+  "userType": "USER_DEF",
+  "type": "CELLTRACE",
+  "cellTraceCategory": "ESN",
+  "scheduleInfo": {},
+  "administrationState": "INACTIVE",
+  "operationalState": "NA",
+  "taskStatus": "OK",
+  "rop": "NOT_APPLICABLE",
+  "filterOnManagedFunction": false,
+  "filterOnManagedElement": false,
+  "nodeListIdentity": 1377321201,
+  "nodeFilter": "NODE_TYPE",
+  "cbs": false,
+  "accessType": "FULL",
+  "nodes": [
+    {
+      "name": "LTEERBS-ESN-18-Q4-NODE",
+      "fdn": "NetworkElement=LTEERBS-ESN-18-Q4-NODE",
+      "neType": "ERBS",
+      "ossModelIdentity": "18.Q4-J.2.300",
+      "ossPrefix": "MeContext=LTEERBS-ESN-18-Q4-NODE",
+      "technologyDomain": [],
+      "pmFunction": "N/A"
+    }
+  ],
+  "criteriaSpecification": [],
+  "events": [],
+  "outputMode": "FILE",
+  "streamInfoList": [],
+  "ebsCounters": [],
+  "ebsEvents": [],
+  "ueFraction": 1000,
+  "asnEnabled": true,
+  "ebsStreamInfoList": []
+}

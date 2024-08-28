@@ -1,0 +1,431 @@
+[{
+	"resource": "extCA_mgmt",
+	"actions": ["create",
+	"update",
+	"delete"]
+},
+{
+	"resource": "neconnection_credentials_normaluser",
+	"actions": ["read"]
+},
+{
+	"resource": "topologySearchService",
+	"actions": ["read"]
+},
+{
+	"resource": "alarm_export",
+	"actions": ["query"]
+},
+{
+	"resource": "read_entities",
+	"actions": ["read"]
+},
+{
+	"resource": "persistentobjectservice",
+	"actions": ["read",
+	"update"]
+},
+{
+	"resource": "cm_editor",
+	"actions": ["read",
+	"create",
+	"execute",
+	"update",
+	"delete"]
+},
+{
+	"resource": "esn_schema_registry",
+	"actions": ["read"]
+},
+{
+	"resource": "cm_bulk_rest_nbi",
+	"actions": ["read",
+	"create"]
+},
+{
+	"resource": "lcm",
+	"actions": ["read",
+	"create",
+	"execute",
+	"update",
+	"delete",
+	"query"]
+},
+{
+	"resource": "file-lookup-service",
+	"actions": ["read"]
+},
+{
+	"resource": "ipsec",
+	"actions": ["read",
+	"execute",
+	"delete"]
+},
+{
+	"resource": "credentials",
+	"actions": ["create",
+	"update",
+	"read"]
+},
+{
+	"resource": "read_profiles",
+	"actions": ["read"]
+},
+{
+	"resource": "fm_services",
+	"actions": ["read",
+	"query",
+	"update",
+	"execute"]
+},
+{
+	"resource": "topologyCollectionsService",
+	"actions": ["create",
+	"delete",
+	"read",
+	"update"]
+},
+{
+	"resource": "nhm",
+	"actions": ["read",
+	"execute",
+	"update",
+	"create",
+	"query",
+	"delete"]
+},
+{
+	"resource": "element_manager",
+	"actions": ["read",
+	"execute"]
+},
+{
+	"resource": "searchExecutor",
+	"actions": ["read"]
+},
+{
+	"resource": "cm_config_rest_nbi",
+	"actions": ["read",
+	"create",
+	"update",
+	"execute",
+	"delete"]
+},
+{
+	"resource": "modelInformationService",
+	"actions": ["read"]
+},
+{
+	"resource": "sshkey",
+	"actions": ["create",
+	"update"]
+},
+{
+	"resource": "nodecli_usertype_admin",
+	"actions": ["execute"]
+},
+{
+	"resource": "ldap",
+	"actions": ["create",
+	"update"]
+},
+{
+	"resource": "cm-events-nbi",
+	"actions": ["read",
+	"create",
+	"delete"]
+},
+{
+	"resource": "template_manager",
+	"actions": ["create",
+	"read",
+	"update",
+	"delete",
+	"execute"]
+},
+{
+	"resource": "read_extCA",
+	"actions": ["read"]
+},
+{
+	"resource": "caEntity_mgmt",
+	"actions": ["create",
+	"update",
+	"delete"]
+},
+{
+	"resource": "rootAssociations",
+	"actions": ["read"]
+},
+{
+	"resource": "update_algorithms",
+	"actions": ["update"]
+},
+{
+	"resource": "neconnection_credentials_secureuser",
+	"actions": ["read"]
+},
+{
+	"resource": "logViewer_access",
+	"actions": ["read"]
+},
+{
+	"resource": "read_caEntities",
+	"actions": ["read"]
+},
+{
+	"resource": "read_entityCerts",
+	"actions": ["read"]
+},
+{
+	"resource": "node_version_support",
+	"actions": ["execute",
+	"delete",
+	"read"]
+},
+{
+	"resource": "service_manager",
+	"actions": ["create",
+	"read",
+	"update",
+	"delete",
+	"execute"]
+},
+{
+	"resource": "cppinventorysynch_service",
+	"actions": ["create",
+	"execute",
+	"delete",
+	"update"]
+},
+{
+	"resource": "snmpv3",
+	"actions": ["create",
+	"update"]
+},
+{
+	"resource": "fmxModuleManagement",
+	"actions": ["execute",
+	"create",
+	"delete",
+	"update",
+	"read",
+	"query"]
+},
+{
+	"resource": "read_algorithms",
+	"actions": ["read"]
+},
+{
+	"resource": "alarm_overview",
+	"actions": ["query"]
+},
+{
+	"resource": "netlogService",
+	"actions": ["query",
+	"execute",
+	"read",
+	"delete"]
+},
+{
+	"resource": "autocellid_services",
+	"actions": ["create",
+	"read",
+	"update",
+	"delete"]
+},
+{
+	"resource": "open_alarms",
+	"actions": ["execute",
+	"update",
+	"query"]
+},
+{
+	"resource": "security_enrollment_download",
+	"actions": ["execute"]
+},
+{
+	"resource": "gim_ecim_user_mgmt",
+	"actions": ["read",
+	"create",
+	"update",
+	"delete"]
+},
+{
+	"resource": "on_demand_crl_download",
+	"actions": ["execute"]
+},
+{
+	"resource": "ciphers",
+	"actions": ["update",
+	"read"]
+},
+{
+	"resource": "winfiol_enm",
+	"actions": ["execute"]
+},
+{
+	"resource": "healthcheck",
+	"actions": ["execute"]
+},
+{
+	"resource": "crlcheck",
+	"actions": ["update",
+	"read"]
+},
+{
+	"resource": "service_definition",
+	"actions": ["create",
+	"read",
+	"update",
+	"delete",
+	"execute"]
+},
+{
+	"resource": "subscription",
+	"actions": ["create",
+	"update",
+	"delete",
+	"read",
+	"execute"]
+},
+{
+	"resource": "session_mgmt",
+	"actions": ["create"]
+},
+{
+	"resource": "oam",
+	"actions": ["read",
+	"execute",
+	"delete"]
+},
+{
+	"resource": "alarm_policies",
+	"actions": ["create",
+	"query",
+	"update",
+	"delete"]
+},
+{
+	"resource": "profile_mgmt",
+	"actions": ["create",
+	"update",
+	"delete"]
+},
+{
+	"resource": "entity_cert_mgmt",
+	"actions": ["create",
+	"update"]
+},
+{
+	"resource": "NodeDiscovery",
+	"actions": ["create",
+	"update",
+	"delete",
+	"read",
+	"execute"]
+},
+{
+	"resource": "entity_mgmt",
+	"actions": ["create",
+	"update",
+	"delete"]
+},
+{
+	"resource": "cm_config",
+	"actions": ["read",
+	"create",
+	"execute",
+	"update",
+	"delete"]
+},
+{
+	"resource": "kpi_service",
+	"actions": ["read"]
+},
+{
+	"resource": "connectivity_design",
+	"actions": ["create",
+	"read",
+	"update",
+	"delete",
+	"execute"]
+},
+{
+	"resource": "caEntity_cert_mgmt",
+	"actions": ["create",
+	"update"]
+},
+{
+	"resource": "sls-credentialmanagement",
+	"actions": ["delete"]
+},
+{
+	"resource": "nodecli_usertype_control",
+	"actions": ["execute"]
+},
+{
+	"resource": "read_caCerts",
+	"actions": ["read"]
+},
+{
+	"resource": "vnflcm",
+	"actions": ["read",
+	"execute"]
+},
+{
+	"resource": "error_event",
+	"actions": ["create",
+	"read"]
+},
+{
+	"resource": "read_crls",
+	"actions": ["read"]
+},
+{
+	"resource": "cell-management-nbi",
+	"actions": ["read",
+	"create",
+	"update",
+	"delete"]
+},
+{
+	"resource": "alarms_search",
+	"actions": ["query"]
+},
+{
+	"resource": "ap",
+	"actions": ["read",
+	"execute"]
+},
+{
+	"resource": "credm",
+	"actions": ["read",
+	"execute"]
+},
+{
+	"resource": "connectivity_manager",
+	"actions": ["create",
+	"read",
+	"update",
+	"delete",
+	"execute"]
+},
+{
+	"resource": "nodes",
+	"actions": ["execute",
+	"query",
+	"update"]
+},
+{
+	"resource": "bulk_import",
+	"actions": ["execute"]
+},
+{
+	"resource": "amos_em",
+	"actions": ["read",
+	"create",
+	"patch",
+	"execute"]
+}
+]

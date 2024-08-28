@@ -1,0 +1,33 @@
+{
+  "@class": "ctum",
+  "activationTime": 969620850000,
+  "administrationState": "INACTIVE",
+  "deactivationTime": 969619950000,
+  "description": "Hello World",
+  "id": "1",
+  "name": "Test",
+  "nextVersionName": "Test1",
+  "nodeFilter": null,
+  "nodes": null,
+  "operationalState": "NA",
+  "outputMode": "FILE",
+  "owner": "Administrator",
+  "persistenceTime": 969620850000,
+  "prevVersionName": "Test2",
+  "rop": "FIFTEEN_MIN",
+  "scheduleInfo": {
+    "endDateTime": 969620850000,
+    "startDateTime": 969619950000
+  },
+  "selectedNeTypes": null,
+  "streamInfo": {
+    "ipAddress": "192.168.0.42",
+    "port": 4554,
+    "portOffset": 2
+  },
+  "taskStatus": "OK",
+  "type": "CTUM",
+  "userActivationDateTime": 969620850000,
+  "userDeActivationDateTime": 969619950000,
+  "userType": "USER_DEF"
+}

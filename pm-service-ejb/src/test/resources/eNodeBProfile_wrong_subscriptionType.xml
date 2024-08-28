@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subscriptionManager>
+  <statisticalSubscription>
+    <name>ENODEBstatistics</name>
+    <owner>eushmar</owner>
+    <description>subscription for ENODEB</description>
+    <userType>SYSTEM_DEF</userType>
+    <type>WrongSTATISTICAL</type>
+    <administrationState>CREATE</administrationState>
+    <operationalState>NA</operationalState>
+    <taskStatus>NA</taskStatus>
+    <isPnPEnabled>false</isPnPEnabled>
+    <isFilterOnManagedFunction>false</isFilterOnManagedFunction>
+    <isFilterOnManagedElement>false</isFilterOnManagedElement>
+    <managedElementTypes>
+      <meTypeName>eRBS</meTypeName>
+      <PMINodeInfo>
+        <meName>NW=ONRM_ROOT_MO,SN=FDDGroup,MeC=LTE01ERBS00001,ManagedElement=1</meName>
+        <meName>NW=ONRM_ROOT_MO,SN=FDDGroup,MeC=LTE01ERBS00002,ManagedElement=1</meName>
+      </PMINodeInfo>
+    </managedElementTypes>
+    <managedFunctionInfo>
+      <managedFunctionName>eNodeB</managedFunctionName>
+      <counterEventGroupInfo>
+        <moClassType>CounterGroup1</moClassType>
+        <eventCounterInfo>
+          <eventCounterName>pmCellDowntimeAuto</eventCounterName>
+          <eventCounterName>pmCellDowntimeMan</eventCounterName>
+          <eventCounterName>pmErabEstabAttAdded</eventCounterName>
+          <eventCounterName>pmErabEstabAttInit</eventCounterName>
+          <eventCounterName>pmErabEstabFailAddedLic</eventCounterName>
+          <eventCounterName>pmErabEstabFailInitLic</eventCounterName>
+        </eventCounterInfo>
+      </counterEventGroupInfo>
+    </managedFunctionInfo>
+  </statisticalSubscription>
+</subscriptionManager>

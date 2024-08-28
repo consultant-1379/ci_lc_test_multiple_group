@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.ericsson.oss.pmic</groupId>
+    <artifactId>pm-service-fake-models</artifactId>
+    <version>2.23.3-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>ERICsnmpcustomnodepmnodemodelcommon_CXP0000000</artifactId>
+  <packaging>${rpm.packaging}</packaging>
+
+  <name>[${project.parent.artifactId}] snmp custom node model CXP module</name>
+
+  <properties>
+    <publish_artifact>false</publish_artifact>
+    <com.ericsson.oss.rpm.architecture>noarch</com.ericsson.oss.rpm.architecture>
+    <rpm-root>var/opt</rpm-root>
+    <comp-name>ericsson</comp-name>
+    <model-install-path>ERICmodeldeployment/data/post_install</model-install-path>
+    <rpm.name>${project.artifactId}</rpm.name>
+    <rpm.version>${project.version}</rpm.version>
+    <media.category>model</media.category>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>Copy pm-service-fake-models jar</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>copy</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>${project.groupId}</groupId>
+                  <artifactId>pm-service-fake-models-jar</artifactId>
+                  <version>${project.version}</version>
+                  <type>jar</type>
+                  <overWrite>true</overWrite>
+                  <outputDirectory>target/${model-install-path}</outputDirectory>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.ericsson.oss.itpf.deployment</groupId>
+        <artifactId>deployment-descriptor-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>configurable-entity</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <configEntity>
+            <stereotype>MODEL_PKG</stereotype>
+            <parameters>
+              <itemType name="model-package">
+                <property name="name" defaultValue="ERICsnmpcustomnodepmnodemodelcommon_CXP0000000" />
+              </itemType>
+            </parameters>
+          </configEntity>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>rpm-maven-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <copyright>2017 Ericsson AB All rights reserved</copyright>
+          <name>${rpm.name}</name>
+          <versionProperty>${rpm.version}</versionProperty>
+          <summary>${stripped.artifactId}</summary>
+          <packager>${ericsson.rstate}</packager>
+          <group>ERI-NMS</group>
+          <vendor>Ericsson AB</vendor>
+          <url>www.ericsson.com</url>
+          <mappings combine.self="override">
+            <mapping>
+              <!-- MDT requires JARs to be dropped off in this
+                  location -->
+              <directory>/${rpm-root}/${comp-name}/${model-install-path}</directory>
+              <filemode>775</filemode>
+              <!-- This directory should only be accessed through
+                  ‘mdtuser’ -->
+              <username>mdtuser</username>
+              <groupname>mdt</groupname>
+              <configuration>false</configuration>
+              <directoryIncluded>true</directoryIncluded>
+              <recurseDirectories>true</recurseDirectories>
+              <sources>
+                <source>
+                  <location>target/${model-install-path}</location>
+                  <includes>
+                    <include>**/*</include>
+                  </includes>
+                </source>
+              </sources>
+            </mapping>
+          </mappings>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

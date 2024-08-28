@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.ericsson.oss.pmic</groupId>
+    <artifactId>pm-service-fake-models</artifactId>
+    <version>2.23.3-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>pm-service-fake-models-jar</artifactId>
+  <packaging>jar</packaging>
+  <name>[${project.parent.artifactId}] JAR module</name>
+  <build>
+    <plugins>
+      <!-- This copies any hand-written XML files into the model build directory. -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy-all-models-to-model-processing</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <includeEmptyDirs>false</includeEmptyDirs>
+              <outputDirectory>model-build/etc/model</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>etc/model</directory>
+                  <includes>
+                    <include>**/*.xml</include>
+                  </includes>
+                  <filtering>true</filtering>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>com.ericsson.oss.itpf.modeling.tools</groupId>
+        <artifactId>model-processing-jar</artifactId>
+        <version>${version.model-processing-jar}</version>
+        <executions>
+          <execution>
+            <id>process-models</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>modelproc</goal>
+            </goals>
+            <configuration>
+              <modelBuildDir>model-build</modelBuildDir>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>add-model-processing-dir-as-resources</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>add-resource</goal>
+            </goals>
+            <configuration>
+              <resources>
+                <resource>
+                  <directory>model-build</directory>
+                  <excludes>
+                    <exclude>**/*.gitignore</exclude>
+                  </excludes>
+                  <targetPath>modeling</targetPath>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

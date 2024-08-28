@@ -1,0 +1,20 @@
+[
+  {
+    "nodeName": "SYS_DEF_SUB_SGSN_MME_NODE_01",
+    "ipAddress": "8.8.8.8",
+    "neType": "SGSN-MME",
+    "ossModelIdentity": "16A-CP02",
+    "technologyDomain": [
+      "EPS"
+    ]
+  },
+  {
+    "nodeName": "SYS_DEF_SUB_SGSN_MME_NODE_02",
+    "ipAddress": "9.9.9.9",
+    "neType": "SGSN-MME",
+    "ossModelIdentity": "16A-CP02",
+    "technologyDomain": [
+      "EPS"
+    ]
+  }
+]

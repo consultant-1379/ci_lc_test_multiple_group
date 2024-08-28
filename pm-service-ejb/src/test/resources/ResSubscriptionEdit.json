@@ -1,0 +1,102 @@
+{
+  "@class": "res",
+  "accessType": "FULL",
+  "activationTime": 969620850000,
+  "administrationState": "ACTIVE",
+  "applyOnAllCells": false,
+  "attachedNodes": [
+    {
+      "fdn": "NetworkElement=RBS1",
+      "id": "281474977475095",
+      "meFdn": null,
+      "name": "RBS1",
+      "neType": "RBS",
+      "ossModelIdentity": "16A-U.4.210",
+      "pmFunction": "true",
+      "technologyDomain": [
+        "EPS"
+      ]
+    }
+  ],
+  "cbs": false,
+  "cellInfoList": [
+    {
+      "nodeName": "nodeName",
+      "utranCellId": "utranCellId"
+    }
+  ],
+  "counters": [
+    {
+      "moClassType": "UtranCell",
+      "name": "pmRes6"
+    }
+  ],
+  "criteriaSpecification": [
+    {
+      "criteriaIdString": "name",
+      "name": "123"
+    }
+  ],
+  "deactivationTime": 969619950000,
+  "description": "Hello World",
+  "filterOnManagedElement": false,
+  "filterOnManagedFunction": false,
+  "id": "281474977475060",
+  "name": "Test_RES",
+  "nextVersionName": "Test1",
+  "nodeFilter": "NODE_TYPE",
+  "nodeListIdentity": 78118344,
+  "nodes": [
+    {
+      "fdn": "NetworkElement=RNC01",
+      "id": "281474977475096",
+      "meFdn": null,
+      "name": "RNC01",
+      "neType": "RNC",
+      "ossModelIdentity": "16B-V.7.1659",
+      "pmFunction": "N/A",
+      "technologyDomain": [
+        "EPS"
+      ]
+    },
+    {
+      "fdn": "NetworkElement=RNC02",
+      "id": "281474977475095",
+      "meFdn": null,
+      "name": "RNC02",
+      "neType": "RNC",
+      "ossModelIdentity": "16B-V.7.1659",
+      "pmFunction": "N/A",
+      "technologyDomain": [
+        "EPS"
+      ]
+    }
+  ],
+  "numberOfNodes": 1,
+  "operationalState": "NA",
+  "owner": "administrator",
+  "persistenceTime": 969620850000,
+  "pnpEnabled": false,
+  "prevVersionName": "Test2",
+  "resMeasDef": {
+  },
+  "resMeasPeriods": {
+  },
+  "resSpreadingFactor": [
+    "SF_128"
+  ],
+  "resUeFraction": 3,
+  "rop": "FIFTEEN_MIN",
+  "scheduleInfo": {
+    "endDateTime": 1493545680000,
+    "startDateTime": 1489163580000
+  },
+  "selectedNeTypes": [
+    "RNC"
+  ],
+  "taskStatus": "OK",
+  "type": "RES",
+  "userActivationDateTime": 969620850000,
+  "userDeActivationDateTime": 969619950000,
+  "userType": "USER_DEF"
+}

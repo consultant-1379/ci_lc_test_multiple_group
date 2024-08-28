@@ -1,0 +1,4 @@
+ERIClicenseservicestub_CXP0000000
+ERICflsservicestub_CXP0000000
+com/ericsson/oss/services/test:ERICservicehelper_CXP0000000
+com/ericsson/oss/services/test:ERICsharedserviceshelper_CXP0000000

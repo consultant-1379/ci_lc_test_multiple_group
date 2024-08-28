@@ -1,0 +1,59 @@
+{
+  "@class": "celltrace",
+  "activationTime": null,
+  "administrationState": "INACTIVE",
+  "asnEnabled": false,
+  "cbs": false,
+  "criteriaSpecification": [],
+  "deactivationTime": null,
+  "description": "CellTrace Subscription Test Description",
+  "ebsCounters": [],
+  "events": [],
+  "filterOnManagedElement": false,
+  "filterOnManagedFunction": false,
+  "id": null,
+  "name": "CellTraceSubscriptionJson3",
+  "nextVersionName": null,
+  "nodeFilter": "NODE_TYPE",
+  "nodeListIdentity": 123,
+  "nodes": [
+    {
+      "fdn": "NetworkElement=SGSN-15B-CP01-V301",
+      "id": "281474978428104",
+      "name": "SGSN-15B-CP01-V301",
+      "neType": "To be replaced",
+      "ossModelIdentity": "To be replaced",
+      "ossPrefix": "MeContext=SGSN-15B-CP01-V301",
+      "pmFunction": "ON"
+    }
+  ],
+  "operationalState": "NA",
+  "outputMode": "STREAMING",
+  "owner": "Administrator",
+  "persistenceTime": null,
+  "prevVersionName": null,
+  "rop": "FIFTEEN_MIN",
+  "scheduleInfo": {
+    "endDateTime": null,
+    "startDateTime": null
+  },
+  "selectedNeTypes": [
+    "SGSN-MME"
+  ],
+  "streamInfoList": [
+    {
+      "ipAddress": "1.1.1.1",
+      "port": 100
+    },
+    {
+      "ipAddress": "2.2.2.2",
+      "port": 200
+    }
+  ],
+  "taskStatus": "OK",
+  "type": "CELLTRACE",
+  "ueFraction": 1,
+  "userActivationDateTime": null,
+  "userDeActivationDateTime": null,
+  "userType": "USER_DEF"
+}

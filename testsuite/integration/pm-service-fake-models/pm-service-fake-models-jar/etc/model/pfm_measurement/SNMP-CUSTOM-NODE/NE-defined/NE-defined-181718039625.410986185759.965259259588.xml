@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+
+*******************************************************************************
+* COPYRIGHT Ericsson LMI 2019. All rights reserved.
+*
+* No part of this document may be reproduced in any form without the
+* written permission of the copyright owner.The contents of this document
+* are subject to revision without notice due to continued progress in
+* methodology, design and manufacturing. Ericsson shall have no liability
+* for any error or damage of any kind resulting from the use of this document.
+*
+*******************************************************************************
+
+
+-->
+<PerformanceMeasurementDefinition xmlns:ns2="urn:com:ericsson:schema:xml:oss:oss_common" xmlns="urn:com:ericsson:schema:xml:oss:pfm_measurement" ns2:name="NE-defined" ns2:ns="SNMP-CUSTOM-NODE" ns2:version="181718039625.410986185759.965259259588">
+  <ns2:modelCreationInfo author="SMIv2 Transformer" creationDate="2019-03-14 12:13:52.321">
+    <ns2:designedModel componentId="smiv2-transformer"/>
+  </ns2:modelCreationInfo>
+  <ns2:desc>Performance measurement model for NE type 'SNMP-CUSTOM-NODE'</ns2:desc>
+  <measurementGroup name="MY-IF-MIB_myifTable_Group">
+    <desc>"A list of interface entries. The number of entries is
+      given by the value of ifNumber. This table contains
+      additional objects for the interface table."
+    </desc>
+    <measurement measurementName=".1.3.6.1.2.1.2.2.1.10" moClassName="MY-IF-MIB_myifTable" namespace="MIB_MY-IF-MIB"/>
+    <measurement measurementName=".1.3.6.1.2.1.2.2.1.14" moClassName="MY-IF-MIB_myifTable" namespace="MIB_MY-IF-MIB"/>
+  </measurementGroup>
+  <measurementGroup name="MY-MPLS-L3VPN-STD-MIB_mymplsL3VpnIfConfTable_Group">
+    <desc>"A list of interface entries. The number of entries is
+      given by the value of ifNumber. This table contains
+      additional objects for the interface table."
+    </desc>
+    <measurement measurementName=".1.3.6.1.2.1.10.166.11.1.2.1.1.4" moClassName="MY-MPLS-L3VPN-STD-MIB_mymplsL3VpnIfConfTable" namespace="MIB_MY-MPLS-L3VPN-STD-MIB"/>
+  </measurementGroup>
+  <measurementGroup name="MY-MPLS-LSR-STD-MIB_mymplsOutSegmentPerfTable_Group">
+    <desc>"A list of interface entries. The number of entries is
+      given by the value of ifNumber. This table contains
+      additional objects for the interface table."
+    </desc>
+    <measurement measurementName=".1.3.6.1.2.1.10.166.2.1.8.1.3" moClassName="MY-MPLS-LSR-STD-MIB_mymplsOutSegmentPerfTable" namespace="MIB_MY-MPLS-LSR-STD-MIB"/>
+  </measurementGroup>
+  <measurementGroup name="MY-MPLS-VPN-MIB_mymplsVpnVrfSecTable_Group">
+    <desc>"MPLS-VPN-MIB mplsVpnVrfSecTable."</desc>
+    <measurement measurementName=".1.3.6.1.3.118.1.2.6.1.1" moClassName="MY-MPLS-VPN-MIB_mymplsVpnVrfSecTable" namespace="MIB_MY-MPLS-VPN-MIB"/>
+  </measurementGroup>
+  <measurementGroup name="MY-MPLS-L3VPN-STD-MIB_mymplsVpnVrfSecTable_Group">
+    <desc>"A list of interface entries. The number of entries is
+      given by the value of ifNumber. This table contains
+      additional objects for the interface table."
+    </desc>
+    <measurement measurementName=".1.3.6.1.2.1.10.166.11.1.4.1.1.10" moClassName="MY-MPLS-L3VPN-STD-MIB_mymplsVpnVrfSecTable" namespace="MIB_MY-MPLS-L3VPN-STD-MIB"/>
+  </measurementGroup>
+  <measurementGroup name="MY-OSPF-MIB_myospfAreaTable_Group">
+    <desc>"A list of interface entries. The number of entries is
+      given by the value of ifNumber. This table contains
+      additional objects for the interface table."
+    </desc>
+    <measurement measurementName=".1.3.6.1.2.1.14.2.1.5" moClassName="MY-OSPF-MIB_myospfAreaTable" namespace="MIB_MY-OSPF-MIB"/>
+  </measurementGroup>
+  <measurementGroup name="IF-MIB_ifTable_Group">
+    <desc>"A list of interface entries. The number of entries is
+      given by the value of ifNumber."
+    </desc>
+    <measurement measurementName=".1.3.6.1.2.1.2.2.1.5" moClassName="IF-MIB_ifTable" namespace="MIB_IF-MIB"/>
+    <measurement measurementName="ifInOctets" moClassName="IF-MIB_ifTable" namespace="MIB_IF-MIB"/>
+    <measurement measurementName="ifInUcastPkts" moClassName="IF-MIB_ifTable" namespace="MIB_IF-MIB"/>
+    <measurement measurementName="ifInNUcastPkts" moClassName="IF-MIB_ifTable" namespace="MIB_IF-MIB"/>
+    <measurement measurementName="ifInDiscards" moClassName="IF-MIB_ifTable" namespace="MIB_IF-MIB"/>
+    <measurement measurementName="ifInErrors" moClassName="IF-MIB_ifTable" namespace="MIB_IF-MIB"/>
+    <measurement measurementName="ifInUnknownProtos" moClassName="IF-MIB_ifTable" namespace="MIB_IF-MIB"/>
+    <measurement measurementName="ifOutOctets" moClassName="IF-MIB_ifTable" namespace="MIB_IF-MIB"/>
+    <measurement measurementName="ifOutUcastPkts" moClassName="IF-MIB_ifTable" namespace="MIB_IF-MIB"/>
+    <measurement measurementName="ifOutNUcastPkts" moClassName="IF-MIB_ifTable" namespace="MIB_IF-MIB"/>
+    <measurement measurementName="ifOutDiscards" moClassName="IF-MIB_ifTable" namespace="MIB_IF-MIB"/>
+    <measurement measurementName="ifOutErrors" moClassName="IF-MIB_ifTable" namespace="MIB_IF-MIB"/>
+    <measurement measurementName="ifOutQLen" moClassName="IF-MIB_ifTable" namespace="MIB_IF-MIB"/>
+  </measurementGroup>
+  <measurementGroup name="MY-IP-MIB_Global_Group">
+    <desc>This measurement group contains all the scalar measurements (which are not part of any table)</desc>
+    <measurement measurementName=".1.3.6.1.2.1.4.11" moClassName="MY-IP-MIB_Global" namespace="MIB_MY-IP-MIB"/>
+    <measurement measurementName=".1.3.6.1.2.1.5.2" moClassName="MY-IP-MIB_Global" namespace="MIB_MY-IP-MIB"/>
+  </measurementGroup>
+  <measurementGroup name="IP-MIB_Global_Group">
+    <desc>This measurement group contains all the scalar measurements (which are not part of any table)</desc>
+    <measurement measurementName=".1.3.6.1.2.1.5.3" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipOutDiscards" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpInErrors" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpInTimestampReps" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpOutDestUnreachs" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipFragFails" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpOutRedirects" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpOutEchoReps" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpInAddrMaskReps" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipInReceives" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipOutRequests" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpInTimestamps" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpOutAddrMaskReps" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipForwDatagrams" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpInEchoReps" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpOutTimestamps" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipFragOKs" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipReasmReqds" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipReasmOKs" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpInAddrMasks" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpOutParmProbs" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpInMsgs" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpInParmProbs" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpOutEchos" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipReasmFails" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipOutNoRoutes" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipInHdrErrors" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpInRedirects" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipInDelivers" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpOutMsgs" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpInSrcQuenchs" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipFragCreates" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipInDiscards" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpOutErrors" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpOutSrcQuenchs" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipInUnknownProtos" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpOutTimestampReps" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipInAddrErrors" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpOutTimeExcds" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpInEchos" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="ipRoutingDiscards" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpOutAddrMasks" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+    <measurement measurementName="icmpInTimeExcds" moClassName="IP-MIB_Global" namespace="MIB_IP-MIB"/>
+  </measurementGroup>
+
+  <moClass name="MY-IF-MIB_myifTable" namespace="MIB_MY-IF-MIB">
+    <measurement aggregation="SUM" externalName="myifInOctets" ns2:lifeCycle="CURRENT" ns2:name=".1.3.6.1.2.1.2.2.1.10" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"ifInOctets"</ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="myifInErrors" ns2:lifeCycle="CURRENT" ns2:name=".1.3.6.1.2.1.2.2.1.14" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"ifInErrors"</ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+  </moClass>
+  <moClass name="MY-MPLS-L3VPN-STD-MIB_mymplsL3VpnIfConfTable" namespace="MIB_MY-MPLS-L3VPN-STD-MIB">
+    <measurement aggregation="SUM" externalName="mymplsL3VpnIfConfStorageType" ns2:lifeCycle="CURRENT" ns2:name=".1.3.6.1.2.1.10.166.11.1.2.1.1.4" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"mplsL3VpnIfConfStorageType"</ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+  </moClass>
+  <moClass name="MY-MPLS-LSR-STD-MIB_mymplsOutSegmentPerfTable" namespace="MIB_MY-MPLS-LSR-STD-MIB">
+    <measurement aggregation="SUM" externalName="mymplsOutSegmentPerfErrors" ns2:lifeCycle="CURRENT" ns2:name=".1.3.6.1.2.1.10.166.2.1.8.1.3" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"mplsOutSegmentPerfErrors"</ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+  </moClass>
+  <moClass name="MY-MPLS-VPN-MIB_mymplsVpnVrfSecTable" namespace="MIB_MY-MPLS-VPN-MIB">
+    <measurement aggregation="SUM" externalName="mymplsVpnVrfSecIllegalLabelViolations" ns2:lifeCycle="CURRENT" ns2:name=".1.3.6.1.3.118.1.2.6.1.1" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"mplsVpnVrfSecIllegalLabelViolations"</ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+  </moClass>
+  <moClass name="MY-MPLS-L3VPN-STD-MIB_mymplsVpnVrfSecTable" namespace="MIB_MY-MPLS-L3VPN-STD-MIB">
+    <measurement aggregation="LAST_UPDATE" externalName="mymplsL3VpnVrfRteInetCidrAge" ns2:lifeCycle="CURRENT" ns2:name=".1.3.6.1.2.1.10.166.11.1.4.1.1.10" scanner="USER_DEFINED" type="GAUGE">
+      <ns2:desc>"mplsL3VpnVrfRteInetCidrAge"</ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+  </moClass>
+  <moClass name="MY-OSPF-MIB_myospfAreaTable" namespace="MIB_MY-OSPF-MIB">
+    <measurement aggregation="LAST_UPDATE" externalName="myospfAreaBdrRtrCount" ns2:lifeCycle="CURRENT" ns2:name=".1.3.6.1.2.1.14.2.1.5" scanner="USER_DEFINED" type="GAUGE">
+      <ns2:desc>"ospfAreaBdrRtrCount"</ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+  </moClass>
+  <moClass name="IF-MIB_ifTable" namespace="MIB_IF-MIB">
+    <measurement aggregation="LAST_UPDATE" externalName="myIfSpeed" ns2:lifeCycle="CURRENT" ns2:name=".1.3.6.1.2.1.2.2.1.5" scanner="USER_DEFINED" type="GAUGE">
+      <ns2:desc>"An estimate of the interface's current bandwidth in bits
+        per second. For interfaces which do not vary in bandwidth
+        or for those where no accurate estimation can be made, this
+        object should contain the nominal bandwidth. If the
+        bandwidth of the interface is greater than the maximum value
+        reportable by this object then this object should report its
+        maximum value (4,294,967,295) and ifHighSpeed must be used
+        to report the interace's speed. For a sub-layer which has
+        no concept of bandwidth, this object should be zero."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ifInOctets" ns2:lifeCycle="CURRENT" ns2:name="ifInOctets" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The total number of octets received on the interface,
+
+
+        including framing characters.
+
+        Discontinuities in the value of this counter can occur at
+        re-initialization of the management system, and at other
+        times as indicated by the value of
+        ifCounterDiscontinuityTime."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ifInUcastPkts" ns2:lifeCycle="CURRENT" ns2:name="ifInUcastPkts" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of packets, delivered by this sub-layer to a
+        higher (sub-)layer, which were not addressed to a multicast
+        or broadcast address at this sub-layer.
+
+        Discontinuities in the value of this counter can occur at
+        re-initialization of the management system, and at other
+        times as indicated by the value of
+        ifCounterDiscontinuityTime."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ifInNUcastPkts" ns2:lifeCycle="DEPRECATED" ns2:name="ifInNUcastPkts" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of packets, delivered by this sub-layer to a
+        higher (sub-)layer, which were addressed to a multicast or
+        broadcast address at this sub-layer.
+
+        Discontinuities in the value of this counter can occur at
+        re-initialization of the management system, and at other
+        times as indicated by the value of
+        ifCounterDiscontinuityTime.
+
+        This object is deprecated in favour of ifInMulticastPkts and
+        ifInBroadcastPkts."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ifInDiscards" ns2:lifeCycle="CURRENT" ns2:name="ifInDiscards" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of inbound packets which were chosen to be
+        discarded even though no errors had been detected to prevent
+
+
+        their being deliverable to a higher-layer protocol. One
+        possible reason for discarding such a packet could be to
+        free up buffer space.
+
+        Discontinuities in the value of this counter can occur at
+        re-initialization of the management system, and at other
+        times as indicated by the value of
+        ifCounterDiscontinuityTime."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ifInErrors" ns2:lifeCycle="CURRENT" ns2:name="ifInErrors" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"For packet-oriented interfaces, the number of inbound
+        packets that contained errors preventing them from being
+        deliverable to a higher-layer protocol. For character-
+        oriented or fixed-length interfaces, the number of inbound
+        transmission units that contained errors preventing them
+        from being deliverable to a higher-layer protocol.
+
+        Discontinuities in the value of this counter can occur at
+        re-initialization of the management system, and at other
+        times as indicated by the value of
+        ifCounterDiscontinuityTime."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ifInUnknownProtos" ns2:lifeCycle="CURRENT" ns2:name="ifInUnknownProtos" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"For packet-oriented interfaces, the number of packets
+        received via the interface which were discarded because of
+        an unknown or unsupported protocol. For character-oriented
+        or fixed-length interfaces that support protocol
+        multiplexing the number of transmission units received via
+        the interface which were discarded because of an unknown or
+        unsupported protocol. For any interface that does not
+        support protocol multiplexing, this counter will always be
+        0.
+
+        Discontinuities in the value of this counter can occur at
+        re-initialization of the management system, and at other
+        times as indicated by the value of
+        ifCounterDiscontinuityTime."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ifOutOctets" ns2:lifeCycle="CURRENT" ns2:name="ifOutOctets" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The total number of octets transmitted out of the
+        interface, including framing characters.
+
+        Discontinuities in the value of this counter can occur at
+        re-initialization of the management system, and at other
+        times as indicated by the value of
+        ifCounterDiscontinuityTime."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ifOutUcastPkts" ns2:lifeCycle="CURRENT" ns2:name="ifOutUcastPkts" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The total number of packets that higher-level protocols
+        requested be transmitted, and which were not addressed to a
+        multicast or broadcast address at this sub-layer, including
+        those that were discarded or not sent.
+
+        Discontinuities in the value of this counter can occur at
+        re-initialization of the management system, and at other
+        times as indicated by the value of
+        ifCounterDiscontinuityTime."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ifOutNUcastPkts" ns2:lifeCycle="DEPRECATED" ns2:name="ifOutNUcastPkts" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The total number of packets that higher-level protocols
+        requested be transmitted, and which were addressed to a
+        multicast or broadcast address at this sub-layer, including
+        those that were discarded or not sent.
+
+        Discontinuities in the value of this counter can occur at
+        re-initialization of the management system, and at other
+        times as indicated by the value of
+        ifCounterDiscontinuityTime.
+
+        This object is deprecated in favour of ifOutMulticastPkts
+        and ifOutBroadcastPkts."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ifOutDiscards" ns2:lifeCycle="CURRENT" ns2:name="ifOutDiscards" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of outbound packets which were chosen to be
+        discarded even though no errors had been detected to prevent
+        their being transmitted. One possible reason for discarding
+        such a packet could be to free up buffer space.
+
+        Discontinuities in the value of this counter can occur at
+        re-initialization of the management system, and at other
+        times as indicated by the value of
+        ifCounterDiscontinuityTime."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ifOutErrors" ns2:lifeCycle="CURRENT" ns2:name="ifOutErrors" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"For packet-oriented interfaces, the number of outbound
+        packets that could not be transmitted because of errors.
+        For character-oriented or fixed-length interfaces, the
+        number of outbound transmission units that could not be
+        transmitted because of errors.
+
+        Discontinuities in the value of this counter can occur at
+        re-initialization of the management system, and at other
+        times as indicated by the value of
+        ifCounterDiscontinuityTime."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="LAST_UPDATE" externalName="ifOutQLen" ns2:lifeCycle="DEPRECATED" ns2:name="ifOutQLen" scanner="USER_DEFINED" type="GAUGE">
+      <ns2:desc>"The length of the output packet queue (in packets)."</ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+  </moClass>
+  <moClass name="MY-IP-MIB_Global" namespace="MIB_MY-IP-MIB">
+    <measurement aggregation="LAST_UPDATE" externalName="myipOutDiscards" ns2:lifeCycle="CURRENT" ns2:name=".1.3.6.1.2.1.4.11" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"An estimate of the interface's current bandwidth in bits
+        per second. For interfaces which do not vary in bandwidth
+        or for those where no accurate estimation can be made, this
+        object should contain the nominal bandwidth. If the
+        bandwidth of the interface is greater than the maximum value
+        reportable by this object then this object should report its
+        maximum value (4,294,967,295) and ifHighSpeed must be used
+        to report the interace's speed. For a sub-layer which has
+        no concept of bandwidth, this object should be zero."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="myicmpInErrors" ns2:lifeCycle="CURRENT" ns2:name=".1.3.6.1.2.1.5.2" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The total number of octets received on the interface,
+        including framing characters.
+        Discontinuities in the value of this counter can occur at
+        re-initialization of the management system, and at other
+        times as indicated by the value of
+        ifCounterDiscontinuityTime."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+  </moClass>
+  <moClass name="IP-MIB_Global" namespace="MIB_IP-MIB">
+    <measurement aggregation="SUM" externalName="myIcmpInDestUnreachs" ns2:lifeCycle="DEPRECATED" ns2:name=".1.3.6.1.2.1.5.3" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Destination Unreachable messages
+        received.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipOutDiscards" ns2:lifeCycle="DEPRECATED" ns2:name="ipOutDiscards" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of output IPv4 datagrams for which no problem was
+        encountered to prevent their transmission to their
+        destination, but which were discarded (e.g., for lack of
+        buffer space). Note that this counter would include
+        datagrams counted in ipForwDatagrams if any such packets met
+        this (discretionary) discard criterion.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        ipSystemStatsOutDiscards."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpInErrors" ns2:lifeCycle="DEPRECATED" ns2:name="icmpInErrors" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP messages which the entity received but
+        determined as having ICMP-specific errors (bad ICMP
+        checksums, bad length, etc.).
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        icmpStatsInErrors."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpInTimestampReps" ns2:lifeCycle="DEPRECATED" ns2:name="icmpInTimestampReps" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Timestamp Reply messages received.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpOutDestUnreachs" ns2:lifeCycle="DEPRECATED" ns2:name="icmpOutDestUnreachs" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Destination Unreachable messages sent.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipFragFails" ns2:lifeCycle="DEPRECATED" ns2:name="ipFragFails" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of IPv4 datagrams that have been discarded
+        because they needed to be fragmented at this entity but
+        could not be, e.g., because their Don't Fragment flag was
+        set.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        ipSystemStatsOutFragFails."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpOutRedirects" ns2:lifeCycle="DEPRECATED" ns2:name="icmpOutRedirects" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Redirect messages sent. For a host, this
+        object will always be zero, since hosts do not send
+        redirects.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpOutEchoReps" ns2:lifeCycle="DEPRECATED" ns2:name="icmpOutEchoReps" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Echo Reply messages sent.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpInAddrMaskReps" ns2:lifeCycle="DEPRECATED" ns2:name="icmpInAddrMaskReps" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Address Mask Reply messages received.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipInReceives" ns2:lifeCycle="DEPRECATED" ns2:name="ipInReceives" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The total number of input datagrams received from
+        interfaces, including those received in error.
+
+        This object has been deprecated, as a new IP version-neutral
+
+
+        table has been added. It is loosely replaced by
+        ipSystemStatsInRecieves."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipOutRequests" ns2:lifeCycle="DEPRECATED" ns2:name="ipOutRequests" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The total number of IPv4 datagrams which local IPv4 user
+        protocols (including ICMP) supplied to IPv4 in requests for
+        transmission. Note that this counter does not include any
+        datagrams counted in ipForwDatagrams.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        ipSystemStatsOutRequests."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpInTimestamps" ns2:lifeCycle="DEPRECATED" ns2:name="icmpInTimestamps" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Timestamp (request) messages received.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpOutAddrMaskReps" ns2:lifeCycle="DEPRECATED" ns2:name="icmpOutAddrMaskReps" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Address Mask Reply messages sent.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipForwDatagrams" ns2:lifeCycle="DEPRECATED" ns2:name="ipForwDatagrams" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of input datagrams for which this entity was not
+        their final IPv4 destination, as a result of which an
+        attempt was made to find a route to forward them to that
+        final destination. In entities which do not act as IPv4
+        routers, this counter will include only those packets which
+
+
+        were Source-Routed via this entity, and the Source-Route
+        option processing was successful.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        ipSystemStatsInForwDatagrams."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpInEchoReps" ns2:lifeCycle="DEPRECATED" ns2:name="icmpInEchoReps" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Echo Reply messages received.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpOutTimestamps" ns2:lifeCycle="DEPRECATED" ns2:name="icmpOutTimestamps" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Timestamp (request) messages sent.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipFragOKs" ns2:lifeCycle="DEPRECATED" ns2:name="ipFragOKs" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of IPv4 datagrams that have been successfully
+        fragmented at this entity.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        ipSystemStatsOutFragOKs."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipReasmReqds" ns2:lifeCycle="DEPRECATED" ns2:name="ipReasmReqds" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of IPv4 fragments received which needed to be
+        reassembled at this entity.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        ipSystemStatsReasmReqds."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipReasmOKs" ns2:lifeCycle="DEPRECATED" ns2:name="ipReasmOKs" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of IPv4 datagrams successfully re-assembled.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        ipSystemStatsReasmOKs."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpInAddrMasks" ns2:lifeCycle="DEPRECATED" ns2:name="icmpInAddrMasks" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Address Mask Request messages received.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpOutParmProbs" ns2:lifeCycle="DEPRECATED" ns2:name="icmpOutParmProbs" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Parameter Problem messages sent.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpInMsgs" ns2:lifeCycle="DEPRECATED" ns2:name="icmpInMsgs" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The total number of ICMP messages which the entity received.
+        Note that this counter includes all those counted by
+        icmpInErrors.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        icmpStatsInMsgs."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpInParmProbs" ns2:lifeCycle="DEPRECATED" ns2:name="icmpInParmProbs" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Parameter Problem messages received.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpOutEchos" ns2:lifeCycle="DEPRECATED" ns2:name="icmpOutEchos" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Echo (request) messages sent.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipReasmFails" ns2:lifeCycle="DEPRECATED" ns2:name="ipReasmFails" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of failures detected by the IPv4 re-assembly
+        algorithm (for whatever reason: timed out, errors, etc).
+        Note that this is not necessarily a count of discarded IPv4
+        fragments since some algorithms (notably the algorithm in
+        RFC 815) can lose track of the number of fragments by
+        combining them as they are received.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        ipSystemStatsReasmFails."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipOutNoRoutes" ns2:lifeCycle="DEPRECATED" ns2:name="ipOutNoRoutes" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of IPv4 datagrams discarded because no route
+        could be found to transmit them to their destination. Note
+        that this counter includes any packets counted in
+        ipForwDatagrams which meet this `no-route' criterion. Note
+        that this includes any datagrams which a host cannot route
+        because all of its default routers are down.
+
+        This object has been deprecated, as a new IP version-neutral
+
+
+        table has been added. It is loosely replaced by
+        ipSystemStatsOutNoRoutes."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipInHdrErrors" ns2:lifeCycle="DEPRECATED" ns2:name="ipInHdrErrors" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of input datagrams discarded due to errors in
+        their IPv4 headers, including bad checksums, version number
+        mismatch, other format errors, time-to-live exceeded, errors
+        discovered in processing their IPv4 options, etc.
+
+        This object has been deprecated as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        ipSystemStatsInHdrErrors."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpInRedirects" ns2:lifeCycle="DEPRECATED" ns2:name="icmpInRedirects" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Redirect messages received.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipInDelivers" ns2:lifeCycle="DEPRECATED" ns2:name="ipInDelivers" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The total number of input datagrams successfully delivered
+        to IPv4 user-protocols (including ICMP).
+
+        This object has been deprecated as a new IP version neutral
+        table has been added. It is loosely replaced by
+
+
+        ipSystemStatsIndelivers."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpOutMsgs" ns2:lifeCycle="DEPRECATED" ns2:name="icmpOutMsgs" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The total number of ICMP messages which this entity
+        attempted to send. Note that this counter includes all
+        those counted by icmpOutErrors.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        icmpStatsOutMsgs."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpInSrcQuenchs" ns2:lifeCycle="DEPRECATED" ns2:name="icmpInSrcQuenchs" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Source Quench messages received.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipFragCreates" ns2:lifeCycle="DEPRECATED" ns2:name="ipFragCreates" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of IPv4 datagram fragments that have been
+        generated as a result of fragmentation at this entity.
+
+        This object has been deprecated as a new IP version neutral
+        table has been added. It is loosely replaced by
+        ipSystemStatsOutFragCreates."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipInDiscards" ns2:lifeCycle="DEPRECATED" ns2:name="ipInDiscards" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of input IPv4 datagrams for which no problems
+        were encountered to prevent their continued processing, but
+        which were discarded (e.g., for lack of buffer space). Note
+        that this counter does not include any datagrams discarded
+        while awaiting re-assembly.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        ipSystemStatsInDiscards."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpOutErrors" ns2:lifeCycle="DEPRECATED" ns2:name="icmpOutErrors" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP messages which this entity did not send
+        due to problems discovered within ICMP, such as a lack of
+        buffers. This value should not include errors discovered
+        outside the ICMP layer, such as the inability of IP to route
+        the resultant datagram. In some implementations, there may
+        be no types of error which contribute to this counter's
+        value.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        icmpStatsOutErrors."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpOutSrcQuenchs" ns2:lifeCycle="DEPRECATED" ns2:name="icmpOutSrcQuenchs" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Source Quench messages sent.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipInUnknownProtos" ns2:lifeCycle="DEPRECATED" ns2:name="ipInUnknownProtos" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of locally-addressed datagrams received
+        successfully but discarded because of an unknown or
+        unsupported protocol.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        ipSystemStatsInUnknownProtos."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpOutTimestampReps" ns2:lifeCycle="DEPRECATED" ns2:name="icmpOutTimestampReps" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Timestamp Reply messages sent.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipInAddrErrors" ns2:lifeCycle="DEPRECATED" ns2:name="ipInAddrErrors" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of input datagrams discarded because the IPv4
+        address in their IPv4 header's destination field was not a
+        valid address to be received at this entity. This count
+        includes invalid addresses (e.g., 0.0.0.0) and addresses of
+        unsupported Classes (e.g., Class E). For entities which are
+        not IPv4 routers, and therefore do not forward datagrams,
+        this counter includes datagrams discarded because the
+        destination address was not a local address.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by
+        ipSystemStatsInAddrErrors."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpOutTimeExcds" ns2:lifeCycle="DEPRECATED" ns2:name="icmpOutTimeExcds" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Time Exceeded messages sent.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpInEchos" ns2:lifeCycle="DEPRECATED" ns2:name="icmpInEchos" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Echo (request) messages received.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="ipRoutingDiscards" ns2:lifeCycle="DEPRECATED" ns2:name="ipRoutingDiscards" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of routing entries which were chosen to be
+        discarded even though they are valid. One possible reason
+        for discarding such an entry could be to free-up buffer
+        space for other routing entries.
+
+
+        This object was defined in pre-IPv6 versions of the IP MIB.
+        It was implicitly IPv4 only, but the original specifications
+        did not indicate this protocol restriction. In order to
+        clarify the specifications, this object has been deprecated
+        and a similar, but more thoroughly clarified, object has
+        been added to the IP-FORWARD-MIB."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpOutAddrMasks" ns2:lifeCycle="DEPRECATED" ns2:name="icmpOutAddrMasks" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Address Mask Request messages sent.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+    <measurement aggregation="SUM" externalName="icmpInTimeExcds" ns2:lifeCycle="DEPRECATED" ns2:name="icmpInTimeExcds" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns2:desc>"The number of ICMP Time Exceeded messages received.
+
+        This object has been deprecated, as a new IP version-neutral
+        table has been added. It is loosely replaced by a column in
+        the icmpMsgStatsTable."
+      </ns2:desc>
+      <condition>TBD</condition>
+      <result>TBD</result>
+      <size maxMultiplicity="1" minMultiplicity="1" octets="4"/>
+      <granularityPeriodHandling initialValue="0" resetsAtBeginning="false"/>
+    </measurement>
+  </moClass>
+</PerformanceMeasurementDefinition>

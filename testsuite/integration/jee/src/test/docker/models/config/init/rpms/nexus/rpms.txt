@@ -1,0 +1,12 @@
+#################################
+# install specific dependencies #
+#################################
+ERICpmfunctionmodel_CXP9031819
+ERICpmicservicecommonmodulemodel_CXP9033021
+ERICpmicservicesubuetrmodel_CXP9033070
+ERICpmicservicesubmoinstancemodel_CXP9033109
+ERICpmicservicesubcelltrafficmodel_CXP9033267
+ERICpmicservicesubgpehmodel_CXP9033902
+ERICpmicservicesubresmodel_CXP9035604
+ERICpmicservicesubbscrecordingsmodel_CXP9036688
+ERICpmicservicesubmtrmodel_CXP9036633

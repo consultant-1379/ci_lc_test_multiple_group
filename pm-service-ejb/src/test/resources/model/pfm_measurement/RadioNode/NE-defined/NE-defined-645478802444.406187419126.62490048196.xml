@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+Temporary model : Not able load 17A model in Spock
+-->
+<ns2:PerformanceMeasurementDefinition xmlns:ns1="urn:com:ericsson:schema:xml:oss:oss_common" xmlns:ns2="urn:com:ericsson:schema:xml:oss:pfm_measurement" ns1:name="NE-defined" ns1:ns="RadioNode" ns1:version="645478802444.406187419126.62490048196">
+  <ns1:modelCreationInfo author="MIB Transformer" creationDate="Thu May 11 15:41:52 CEST 2017">
+    <ns1:designedModel componentId="MIB Transformer"/>
+  </ns1:modelCreationInfo>
+  <ns1:desc>Measurement model for NE type 'RadioNode'.</ns1:desc>
+  <ns2:measurementGroup name="QueueTailDrop" ns1:definedBy="NE">
+    <ns2:desc>QoS TailDropQueue Statistics</ns2:desc>
+    <ns2:measurement measurementName="queueHCDroppedOctets" moClassName="QueueTailDrop" namespace="RtnQoSPMQueueTailDropStatistics"/>
+    <ns2:measurement measurementName="queueHCDroppedPkts" moClassName="QueueTailDrop" namespace="RtnQoSPMQueueTailDropStatistics"/>
+    <ns2:measurement measurementName="filledLowerThreshold" moClassName="QueueTailDrop" namespace="RtnQoSPMQueueTailDropStatistics"/>
+    <ns2:measurement measurementName="queueHCInOctets" moClassName="QueueTailDrop" namespace="RtnQoSPMQueueTailDropStatistics"/>
+    <ns2:measurement measurementName="queueHCOutOctets" moClassName="QueueTailDrop" namespace="RtnQoSPMQueueTailDropStatistics"/>
+    <ns2:measurement measurementName="queueHCInPkts" moClassName="QueueTailDrop" namespace="RtnQoSPMQueueTailDropStatistics"/>
+    <ns2:measurement measurementName="queueHCOutPkts" moClassName="QueueTailDrop" namespace="RtnQoSPMQueueTailDropStatistics"/>
+    <ns2:measurement measurementName="filledUpperThreshold" moClassName="QueueTailDrop" namespace="RtnQoSPMQueueTailDropStatistics"/>
+  </ns2:measurementGroup>
+  <ns2:measurementGroup name="EthernetOamLocalMep" ns1:definedBy="NE">
+    <ns2:desc>Statistics for EthernetOamLocalMep</ns2:desc>
+    <ns2:measurement measurementName="ccmSequenceErrors" moClassName="EthernetOamLocalMep" namespace="RtnEthernetOam"/>
+    <ns2:measurement measurementName="lbrIn" moClassName="EthernetOamLocalMep" namespace="RtnEthernetOam"/>
+    <ns2:measurement measurementName="unexpLtrIn" moClassName="EthernetOamLocalMep" namespace="RtnEthernetOam"/>
+    <ns2:measurement measurementName="lbrBadMsdu" moClassName="EthernetOamLocalMep" namespace="RtnEthernetOam"/>
+    <ns2:measurement measurementName="lbrOut" moClassName="EthernetOamLocalMep" namespace="RtnEthernetOam"/>
+    <ns2:measurement measurementName="cciSentCcms" moClassName="EthernetOamLocalMep" namespace="RtnEthernetOam"/>
+  </ns2:measurementGroup>
+  <ns2:measurementGroup name="DlPowerSharing" ns1:definedBy="NE">
+    <ns2:desc>Contains all PM counters for DlPowerSharing</ns2:desc>
+    <ns2:measurement measurementName="pmNoOfPowLimSlots" moClassName="DlPowerSharing" namespace="Wrat"/>
+  </ns2:measurementGroup>
+
+  <ns2:moClass name="EthernetOamLocalMep" namespace="RtnEthernetOam">
+    <ns2:measurement aggregation="SUM" derSampleRate="0" externalName="ccmSequenceErrors" generation="" ns1:lifeCycle="CURRENT" ns1:name="ccmSequenceErrors" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The total number of out-of-sequence CCMs received for all EthernetOamRemoteMep MOs.</ns1:desc>
+      <ns2:condition>An out-of-sequence CCM message is received.</ns2:condition>
+      <ns2:result>OK</ns2:result>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+    <ns2:measurement aggregation="SUM" derSampleRate="0" externalName="lbrIn" generation="" ns1:lifeCycle="CURRENT" ns1:name="lbrIn" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The total number of valid in-order LBRs received.</ns1:desc>
+      <ns2:condition>A valid in-order LBR message is received.</ns2:condition>
+      <ns2:result>OK</ns2:result>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+    <ns2:measurement aggregation="SUM" derSampleRate="0" externalName="unexpLtrIn" generation="" ns1:lifeCycle="CURRENT" ns1:name="unexpLtrIn" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The total number of unexpected Link Trace Replies (LTR) received.</ns1:desc>
+      <ns2:condition>An unexpected LTR is received.</ns2:condition>
+      <ns2:result>OK</ns2:result>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+    <ns2:measurement aggregation="SUM" derSampleRate="0" externalName="lbrBadMsdu" generation="" ns1:lifeCycle="CURRENT" ns1:name="lbrBadMsdu" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The total number of Loop Back Replies (LBR) received, whose mac_service_data_unit did not match that of the corresponding Loop Back
+        Message (LBM) (except for the OpCode).
+      </ns1:desc>
+      <ns2:condition>An incorrect mac_service_data_unit LBR message is received.</ns2:condition>
+      <ns2:result>OK</ns2:result>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+    <ns2:measurement aggregation="SUM" derSampleRate="0" externalName="lbrOut" generation="" ns1:lifeCycle="CURRENT" ns1:name="lbrOut" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The total number of LBRs that are transmitted.</ns1:desc>
+      <ns2:condition>An LBR packet is transmitted.</ns2:condition>
+      <ns2:result>OK</ns2:result>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+    <ns2:measurement aggregation="SUM" derSampleRate="0" externalName="cciSentCcms" generation="" ns1:lifeCycle="CURRENT" ns1:name="cciSentCcms" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The total number of CCMs transmitted.</ns1:desc>
+      <ns2:condition>A CCM message is transmitted.</ns2:condition>
+      <ns2:result>OK</ns2:result>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+  </ns2:moClass>
+
+  <ns2:moClass name="DlPowerSharing" namespace="Wrat">
+    <ns2:measurement aggregation="SUM" externalName="pmNoOfPowLimSlots" generation="UMTS" ns1:lifeCycle="PRELIMINARY" ns1:name="pmNoOfPowLimSlots" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The number of power-limited slots during a granularity period.</ns1:desc>
+      <ns2:condition>The actual measurement is started when the sector is initiated, and at least one carrier branch is enabled on the downlink
+        rfBranch, and the feature HSDPA Mixed Mode Power Sharing is activated. Each power-limited slot detected on the downlink rfBranch increases the
+        count by 1. This occurs when the traffic load for the rfBranch is too high.
+      </ns2:condition>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+  </ns2:moClass>
+
+  <ns2:moClass name="QueueTailDrop" namespace="RtnQoSPMQueueTailDropStatistics">
+    <ns2:measurement aggregation="SUM" derSampleRate="0" externalName="queueHCDroppedOctets" generation="" ns1:lifeCycle="CURRENT" ns1:name="queueHCDroppedOctets" scanner="PRIMARY" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The number (64-bit) of octets discarded by the queue. Ethernet header, payload and FCS are counted. Unit: Octets</ns1:desc>
+      <ns2:condition>Increases if octet dropped by the queue tail drop</ns2:condition>
+      <ns2:result>OK</ns2:result>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+    <ns2:measurement aggregation="SUM" derSampleRate="0" externalName="queueHCDroppedPkts" generation="" ns1:lifeCycle="DEPRECATED" ns1:name="queueHCDroppedPkts" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The number (64-bit) of packets discarded by the queue. Unit: Packets</ns1:desc>
+      <ns2:condition>Increases if packet dropped by the queue tail drop</ns2:condition>
+      <ns2:result>OK</ns2:result>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+    <ns2:measurement aggregation="SUM" derSampleRate="0" externalName="filledLowerThreshold" generation="" ns1:lifeCycle="CURRENT" ns1:name="filledLowerThreshold" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The number (64-bit) of samples, taken a 1000 times per ROP, when a queue is filled more than 20% of its size.</ns1:desc>
+      <ns2:condition>Increases if queue utilization is larger than 20%.</ns2:condition>
+      <ns2:result>OK</ns2:result>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+    <ns2:measurement aggregation="SUM" derSampleRate="0" externalName="queueHCInOctets" generation="" ns1:lifeCycle="CURRENT" ns1:name="queueHCInOctets" scanner="PRIMARY" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The number (64-bit) of octets transmitted into the queue. Ethernet header, payload and FCS are counted. Unit: Octets</ns1:desc>
+      <ns2:condition>Increases if octet transmitted into the tail-drop queue</ns2:condition>
+      <ns2:result>OK</ns2:result>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+    <ns2:measurement aggregation="SUM" derSampleRate="0" externalName="queueHCOutOctets" generation="" ns1:lifeCycle="CURRENT" ns1:name="queueHCOutOctets" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The number (64-bit) of octets transmitted by the queue. Ethernet header, payload and FCS are counted. Unit: Octets</ns1:desc>
+      <ns2:condition>Increases if octet sent by TailDrop Queue</ns2:condition>
+      <ns2:result>OK</ns2:result>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+    <ns2:measurement aggregation="SUM" derSampleRate="0" externalName="queueHCInPkts" generation="" ns1:lifeCycle="CURRENT" ns1:name="queueHCInPkts" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The number (64-bit) of packets transmitted into the queue. Unit: Packets</ns1:desc>
+      <ns2:condition>Increases if packet transmitted into the tail-drop queue</ns2:condition>
+      <ns2:result>OK</ns2:result>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+    <ns2:measurement aggregation="SUM" derSampleRate="0" externalName="queueHCOutPkts" generation="" ns1:lifeCycle="CURRENT" ns1:name="queueHCOutPkts" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The number (64-bit) of packets transmitted by the queue. Ethernet header, payload and FCS are counted. Unit: Octets</ns1:desc>
+      <ns2:condition>Increases if packets sent by TailDrop Queue</ns2:condition>
+      <ns2:result>OK</ns2:result>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+    <ns2:measurement aggregation="SUM" derSampleRate="0" externalName="filledUpperThreshold" generation="" ns1:lifeCycle="CURRENT" ns1:name="filledUpperThreshold" scanner="USER_DEFINED" type="CUMULATIVE_COUNTER">
+      <ns1:desc>The number (64-bit) of samples, taken a 1000 times per ROP, when a queue is filled more than 80% of its size.</ns1:desc>
+      <ns2:condition>Increases if queue utilization is larger than 80%.</ns2:condition>
+      <ns2:result>OK</ns2:result>
+      <ns2:size maxMultiplicity="1" octets="8"/>
+      <ns2:granularityPeriodHandling initialValue="0" resetsAtBeginning="true"/>
+    </ns2:measurement>
+  </ns2:moClass>
+</ns2:PerformanceMeasurementDefinition>

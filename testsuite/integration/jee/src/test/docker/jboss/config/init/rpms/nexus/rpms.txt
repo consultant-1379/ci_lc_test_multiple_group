@@ -1,0 +1,6 @@
+#################################
+# install specific dependencies #
+#################################
+ERICpmiccommonmoduleapi_CXP9032401
+ERICpmiccommonmoduleimpl_CXP9032400
+ERICftpjcaconnectorapi_CXP9031542

@@ -1,0 +1,47 @@
+{
+  "@class": "celltrace",
+  "name": "CellTraceTestSubscription",
+  "description": null,
+  "type": "CELLTRACE",
+  "scheduleInfo": {
+    "startDateTime": null,
+    "endDateTime": null
+  },
+  "rop": "NOT_APPLICABLE",
+  "nodes": [
+    {
+      "fdn": "NetworkElement=LTE02ERBS00021"
+    }
+  ],
+  "events": [],
+  "outputMode": "FILE",
+  "streamInfoList": [],
+  "ebsCounters": [
+    {
+      "name": "pmAdvCellSupDetection",
+      "moClassType": "EUtranCellFDD"
+    },
+    {
+      "name": "pmAdvCellSupRecoveryCellAtt",
+      "moClassType": "EUtranCellFDD"
+    },
+    {
+      "name": "pmAdvCellSupRecoveryCellSucc",
+      "moClassType": "EUtranCellFDD"
+    },
+    {
+      "name": "pmAdvCellSupRecoveryNodeAtt",
+      "moClassType": "EUtranCellFDD"
+    },
+    {
+      "name": "pmAdvCellSupRecoveryNodeSucc",
+      "moClassType": "EUtranCellFDD"
+    },
+    {
+      "name": "pmAgMeasSuccCgi",
+      "moClassType": "EUtranCellFDD"
+    }
+  ],
+  "ueFraction": 1000,
+  "asnEnabled": false
+}
